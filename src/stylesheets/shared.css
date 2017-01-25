@@ -1,3 +1,9 @@
 .open-sans {
   font-family: 'Open Sans', sans-serif;
 }
+
+:global {
+  body {
+    margin: 0;
+  }
+}

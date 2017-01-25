@@ -3,3 +3,7 @@
 .data {
   composes: open-sans from './shared.css';
 }
+
+.cell {
+  padding: 3px;
+}

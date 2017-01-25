@@ -6,7 +6,9 @@ export const getVotes = () => {  // eslint-disable-line import/prefer-default-ex
     .then(data => data.objects)
     .then(votes => votes.filter(vote => vote.category === 'nomination'))
     .then(votes => votes.map((vote) => {
-      const { id, question, result } = vote;
+      let { question } = vote;
+      const { id, result } = vote;
+      question = question.match(/PN\d\d: (.+)/)[1].split(', of')[0];
       return { id, question, result };
     }));
 };
