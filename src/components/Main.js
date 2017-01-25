@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { Table, Column, Cell } from 'fixed-data-table';
 import 'fixed-data-table/dist/fixed-data-table.css';
 import classnames from 'classnames';
-import { Link } from 'react-router';
 
 import { cell, data, r, d, i, senLink, yea, nay } from '../stylesheets/main.css';
 import { getCabinetAsync } from '../actions/cabinet';
