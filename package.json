@@ -1,0 +1,78 @@
+{
+  "author": "Brian Jacobel <brian@bjacobel.com> (https://bjacobel.com)",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^4.0.0-alpha.4",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.0",
+    "aws-sdk": "^2.7.27",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.9",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.22.0",
+    "cloudformer-node": "https://github.com/bjacobel/cloudformer-node",
+    "cloudfriend": "https://github.com/mapbox/cloudfriend",
+    "css-loader": "^0.26.1",
+    "enzyme": "^2.7.1",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.26.0",
+    "inline-manifest-webpack-plugin": "^3.0.1",
+    "jest-cli": "^18.1.0",
+    "postcss-font-magician": "^1.6.0",
+    "postcss-loader": "^1.2.2",
+    "postcss-modules-values": "^1.2.2",
+    "precss": "^1.4.0",
+    "react-addons-test-utils": "^15.4.2",
+    "redux-mock-store": "^1.2.1",
+    "script-ext-html-webpack-plugin": "^1.5.0",
+    "style-loader": "^0.13.1",
+    "stylelint": "^7.7.1",
+    "stylelint-config-css-modules": "^0.1.0",
+    "stylelint-config-standard": "^15.0.0",
+    "url-loader": "^0.5.7",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0"
+  },
+  "engines": {
+    "node": "^6.7.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.css$": "<rootDir>/mocks/stylesheets.js"
+    },
+    "testPathDirs": [
+      "./tests"
+    ],
+    "testRegex": "tests/.*/.*-test.js$"
+  },
+  "license": "MIT",
+  "name": "cabinet",
+  "repository": {
+    "url": "git@github.com:bjacobel/cabinet.git",
+    "type": "git"
+  },
+  "scripts": {
+    "awsUtils": "node aws/utils",
+    "lint": "eslint . && stylelint src/stylesheets/*.css",
+    "start": "webpack-dev-server",
+    "test": "jest",
+    "webpack": "webpack -p"
+  },
+  "version": "0.0.4"
+}
