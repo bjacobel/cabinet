@@ -77,8 +77,14 @@ const wpconfig = {
         include: path.join(__dirname, 'src'),
         use: 'babel-loader',
       },
-      {
+      { // Normal css files, from vendors
         test: /\.css$/,
+        include: path.join(__dirname, 'node_modules'),
+        loader: 'style-loader!css-loader',
+      },
+      { // Postcss files
+        test: /\.css$/,
+        exclude: path.join(__dirname, 'node_modules'),
         loader: isProd ? prodCssConfig : devCssConfig,
       },
     ],

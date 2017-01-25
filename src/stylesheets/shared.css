@@ -1,10 +1,3 @@
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .open-sans {
   font-family: 'Open Sans', sans-serif;
 }

@@ -1,36 +1,58 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
+import { Table, Column, Cell } from 'fixed-data-table';
+import 'fixed-data-table/dist/fixed-data-table.css';
+// import { Link } from 'react-router';
 
 import styles from '../stylesheets/main.css';
-import { link } from '../stylesheets/link.css';
-import { getDataAsync } from '../actions/data';
+import { getCabinetAsync } from '../actions/cabinet';
 
 const mapStateToProps = state => ({
-  data: state.data,
+  votes: state.votes,
+  voters: state.voters,
 });
 
 const mapDispatchToProps = {
-  getDataAsync,
+  getCabinetAsync,
 };
 
 class Main extends Component {
   componentWillMount() {
-    this.props.getDataAsync();
+    const { party } = this.props.params;
+    this.props.getCabinetAsync(party);
   }
 
   render() {
-    const { data } = this.props;
+    const { votes, voters } = this.props;
 
     return (
-      <div>
-        <div className={ styles.logo } />
-        <h3 className={ styles.data }>{ data.text || '' }</h3>
-        <Link className={ link } to={ `/child/${Math.floor(Math.random() * 100)}` }>
-          Component with passed params
-        </Link>
-        <Link className={ link } to="/asdf">Dead link</Link>
-      </div>
+      <Table
+        rowHeight={ 50 }
+        rowsCount={ 100 }
+        width={ window.innerWidth }
+        height={ window.innerHeight }
+        headerHeight={ 50 }
+      >
+        <Column
+          header={ <Cell></Cell> }
+          cell={ <Cell>Column 1 static content</Cell> }
+          width={ 50 }
+        />
+        <Column
+          header={ <Cell>Col 2</Cell> }
+          cell={ <Cell>Column 2 static content</Cell> }
+          width={ 50 }
+        />
+        <Column
+          header={ <Cell>Col 3</Cell> }
+          cell={ props => (
+            <Cell { ...props }>
+              foo
+            </Cell>
+          ) }
+          width={ 50 }
+        />
+      </Table>
     );
   }
 }
