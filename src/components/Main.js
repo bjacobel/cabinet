@@ -43,8 +43,8 @@ class Main extends Component {
         <Table
           rowHeight={ 42 }
           rowsCount={ exampleVotes.length }
-          width={ window.innerWidth }
-          height={ window.innerHeight }
+          width={ 9999 }
+          height={ (42 * 100) + 100 }
           headerHeight={ 65 }
         >
           <Column // Names of senators
