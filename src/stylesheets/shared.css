@@ -2,6 +2,15 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 :global {
   body {
     margin: 0;

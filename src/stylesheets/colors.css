@@ -1,2 +1,6 @@
-@value blue: #254dc7;
+@value blue-tint: rgba(0, 87, 184, 0.1);
+@value red-tint: rgba(188, 0, 0, 0.1);
+@value yellow-tint: rgba(241, 223, 46, 0.2);
+@value red: rgb(188, 0, 0);
+@value green: rgb(37, 171, 54);
 @value lightgrey: #8d8d8d;

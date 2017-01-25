@@ -9,6 +9,7 @@ export default class Routes extends Component {
       <BrowserRouter>
         <div>
           <Match pattern="/" exactly component={ Main } />
+          <Match pattern="/:party" component={ Main } />
         </div>
       </BrowserRouter>
     );

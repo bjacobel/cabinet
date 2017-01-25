@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { Table, Column, Cell } from 'fixed-data-table';
 import 'fixed-data-table/dist/fixed-data-table.css';
 import classnames from 'classnames';
-// import { Link } from 'react-router';
+import { Link } from 'react-router';
 
-import { cell, data, r, d, i } from '../stylesheets/main.css';
+import { cell, data, r, d, i, senLink, yea, nay } from '../stylesheets/main.css';
 import { getCabinetAsync } from '../actions/cabinet';
 
 const mapStateToProps = state => ({
@@ -23,6 +23,11 @@ const partyClass = party => ({
   [i]: party === 'Independent',
 });
 
+const voteClass = vote => ({
+  [yea]: vote === 'Yea',
+  [nay]: vote === 'Nay',
+});
+
 class Main extends Component {
   componentWillMount() {
     const { party } = this.props.params;
@@ -31,12 +36,13 @@ class Main extends Component {
 
   render() {
     const { votes, voters } = this.props;
+    const exampleVotes = Object.values(voters)[0] || [];
 
     return (
       <div className={ data }>
         <Table
           rowHeight={ 42 }
-          rowsCount={ 100 }
+          rowsCount={ exampleVotes.length }
           width={ window.innerWidth }
           height={ window.innerHeight }
           headerHeight={ 65 }
@@ -44,12 +50,11 @@ class Main extends Component {
           <Column // Names of senators
             width={ 315 }
             cell={ (props) => {
-              const exampleVotes = Object.values(voters)[0];
               if (exampleVotes) {
                 const senator = exampleVotes[props.rowIndex];
                 return (
                   <Cell className={ classnames(cell, partyClass(senator.party)) }>
-                    { senator.name }
+                    <Link className={ senLink } to={ senator.link }>{ senator.name }</Link>
                   </Cell>
                 );
               } else {
@@ -61,9 +66,16 @@ class Main extends Component {
             return (
               <Column // The vote on each nominee
                 key={ voteId }
-                header={ () => <Cell className={ cell }>{ votes[voteId].question }</Cell> }
-                cell={ props => <Cell className={ cell }>{ votersForVote[props.rowIndex].value }</Cell> }
                 width={ 110 }
+                header={ () => <Cell className={ cell }>{ votes[voteId].question }</Cell> }
+                cell={ (props) => {
+                  const vote = votersForVote[props.rowIndex].value;
+                  return (
+                    <Cell className={ classnames(cell, voteClass(vote)) }>
+                      { vote }
+                    </Cell>
+                  );
+                } }
               />
             );
           })}

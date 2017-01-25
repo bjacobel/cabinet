@@ -1,6 +1,6 @@
 import fetch from './fetch';
 
-export const getVotes = () => {  // eslint-disable-line import/prefer-default-export
+export const getVotes = () => {
   return fetch('https://www.govtrack.us/api/v2/vote/?congress=115&chamber=senate&session=2017')
     .then(body => body.json())
     .then(data => data.objects)
