@@ -54,7 +54,7 @@ class Main extends Component {
                 const senator = exampleVotes[props.rowIndex];
                 return (
                   <Cell className={ classnames(cell, partyClass(senator.party)) }>
-                    <Link className={ senLink } to={ senator.link }>{ senator.name }</Link>
+                    <a className={ senLink } href={ senator.link }>{ senator.name }</a>
                   </Cell>
                 );
               } else {
