@@ -13,13 +13,13 @@ export const getVotes = () => {  // eslint-disable-line import/prefer-default-ex
     }));
 };
 
-export const getVoters = (voteId, party) => {
+export const getVoters = (voteId, partyFilter) => {
   return fetch(`https://www.govtrack.us/api/v2/vote_voter?vote=${voteId}`)
     .then(body => body.json())
     .then(data => data.objects)
     .then((voters) => {
-      if (party) {
-        return voters.filter(voter => voter.party === party);
+      if (partyFilter) {
+        return voters.filter(voter => voter.person_role.party === partyFilter);
       } else {
         return voters;
       }
@@ -27,6 +27,7 @@ export const getVoters = (voteId, party) => {
     .then(voters => voters.map((voter) => {
       const { value } = voter.option;
       const { name, link, id } = voter.person;
-      return { name, link, value, id, voteId };
+      const { party } = voter.person_role;
+      return { name, link, value, id, party, voteId };
     }));
 };

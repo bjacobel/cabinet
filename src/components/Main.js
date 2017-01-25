@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Table, Column, Cell } from 'fixed-data-table';
 import 'fixed-data-table/dist/fixed-data-table.css';
+import classnames from 'classnames';
 // import { Link } from 'react-router';
 
-import { cell, data } from '../stylesheets/main.css';
+import { cell, data, r, d, i } from '../stylesheets/main.css';
 import { getCabinetAsync } from '../actions/cabinet';
 
 const mapStateToProps = state => ({
@@ -15,6 +16,12 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = {
   getCabinetAsync,
 };
+
+const partyClass = party => ({
+  [r]: party === 'Republican',
+  [d]: party === 'Democrat',
+  [i]: party === 'Independent',
+});
 
 class Main extends Component {
   componentWillMount() {
@@ -39,7 +46,12 @@ class Main extends Component {
             cell={ (props) => {
               const exampleVotes = Object.values(voters)[0];
               if (exampleVotes) {
-                return <Cell className={ cell }>{ exampleVotes.map(x => x.name)[props.rowIndex] }</Cell>;
+                const senator = exampleVotes[props.rowIndex];
+                return (
+                  <Cell className={ classnames(cell, partyClass(senator.party)) }>
+                    { senator.name }
+                  </Cell>
+                );
               } else {
                 return <Cell />;
               }

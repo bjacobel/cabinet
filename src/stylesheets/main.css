@@ -6,4 +6,17 @@
 
 .cell {
   padding: 3px;
+  width: 100%;
+}
+
+.d {
+  background-color: rgba(188, 0, 0, 0.1);
+}
+
+.r {
+  background-color: rgba(0, 87, 184, 0.1);
+}
+
+.i {
+  background-color: rgba(241, 223, 46, 0.2);
 }

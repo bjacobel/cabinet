@@ -1,6 +1,7 @@
 {
   "author": "Brian Jacobel <brian@bjacobel.com> (https://bjacobel.com)",
   "dependencies": {
+    "classnames": "^2.2.5",
     "fixed-data-table": "^0.6.3",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
