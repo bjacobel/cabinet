@@ -5,8 +5,6 @@ const InlineManifestWebpackPlugin = require('inline-manifest-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
-const projectConfig = require('./config.js');
-
 const isProd = process.env.NODE_ENV === 'production';
 
 const cssLoaderConfig = {
@@ -108,7 +106,7 @@ const wpconfig = {
     new webpack.optimize.CommonsChunkPlugin('manifest'),
     new InlineManifestWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: projectConfig.ProjectName,
+      title: 'CabinetVotes.org',
       template: './src/index.html',
       favicon: './src/assets/images/favicon.ico',
     }),
