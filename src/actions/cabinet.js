@@ -28,7 +28,7 @@ export const getVotersFailed = (err) => {
   return { type: GET_VOTERS_FAILED, payload: { errors: [err] } };
 };
 
-export const getCabinetAsync = (party) => {
+export const getCabinetAsync = () => {
   return (dispatch) => {
     dispatch(loadingStarted());
 
@@ -37,7 +37,7 @@ export const getCabinetAsync = (party) => {
         dispatch(getVotesSucceeded(votes));
 
         return Promise.all(votes.map((vote) => {
-          return getVoters(vote.id, party)
+          return getVoters(vote.id)
             .then(voters => dispatch(getVotersSucceeded(voters)))
             .catch(err => dispatch(getVotersFailed(err)));
         }));

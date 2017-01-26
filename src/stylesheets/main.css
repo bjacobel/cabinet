@@ -47,3 +47,7 @@
   content: '✗';
   color: red;
 }
+
+.filters {
+  padding-left: 10px;
+}
