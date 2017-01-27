@@ -4,6 +4,11 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.sr-only {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 :global {
   a {
     text-decoration: none;

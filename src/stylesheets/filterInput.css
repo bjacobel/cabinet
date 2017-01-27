@@ -1,0 +1,26 @@
+.filterBox {
+  position: absolute;
+  z-index: 999;
+  top: 294px;
+}
+
+.filter,
+.filterLabel {
+  composes: open-sans from './shared.css';
+}
+
+.filterLabel {
+  padding-left: 10px;
+}
+
+.filter {
+  height: calc(42px - 2 * 8px);
+  width: 296px;
+  font-size: 120%;
+  padding: 6px 8px;
+  margin-top: 10px;
+}
+
+.filterHint {
+  composes: sr-only from './shared.css';
+}

@@ -1,37 +1,22 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Table, Column, Cell } from 'fixed-data-table';
-import 'fixed-data-table/dist/fixed-data-table.css';
-import classnames from 'classnames';
 
-import { cell, data, r, d, i, yea, nay, footer, antiskew } from '../stylesheets/main.css';
+import { data, footer } from '../stylesheets/main.css';
 import { getCabinetAsync } from '../actions/cabinet';
+import { updateFilterTermAsync } from '../actions/filtering';
 import Header from './Header';
+import TableWrapper from './TableWrapper';
+import FilterInput from './FilterInput';
 
 const mapStateToProps = state => ({
   votes: state.votes,
   voteRecords: state.voteRecords,
+  filterTerm: state.filterTerm,
 });
 
 const mapDispatchToProps = {
   getCabinetAsync,
-};
-
-const partyClass = party => ({
-  [r]: party === 'Republican',
-  [d]: party === 'Democrat',
-  [i]: party === 'Independent',
-});
-
-const voteClass = vote => ({
-  [yea]: vote === 'Yea',
-  [nay]: vote === 'Nay',
-});
-
-const headerize = (text) => {
-  return text.split(' ').map((textchunk, ind) => {
-    return <span className={ antiskew } key={ ind }>{ `${textchunk} ` }</span>; // eslint-disable-line react/no-array-index-key, max-len
-  });
+  updateFilterTermAsync,
 };
 
 class Main extends Component {
@@ -40,13 +25,23 @@ class Main extends Component {
   }
 
   render() {
-    const { votes, voteRecords } = this.props;
+    const {
+      votes,
+      voteRecords,
+      filterTerm,
+      updateFilterTermAsync, // eslint-disable-line no-shadow
+    } = this.props;
     const { party } = this.props.params;
     const partyRegexp = new RegExp(party || '.+', 'i');
+    const filterRegexp = new RegExp(filterTerm, 'i');
 
     const filteredVoteRecords = {};
     Object.entries(voteRecords).forEach(([voteId, votersForVote]) => {
-      filteredVoteRecords[voteId] = votersForVote.filter(voter => voter.party.match(partyRegexp));
+      filteredVoteRecords[voteId] = votersForVote
+        .filter(voter => voter.party.match(partyRegexp))
+        .filter((voter) => {
+          return voter.name.match(filterRegexp) || voter.state.match(filterRegexp) || voter.stateFull.match(filterRegexp);
+        });
     });
 
     const senators = Object.values(filteredVoteRecords)[0] || [];
@@ -54,46 +49,8 @@ class Main extends Component {
     return (
       <div className={ data }>
         <Header />
-        <Table
-          rowHeight={ 42 }
-          rowsCount={ senators.length }
-          width={ 9999 }
-          height={ (42 * senators.length) + 150 + 2 }
-          headerHeight={ 150 }
-        >
-          <Column // Names of senators
-            width={ 315 }
-            cell={ (props) => {
-              if (senators) {
-                const senator = senators[props.rowIndex];
-                return (
-                  <Cell className={ classnames(cell, partyClass(senator.party)) }>
-                    <a href={ senator.link }>{ senator.name }</a>
-                  </Cell>
-                );
-              } else {
-                return <Cell />;
-              }
-            } }
-          />
-          { Object.entries(filteredVoteRecords).map(([voteId, votersForVote]) => {
-            return (
-              <Column // The vote on each nominee
-                key={ voteId }
-                width={ 110 }
-                header={ () => <Cell className={ cell }>{ headerize(votes[voteId].question) }</Cell> }
-                cell={ (props) => {
-                  const vote = votersForVote[props.rowIndex].value;
-                  return (
-                    <Cell className={ classnames(cell, voteClass(vote)) }>
-                      { vote }
-                    </Cell>
-                  );
-                } }
-              />
-            );
-          })}
-        </Table>
+        <FilterInput updateFilter={ updateFilterTermAsync } />
+        <TableWrapper votes={ votes } senators={ senators } filteredVoteRecords={ filteredVoteRecords } />
         <p className={ footer }>
           <span>Data via <a href="https://www.govtrack.us">GovTrack</a>. </span>
           <span>Code on <a href="https://github.com/bjacobel/cabinet">GitHub</a>, PRs welcome. </span>

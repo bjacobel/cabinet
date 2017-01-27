@@ -1,4 +1,5 @@
 import fetch from './fetch';
+import states from './states.json';
 
 export const getVotes = () => {
   return fetch('https://www.govtrack.us/api/v2/vote/?congress=115&chamber=senate&session=2017')
@@ -28,7 +29,7 @@ export const getVoteRecords = (voteId) => {
     .then(voters => voters.map((voter) => {
       const { value } = voter.option;
       const { name, link, id } = voter.person;
-      const { party } = voter.person_role;
-      return { name, link, value, id, party, voteId };
+      const { party, state } = voter.person_role;
+      return { name, link, value, id, party, voteId, state, stateFull: states[state] };
     }));
 };
