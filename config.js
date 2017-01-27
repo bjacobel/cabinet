@@ -7,17 +7,17 @@
  */
 const config = {
   // The common name for your project. Used for naming CloudFormation stacks and CloudFront distros.
-  ProjectName: 'cabinet',
+  ProjectName: 'cabinetvotes',
 
   // The root domain that your project will live at. Used for creating hosted zones and connecting DNS.
-  ProjectDomain: 'bjacobel.com',
+  ProjectDomain: 'cabinetvotes.org',
 
   // If project will live on a subdomain, give the fully qualified domain here. Otherwise use the same value as above.
-  ProjectFQDomain: 'cabinet.bjacobel.com',
+  ProjectFQDomain: 'cabinetvotes.org',
 
   // If you already have a Route53 hosted zone for the ProjectDomain domain, setting this value to `'true'` will
   // re-use the zone. Setting it to `'false'` will create a new zone.
-  ExistingHostedZone: 'true',
+  ExistingHostedZone: 'false',
 };
 
 if (!module.parent && process.argv[2]) {
