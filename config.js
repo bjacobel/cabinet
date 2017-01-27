@@ -17,7 +17,7 @@ const config = {
 
   // If you already have a Route53 hosted zone for the ProjectDomain domain, setting this value to `'true'` will
   // re-use the zone. Setting it to `'false'` will create a new zone.
-  ExistingHostedZone: 'true',
+  ExistingHostedZone: 'false',
 };
 
 if (!module.parent && process.argv[2]) {
