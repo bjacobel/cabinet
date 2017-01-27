@@ -6,10 +6,18 @@ export const getVotes = () => {
     .then(data => data.objects)
     .then(votes => votes.filter(vote => vote.category === 'nomination'))
     .then(votes => votes.map((vote) => {
-      let { question } = vote;
-      const { id, result } = vote;
-      question = question.match(/PN\d\d: (.+)/)[1].split(', of')[0];
-      return { id, question, result };
+      const { id, result, question } = vote;
+      let [_, name, position] = question.match(/PN\d\d: (.+), .+ to be ([\w\ ]+)/);  // eslint-disable-line
+
+      if (position === 'the Representative of the United States of America to the United Nations') {
+        position = 'Ambassador to the United Nations';
+      }
+
+      return {
+        id,
+        question: `${name} (${position})`,
+        result,
+      };
     }));
 };
 

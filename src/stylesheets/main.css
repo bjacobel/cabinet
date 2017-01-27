@@ -11,6 +11,13 @@
 .cell {
   padding: 3px;
   width: 100%;
+  white-space: pre-wrap;
+}
+
+.antiskew {
+  display: inline-block;
+  transform: skew(-45deg);
+  min-width: 3px;
 }
 
 .r {
@@ -46,4 +53,41 @@
 
 .footer {
   padding: 10px;
+}
+
+:global {
+  .public_fixedDataTable_main {
+    border-top: 0;
+  }
+
+  .public_fixedDataTable_header {
+    background-image: none;
+
+    .fixedDataTableCellGroupLayout_cellGroup {
+      width: 9999px !important;
+    }
+
+    .public_fixedDataTableCell_main {
+      font-size: 80%;
+      background-image: none;
+      background-color: transparent;
+      border: none;
+      width: 180px !important;
+      overflow: visible;
+      transform:
+        rotate(315deg)
+        skew(45deg)
+        translate(-15px, 63px);
+
+      &:not(:first-of-type) {
+        border-top: 1px solid #d3d3d3;
+      }
+
+      .public_fixedDataTableCell_wrap1 {
+        .public_fixedDataTableCell_cellContent {
+          padding: 3px 3px 3px 15px;
+        }
+      }
+    }
+  }
 }

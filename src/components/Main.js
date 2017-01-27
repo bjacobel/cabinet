@@ -4,7 +4,7 @@ import { Table, Column, Cell } from 'fixed-data-table';
 import 'fixed-data-table/dist/fixed-data-table.css';
 import classnames from 'classnames';
 
-import { cell, data, r, d, i, yea, nay, footer } from '../stylesheets/main.css';
+import { cell, data, r, d, i, yea, nay, footer, antiskew } from '../stylesheets/main.css';
 import { getCabinetAsync } from '../actions/cabinet';
 import Header from './Header';
 
@@ -27,6 +27,12 @@ const voteClass = vote => ({
   [yea]: vote === 'Yea',
   [nay]: vote === 'Nay',
 });
+
+const headerize = (text) => {
+  return text.split(' ').map((textchunk, ind) => {
+    return <span className={ antiskew } key={ ind }>{ `${textchunk} ` }</span>; // eslint-disable-line react/no-array-index-key, max-len
+  });
+};
 
 class Main extends Component {
   componentWillMount() {
@@ -52,8 +58,8 @@ class Main extends Component {
           rowHeight={ 42 }
           rowsCount={ senators.length }
           width={ 9999 }
-          height={ (42 * senators.length) + 65 }
-          headerHeight={ 65 }
+          height={ (42 * senators.length) + 150 + 2 }
+          headerHeight={ 150 }
         >
           <Column // Names of senators
             width={ 315 }
@@ -75,7 +81,7 @@ class Main extends Component {
               <Column // The vote on each nominee
                 key={ voteId }
                 width={ 110 }
-                header={ () => <Cell className={ cell }>{ votes[voteId].question }</Cell> }
+                header={ () => <Cell className={ cell }>{ headerize(votes[voteId].question) }</Cell> }
                 cell={ (props) => {
                   const vote = votersForVote[props.rowIndex].value;
                   return (

@@ -1,6 +1,10 @@
 .header {
   padding-left: 10px;
   max-width: 680px;
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .tiny {
