@@ -9,8 +9,8 @@ export default class Header extends Component {
       <div className={ header }>
         <h1>CabinetVotes.org</h1>
         <div>
-          <p>Tracking how Senators voted on the confirmation of each member of Trump's Cabinet*.</p>
-          <p>Updated after each vote. Click on a Senator's name for contact information.</p>
+          <p>Tracking how Senators voted on the confirmation of each member of Trump&#39;s Cabinet*.</p>
+          <p>Updated after each vote. Click on a Senator&#39;s name for contact information.</p>
           <p className={ tiny }>* (and Ambassadors, Justices, etc.)</p>
         </div>
         <p>
@@ -24,6 +24,6 @@ export default class Header extends Component {
           <Link to="/">All</Link>
         </p>
       </div>
-    )
+    );
   }
 }
