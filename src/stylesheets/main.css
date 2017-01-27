@@ -57,11 +57,11 @@
 
 :global {
   .public_fixedDataTable_main {
-    border-top: 0;
+    border-top: 0 !important;
   }
 
   .public_fixedDataTable_header {
-    background-image: none;
+    background-image: none !important;
 
     .fixedDataTableCellGroupLayout_cellGroup {
       width: 9999px !important;
@@ -69,8 +69,8 @@
 
     .public_fixedDataTableCell_main {
       font-size: 80%;
-      background-image: none;
-      background-color: transparent;
+      background-image: none !important;
+      background-color: transparent !important;
       border: none;
       width: 180px !important;
       overflow: visible;
