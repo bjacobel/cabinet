@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
 import { Table, Column, Cell } from 'fixed-data-table';
 import 'fixed-data-table/dist/fixed-data-table.css';
 import classnames from 'classnames';
 
-import { cell, data, r, d, i, senLink, yea, nay, filters } from '../stylesheets/main.css';
-import { link } from '../stylesheets/shared.css';
+import { cell, data, r, d, i, yea, nay, footer } from '../stylesheets/main.css';
 import { getCabinetAsync } from '../actions/cabinet';
+import Header from './Header';
 
 const mapStateToProps = state => ({
   votes: state.votes,
@@ -41,18 +40,7 @@ class Main extends Component {
 
     return (
       <div className={ data }>
-        <div className={ filters }>
-          <p>
-            <span>Show: </span>
-            <Link className={ link } to="/rep">Republicans</Link>
-            <span> / </span>
-            <Link className={ link } to="/dem">Democrats </Link>
-            <span> / </span>
-            <Link className={ link } to="/ind">Independents</Link>
-            <span> / </span>
-            <Link className={ link } to="/">All</Link>
-          </p>
-        </div>
+        <Header />
         <Table
           rowHeight={ 42 }
           rowsCount={ exampleVotes.length }
@@ -67,7 +55,7 @@ class Main extends Component {
                 const senator = exampleVotes[props.rowIndex];
                 return (
                   <Cell className={ classnames(cell, partyClass(senator.party)) }>
-                    <a className={ senLink } href={ senator.link }>{ senator.name }</a>
+                    <a href={ senator.link }>{ senator.name }</a>
                   </Cell>
                 );
               } else {
@@ -93,7 +81,7 @@ class Main extends Component {
             );
           })}
         </Table>
-        <p>
+        <p className={ footer }>
           <span>Data via <a href="https://www.govtrack.us">GovTrack</a>. </span>
           <span>Code on <a href="https://github.com/bjacobel/cabinet">GitHub</a>, PRs welcome. </span>
           <span>By <a href="https://twitter.com/bjacobel">@bjacobel</a></span>

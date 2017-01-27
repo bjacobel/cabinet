@@ -1,17 +1,19 @@
+@value blue from './colors.css';
+
 .open-sans {
   font-family: 'Open Sans', sans-serif;
 }
 
-.link {
-  text-decoration: none;
-  color: black;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
 :global {
+  a {
+    text-decoration: none;
+    color: blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   body {
     margin: 0;
   }
