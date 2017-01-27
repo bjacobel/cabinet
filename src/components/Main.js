@@ -40,7 +40,9 @@ class Main extends Component {
       filteredVoteRecords[voteId] = votersForVote
         .filter(voter => voter.party.match(partyRegexp))
         .filter((voter) => {
-          return voter.name.match(filterRegexp) || voter.state.match(filterRegexp) || voter.stateFull.match(filterRegexp);
+          return voter.name.match(filterRegexp) ||
+            voter.state.match(filterRegexp) ||
+            voter.stateFull.match(filterRegexp);
         });
     });
 

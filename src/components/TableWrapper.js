@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Table, Column, Cell } from 'fixed-data-table';
 import 'fixed-data-table/dist/fixed-data-table.css';
 import classnames from 'classnames';
