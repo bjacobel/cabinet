@@ -13,7 +13,7 @@ export const getVotes = () => {
     }));
 };
 
-export const getVoters = (voteId) => {
+export const getVoteRecords = (voteId) => {
   return fetch(`https://www.govtrack.us/api/v2/vote_voter?vote=${voteId}`)
     .then(body => body.json())
     .then(data => data.objects)

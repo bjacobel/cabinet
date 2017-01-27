@@ -1,11 +1,11 @@
-import { GET_VOTERS_SUCCEEDED } from '../actions/cabinet';
+import { GET_VOTE_RECORDS_SUCCEEDED } from '../actions/cabinet';
 
 export default (state = {}, action) => {
   switch (action.type) {
-  case GET_VOTERS_SUCCEEDED:
+  case GET_VOTE_RECORDS_SUCCEEDED:
     return {
       ...state,
-      ...action.payload.voters.reduce((red, cur) => {
+      ...action.payload.voteRecords.reduce((red, cur) => {
         let newRed = red;
         if (red[cur.voteId]) {
           newRed[cur.voteId] = [cur, ...red[cur.voteId]];

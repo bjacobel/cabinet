@@ -10,7 +10,7 @@ import Header from './Header';
 
 const mapStateToProps = state => ({
   votes: state.votes,
-  voters: state.voters,
+  voteRecords: state.voteRecords,
 });
 
 const mapDispatchToProps = {
@@ -34,25 +34,32 @@ class Main extends Component {
   }
 
   render() {
-    let { votes, voters } = this.props;
+    const { votes, voteRecords } = this.props;
     const { party } = this.props.params;
-    const exampleVotes = Object.values(voters)[0] || [];
+    const partyRegexp = new RegExp(party || '.+', 'i');
+
+    const filteredVoteRecords = {};
+    Object.entries(voteRecords).forEach(([voteId, votersForVote]) => {
+      filteredVoteRecords[voteId] = votersForVote.filter(voter => voter.party.match(partyRegexp));
+    });
+
+    const senators = Object.values(filteredVoteRecords)[0] || [];
 
     return (
       <div className={ data }>
         <Header />
         <Table
           rowHeight={ 42 }
-          rowsCount={ exampleVotes.length }
+          rowsCount={ senators.length }
           width={ 9999 }
-          height={ (42 * exampleVotes.length) + 65 }
+          height={ (42 * senators.length) + 65 }
           headerHeight={ 65 }
         >
           <Column // Names of senators
             width={ 315 }
             cell={ (props) => {
-              if (exampleVotes) {
-                const senator = exampleVotes[props.rowIndex];
+              if (senators) {
+                const senator = senators[props.rowIndex];
                 return (
                   <Cell className={ classnames(cell, partyClass(senator.party)) }>
                     <a href={ senator.link }>{ senator.name }</a>
@@ -63,7 +70,7 @@ class Main extends Component {
               }
             } }
           />
-          { Object.entries(voters).map(([voteId, votersForVote]) => {
+          { Object.entries(filteredVoteRecords).map(([voteId, votersForVote]) => {
             return (
               <Column // The vote on each nominee
                 key={ voteId }
