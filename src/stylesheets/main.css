@@ -25,10 +25,6 @@
   background-color: yellow-tint;
 }
 
-.senLink {
-  composes: link from './shared.css';
-}
-
 .yea,
 .nay {
   &::after {
@@ -46,4 +42,8 @@
 .nay::after {
   content: '✗';
   color: red;
+}
+
+.footer {
+  padding: 10px;
 }

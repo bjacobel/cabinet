@@ -13,17 +13,10 @@ export const getVotes = () => {
     }));
 };
 
-export const getVoters = (voteId, partyFilter) => {
+export const getVoteRecords = (voteId) => {
   return fetch(`https://www.govtrack.us/api/v2/vote_voter?vote=${voteId}`)
     .then(body => body.json())
     .then(data => data.objects)
-    .then((voters) => {
-      if (partyFilter) {
-        return voters.filter(voter => voter.person_role.party === partyFilter);
-      } else {
-        return voters;
-      }
-    })
     .then(voters => voters.map((voter) => {
       const { value } = voter.option;
       const { name, link, id } = voter.person;

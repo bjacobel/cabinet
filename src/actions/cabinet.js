@@ -4,13 +4,13 @@ import {
 } from './loading';
 import {
   getVotes,
-  getVoters,
+  getVoteRecords,
 } from '../services/govTrack';
 
 export const GET_VOTES_FAILED = 'GET_VOTES_FAILED';
 export const GET_VOTES_SUCCEEDED = 'GET_VOTES_SUCCEEDED';
-export const GET_VOTERS_FAILED = 'GET_VOTERS_FAILED';
-export const GET_VOTERS_SUCCEEDED = 'GET_VOTERS_SUCCEEDED';
+export const GET_VOTE_RECORDS_FAILED = 'GET_VOTE_RECORDS_FAILED';
+export const GET_VOTE_RECORDS_SUCCEEDED = 'GET_VOTE_RECORDS_SUCCEEDED';
 
 export const getVotesSucceeded = (votes) => {
   return { type: GET_VOTES_SUCCEEDED, payload: { votes } };
@@ -20,15 +20,15 @@ export const getVotesFailed = (err) => {
   return { type: GET_VOTES_FAILED, payload: { errors: [err] } };
 };
 
-export const getVotersSucceeded = (voters) => {
-  return { type: GET_VOTERS_SUCCEEDED, payload: { voters } };
+export const getVoteRecordsSucceeded = (voteRecords) => {
+  return { type: GET_VOTE_RECORDS_SUCCEEDED, payload: { voteRecords } };
 };
 
-export const getVotersFailed = (err) => {
-  return { type: GET_VOTERS_FAILED, payload: { errors: [err] } };
+export const getVoteRecordsFailed = (err) => {
+  return { type: GET_VOTE_RECORDS_FAILED, payload: { errors: [err] } };
 };
 
-export const getCabinetAsync = (party) => {
+export const getCabinetAsync = () => {
   return (dispatch) => {
     dispatch(loadingStarted());
 
@@ -37,9 +37,9 @@ export const getCabinetAsync = (party) => {
         dispatch(getVotesSucceeded(votes));
 
         return Promise.all(votes.map((vote) => {
-          return getVoters(vote.id, party)
-            .then(voters => dispatch(getVotersSucceeded(voters)))
-            .catch(err => dispatch(getVotersFailed(err)));
+          return getVoteRecords(vote.id)
+            .then(voteRecords => dispatch(getVoteRecordsSucceeded(voteRecords)))
+            .catch(err => dispatch(getVoteRecordsFailed(err)));
         }));
       })
       .then(() => {
