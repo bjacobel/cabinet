@@ -3,7 +3,7 @@ import { Table, Column, Cell } from 'fixed-data-table';
 import 'fixed-data-table/dist/fixed-data-table.css';
 import classnames from 'classnames';
 
-import { cell, r, d, i, yea, nay, antiskew } from '../stylesheets/main.css';
+import { cell, r, d, i, yea, nay, antiskew } from '../stylesheets/tableWrapper.css';
 
 const partyClass = party => ({
   [r]: party === 'Republican',
@@ -27,46 +27,48 @@ export default class TableWrapper extends Component {
     const { senators, votes, filteredVoteRecords } = this.props;
 
     return (
-      <Table
-        rowHeight={ 42 }
-        rowsCount={ senators.length }
-        width={ 9999 }
-        height={ (42 * senators.length) + 150 + 2 }
-        headerHeight={ 150 }
-      >
-        <Column // Names of senators
-          width={ 315 }
-          cell={ (props) => {
-            if (senators) {
-              const senator = senators[props.rowIndex];
-              return (
-                <Cell className={ classnames(cell, partyClass(senator.party)) }>
-                  <a href={ senator.link }>{ senator.name }</a>
-                </Cell>
-              );
-            } else {
-              return <Cell />;
-            }
-          } }
-        />
-        { Object.entries(filteredVoteRecords).map(([voteId, votersForVote]) => {
-          return (
-            <Column // The vote on each nominee
-              key={ voteId }
-              width={ 110 }
-              header={ () => <Cell className={ cell }>{ headerize(votes[voteId].question) }</Cell> }
-              cell={ (props) => {
-                const vote = votersForVote[props.rowIndex].value;
+      <div>
+        <Table
+          rowHeight={ 42 }
+          rowsCount={ senators.length }
+          width={ 9999 }
+          height={ (42 * senators.length) + 150 + 2 }
+          headerHeight={ 150 }
+        >
+          <Column // Names of senators
+            width={ 315 }
+            cell={ (props) => {
+              if (senators) {
+                const senator = senators[props.rowIndex];
                 return (
-                  <Cell className={ classnames(cell, voteClass(vote)) }>
-                    { vote }
+                  <Cell className={ classnames(cell, partyClass(senator.party)) }>
+                    <a href={ senator.link }>{ senator.name }</a>
                   </Cell>
                 );
-              } }
-            />
-          );
-        })}
-      </Table>
+              } else {
+                return <Cell />;
+              }
+            } }
+          />
+          { Object.entries(filteredVoteRecords).map(([voteId, votersForVote]) => {
+            return (
+              <Column // The vote on each nominee
+                key={ voteId }
+                width={ 110 }
+                header={ () => <Cell className={ cell }>{ headerize(votes[voteId].question) }</Cell> }
+                cell={ (props) => {
+                  const vote = votersForVote[props.rowIndex].value;
+                  return (
+                    <Cell className={ classnames(cell, voteClass(vote)) }>
+                      { vote }
+                    </Cell>
+                  );
+                } }
+              />
+            );
+          })}
+        </Table>
+      </div>
     );
   }
 }

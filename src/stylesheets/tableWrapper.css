@@ -1,0 +1,89 @@
+@value blue-tint from './colors.css';
+@value red-tint from './colors.css';
+@value yellow-tint from './colors.css';
+@value red from './colors.css';
+@value green from './colors.css';
+
+.cell {
+  padding: 3px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.antiskew {
+  display: inline-block;
+  transform: skew(-45deg);
+  min-width: 3px;
+}
+
+.r {
+  background-color: red-tint;
+}
+
+.d {
+  background-color: blue-tint;
+}
+
+.i {
+  background-color: yellow-tint;
+}
+
+.yea,
+.nay {
+  &::after {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+  }
+}
+
+.yea::after {
+  content: '✓';
+  color: green;
+}
+
+.nay::after {
+  content: '✗';
+  color: red;
+}
+
+.footer {
+  padding: 10px;
+}
+
+:global {
+  .public_fixedDataTable_main {
+    border-top: 0 !important;
+  }
+
+  .public_fixedDataTable_header {
+    background-image: none !important;
+
+    .fixedDataTableCellGroupLayout_cellGroup {
+      width: 9999px !important;
+    }
+
+    .public_fixedDataTableCell_main {
+      font-size: 80%;
+      background-image: none !important;
+      background-color: transparent !important;
+      border: none;
+      width: 180px !important;
+      overflow: visible;
+      transform:
+        rotate(315deg)
+        skew(45deg)
+        translate(-15px, 63px);
+
+      &:not(:first-of-type) {
+        border-top: 1px solid #d3d3d3;
+      }
+
+      .public_fixedDataTableCell_wrap1 {
+        .public_fixedDataTableCell_cellContent {
+          padding: 3px 3px 3px 15px;
+        }
+      }
+    }
+  }
+}
