@@ -4,6 +4,10 @@
 @value red from './colors.css';
 @value green from './colors.css';
 
+.table {
+  position: relative;
+}
+
 .cell {
   padding: 3px;
   width: 100%;

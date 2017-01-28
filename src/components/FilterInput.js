@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import { filter, filterHint, filterLabel } from '../stylesheets/filterInput.css';
+import { filterBox, filter, filterHint, filterLabel } from '../stylesheets/filterInput.css';
 
 export default class FilterInput extends Component {
   render() {
     return (
-      <div>
+      <div className={ filterBox }>
         <label htmlFor="filter-input" className={ filterLabel }>Filter by:</label>
         <br />
         <input

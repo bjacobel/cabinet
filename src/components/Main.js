@@ -51,8 +51,9 @@ class Main extends Component {
     return (
       <div className={ data }>
         <Header />
-        <FilterInput updateFilter={ updateFilterTermAsync } />
-        <TableWrapper votes={ votes } senators={ senators } filteredVoteRecords={ filteredVoteRecords } />
+        <TableWrapper votes={ votes } senators={ senators } filteredVoteRecords={ filteredVoteRecords }>
+          <FilterInput updateFilter={ updateFilterTermAsync } />
+        </TableWrapper>
         <p className={ footer }>
           <span>Data via <a href="https://www.govtrack.us">GovTrack</a>. </span>
           <span>Code on <a href="https://github.com/bjacobel/cabinet">GitHub</a>, PRs welcome. </span>

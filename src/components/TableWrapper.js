@@ -3,7 +3,7 @@ import { Table, Column, Cell } from 'fixed-data-table';
 import 'fixed-data-table/dist/fixed-data-table.css';
 import classnames from 'classnames';
 
-import { cell, r, d, i, yea, nay, antiskew } from '../stylesheets/tableWrapper.css';
+import { table, cell, r, d, i, yea, nay, antiskew } from '../stylesheets/tableWrapper.css';
 
 const partyClass = party => ({
   [r]: party === 'Republican',
@@ -24,10 +24,11 @@ const headerize = (text) => {
 
 export default class TableWrapper extends Component {
   render() {
-    const { senators, votes, filteredVoteRecords } = this.props;
+    const { senators, votes, filteredVoteRecords, children } = this.props;
 
     return (
-      <div>
+      <div className={ table }>
+        { children }
         <Table
           rowHeight={ 42 }
           rowsCount={ senators.length }

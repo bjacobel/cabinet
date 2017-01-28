@@ -1,3 +1,10 @@
+.filterBox {
+  position: absolute;
+  top: 76px;
+  left: 0;
+  z-index: 999;
+}
+
 .filter,
 .filterLabel {
   composes: open-sans from './shared.css';
@@ -8,12 +15,14 @@
 }
 
 .filter {
-  height: calc(42px - 2 * 8px);
-  width: 296px;
+  box-sizing: border-box;
+  height: 42px;
+  width: 316px;
   font-size: 120%;
-  padding: 6px 8px;
+  padding: 6px 10px;
   margin-top: 10px;
   -webkit-appearance: none;
+  border-radius: 0;
   border: 1px solid rgb(211, 211, 211);
 }
 
