@@ -1,3 +1,7 @@
 .data {
   composes: open-sans from './shared.css';
 }
+
+.footer {
+  padding-left: 10px;
+}

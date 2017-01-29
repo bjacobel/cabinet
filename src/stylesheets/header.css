@@ -1,12 +1,15 @@
 .header {
   padding-left: 10px;
   max-width: 680px;
-
-  p:last-of-type {
-    margin-bottom: 0;
-  }
 }
 
 .tiny {
   font-size: 80%;
+}
+
+.partyFilter {
+  margin-top: 10px;
+  margin-bottom: 0;
+  position: absolute;
+  z-index: 2;
 }
