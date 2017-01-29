@@ -6,6 +6,7 @@
 
 .table {
   position: relative;
+  margin-top: 30px;
 }
 
 .cell {
@@ -58,34 +59,39 @@
 :global {
   .public_fixedDataTable_main {
     border-top: 0 !important;
+    border-left: 0 !important;
   }
 
-  .public_fixedDataTable_header {
-    background-image: none !important;
+  .fixedDataTableRowLayout_rowWrapper {
+    z-index: -1 !important;
 
-    .fixedDataTableCellGroupLayout_cellGroup {
-      width: 9999px !important;
-    }
-
-    .public_fixedDataTableCell_main {
-      font-size: 80%;
+    .public_fixedDataTable_header {
       background-image: none !important;
-      background-color: transparent !important;
-      border: none;
-      width: 180px !important;
-      overflow: visible;
-      transform:
-        rotate(315deg)
-        skew(45deg)
-        translate(-15px, 63px);
 
-      &:not(:first-of-type) {
-        border-top: 1px solid #d3d3d3;
+      .fixedDataTableCellGroupLayout_cellGroup {
+        width: 9999px !important;
       }
 
-      .public_fixedDataTableCell_wrap1 {
-        .public_fixedDataTableCell_cellContent {
-          padding: 3px 3px 3px 15px;
+      .public_fixedDataTableCell_main {
+        font-size: 80%;
+        background-image: none !important;
+        background-color: transparent !important;
+        border: none;
+        width: 180px !important;
+        overflow: visible;
+        transform:
+          rotate(315deg)
+          skew(45deg)
+          translate(-15px, 63px);
+
+        &:not(:first-of-type) {
+          border-top: 1px solid #d3d3d3;
+        }
+
+        .public_fixedDataTableCell_wrap1 {
+          .public_fixedDataTableCell_cellContent {
+            padding: 3px 3px 3px 15px;
+          }
         }
       }
     }

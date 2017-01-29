@@ -1,4 +1,5 @@
 @value blue from './colors.css';
+@value darker-blue from './colors.css';
 
 .open-sans {
   font-family: 'Open Sans', sans-serif;
@@ -7,19 +8,22 @@
 .sr-only {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
 }
 
 :global {
   a {
-    text-decoration: none;
     color: blue;
+    cursor: pointer;
 
     &:hover {
-      text-decoration: underline;
+      color: darker-blue;
     }
   }
 
   body {
     margin: 0;
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
   }
 }

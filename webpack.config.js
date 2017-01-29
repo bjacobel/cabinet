@@ -49,7 +49,7 @@ const wpconfig = {
     // https://github.com/webpack/css-loader/issues/232
     // https://github.com/webpack/css-loader/issues/216
     // https://github.com/webpack/style-loader/issues/55
-    publicPath: isProd ? '/' : 'http://localhost:8080/',
+    publicPath: isProd ? '/' : 'http://192.168.0.101:8080/',
     filename: isProd ? '[name].[chunkhash].js' : '[name].js',
   },
   devtool: isProd ? false : 'source-map',

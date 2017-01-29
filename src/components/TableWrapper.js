@@ -4,6 +4,7 @@ import 'fixed-data-table/dist/fixed-data-table.css';
 import classnames from 'classnames';
 
 import { table, cell, r, d, i, yea, nay, antiskew } from '../stylesheets/tableWrapper.css';
+import Phone from './Phone';
 
 const partyClass = party => ({
   [r]: party === 'Republican',
@@ -37,13 +38,14 @@ export default class TableWrapper extends Component {
           headerHeight={ 150 }
         >
           <Column // Names of senators
-            width={ 315 }
+            width={ 355 }
             cell={ (props) => {
               if (senators) {
                 const senator = senators[props.rowIndex];
                 return (
                   <Cell className={ classnames(cell, partyClass(senator.party)) }>
                     <a href={ senator.link }>{ senator.name }</a>
+                    <Phone number={ senator.phone } name={ senator.name } />
                   </Cell>
                 );
               } else {

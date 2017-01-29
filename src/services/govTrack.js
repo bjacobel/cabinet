@@ -28,8 +28,20 @@ export const getVoteRecords = (voteId) => {
     .then(data => data.objects)
     .then(voters => voters.map((voter) => {
       const { value } = voter.option;
-      const { name, link, id } = voter.person;
-      const { party, state } = voter.person_role;
-      return { name, link, value, id, party, voteId, state, stateFull: states[state] };
+      const { name, id, link } = voter.person;
+      const { party, state, website, phone, extra } = voter.person_role;
+      const { contact_form } = extra;
+
+      return {
+        name,
+        value,
+        id,
+        party,
+        phone,
+        voteId,
+        state,
+        link: contact_form || website || link, // eslint-disable-line camelcase
+        stateFull: states[state],
+      };
     }));
 };

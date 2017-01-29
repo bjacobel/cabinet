@@ -1,0 +1,79 @@
+@value blue from './colors.css';
+@value darker-blue from './colors.css';
+
+.phoneWrapper {
+  background-image: url('../assets/images/phone.svg');
+  background-size: 20px 20px;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  height: 36px;
+  width: 36px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.phoneText {
+  composes: sr-only from './shared.css';
+}
+
+.modalContent {
+  composes: open-sans from './shared.css';
+  background-color: white;
+  padding: 30px;
+  border-radius: 3px;
+  margin: 20px;
+  position: relative;
+}
+
+.bigPhone {
+  font-size: 150%;
+}
+
+.closeModal {
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-size: 110%;
+  cursor: pointer;
+  composes: open-sans from './shared.css';
+
+  &:hover {
+    background-color: darker-blue;
+  }
+}
+
+.headerCloseBtn {
+  width: 30px;
+  height: 30px;
+  font-size: 150%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.headerCloseHint {
+  composes: sr-only from './shared.css';
+}
+
+:global {
+  /* Nasty hack to fix the Safari <= 10 `-webkit-overflow-scrolling: touch` bug */
+  #react-aria-modal-dialog {
+    height: calc(100% + 1px);
+  }
+}

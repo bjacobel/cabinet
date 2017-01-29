@@ -1,8 +1,10 @@
+@value lightgrey from './colors.css';
+
 .filterBox {
   position: absolute;
   top: 76px;
   left: 0;
-  z-index: 999;
+  z-index: 2;
 }
 
 .filter,
@@ -17,13 +19,15 @@
 .filter {
   box-sizing: border-box;
   height: 42px;
-  width: 316px;
+  width: 355px;
   font-size: 120%;
   padding: 6px 10px;
   margin-top: 10px;
   -webkit-appearance: none;
   border-radius: 0;
-  border: 1px solid rgb(211, 211, 211);
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px 1px 1px 0;
 }
 
 .filterHint {

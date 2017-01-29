@@ -57,7 +57,11 @@ class Main extends Component {
         <p className={ footer }>
           <span>Data via <a href="https://www.govtrack.us">GovTrack</a>. </span>
           <span>Code on <a href="https://github.com/bjacobel/cabinet">GitHub</a>, PRs welcome. </span>
-          <span>By <a href="https://twitter.com/bjacobel">@bjacobel</a></span>
+          <span>Created by <a href="https://twitter.com/bjacobel">@bjacobel</a>.</span>
+          <br />
+          <span>Ringing Phone icon By </span>
+          <a href="https://thenounproject.com/mockturtle/">Sergey Demushkin</a>
+          <span> from the <a href="https://thenounproject.com/">Noun Project</a>.</span>
         </p>
       </div>
     );
