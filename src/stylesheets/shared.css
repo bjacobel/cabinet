@@ -12,6 +12,10 @@
   width: 1px;
 }
 
+.fixed {
+  position: fixed !important;
+}
+
 :global {
   a {
     color: blue;
