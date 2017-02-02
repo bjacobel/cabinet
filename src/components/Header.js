@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 
-import { header, tiny, partyFilter } from '../stylesheets/header.css';
+import { header, tiny } from '../stylesheets/header.css';
 
 export default class Header extends Component {
   render() {
@@ -16,17 +15,6 @@ export default class Header extends Component {
           </p>
           <p className={ tiny }>* (and Ambassadors, Justices, etc.)</p>
         </div>
-        <p className={ partyFilter }>
-          <span>Show: </span>
-          <br />
-          <Link to="/rep">Republicans</Link>
-          <span> / </span>
-          <Link to="/dem">Democrats </Link>
-          <br />
-          <Link to="/ind">Independents</Link>
-          <span> / </span>
-          <Link to="/">All</Link>
-        </p>
       </div>
     );
   }

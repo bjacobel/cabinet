@@ -1,10 +1,7 @@
 @value lightgrey from './colors.css';
 
 .filterBox {
-  position: absolute;
-  top: 76px;
-  left: 0;
-  z-index: 2;
+  margin-bottom: -10px;
 }
 
 .filter,

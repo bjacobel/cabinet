@@ -29,7 +29,6 @@ export default class TableWrapper extends Component {
 
     return (
       <div className={ table }>
-        { children }
         <Table
           rowHeight={ 42 }
           rowsCount={ senators.length }
@@ -39,6 +38,7 @@ export default class TableWrapper extends Component {
         >
           <Column // Names of senators
             width={ 355 }
+            header={ children }
             cell={ (props) => {
               if (senators) {
                 const senator = senators[props.rowIndex];

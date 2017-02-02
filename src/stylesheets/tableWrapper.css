@@ -6,7 +6,7 @@
 
 .table {
   position: relative;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .cell {
@@ -63,34 +63,42 @@
   }
 
   .fixedDataTableRowLayout_rowWrapper {
-    z-index: -1 !important;
-
     .public_fixedDataTable_header {
       background-image: none !important;
 
       .fixedDataTableCellGroupLayout_cellGroup {
-        width: 9999px !important;
+        overflow: visible;
       }
 
       .public_fixedDataTableCell_main {
-        font-size: 80%;
+        font-weight: normal;
         background-image: none !important;
         background-color: transparent !important;
         border: none;
-        width: 180px !important;
-        overflow: visible;
-        transform:
-          rotate(315deg)
-          skew(45deg)
-          translate(-15px, 63px);
 
         &:not(:first-of-type) {
+          font-size: 80%;
+          font-weight: bold;
+          width: 180px !important;
+          overflow: visible;
+          transform:
+            rotate(315deg)
+            skew(45deg)
+            translate(-15px, 63px);
           border-top: 1px solid #d3d3d3;
+
+          .public_fixedDataTableCell_wrap1 {
+            .public_fixedDataTableCell_cellContent {
+              padding: 3px 3px 3px 15px;
+            }
+          }
         }
 
-        .public_fixedDataTableCell_wrap1 {
-          .public_fixedDataTableCell_cellContent {
-            padding: 3px 3px 3px 15px;
+        &:first-of-type {
+          .public_fixedDataTableCell_wrap1 {
+            .public_fixedDataTableCell_cellContent {
+              padding: 0;
+            }
           }
         }
       }
