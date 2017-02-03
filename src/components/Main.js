@@ -6,7 +6,8 @@ import { getCabinetAsync } from '../actions/cabinet';
 import { updateFilterTermAsync } from '../actions/filtering';
 import Header from './Header';
 import TableWrapper from './TableWrapper';
-import FilterInput from './FilterInput';
+import FilterBySearch from './FilterBySearch';
+import FilterByParty from './FilterByParty';
 
 const mapStateToProps = state => ({
   votes: state.votes,
@@ -52,7 +53,8 @@ class Main extends Component {
       <div className={ data }>
         <Header />
         <TableWrapper votes={ votes } senators={ senators } filteredVoteRecords={ filteredVoteRecords }>
-          <FilterInput updateFilter={ updateFilterTermAsync } />
+          <FilterByParty />
+          <FilterBySearch updateFilter={ updateFilterTermAsync } />
         </TableWrapper>
         <p className={ footer }>
           <span>Data via <a href="https://www.govtrack.us">GovTrack</a>. </span>

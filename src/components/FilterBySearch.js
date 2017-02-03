@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import { filterBox, filter, filterHint, filterLabel } from '../stylesheets/filterInput.css';
+import { filterBox, filter, filterHint, filterLabel } from '../stylesheets/filterBySearch.css';
 
-export default class FilterInput extends Component {
+export default class FilterbySearch extends Component {
   render() {
     return (
       <div className={ filterBox }>
