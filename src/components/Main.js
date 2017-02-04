@@ -8,6 +8,7 @@ import Header from './Header';
 import TableWrapper from './TableWrapper';
 import FilterBySearch from './FilterBySearch';
 import FilterByParty from './FilterByParty';
+import News from './News';
 
 const mapStateToProps = state => ({
   votes: state.votes,
@@ -56,6 +57,7 @@ class Main extends Component {
           <FilterByParty />
           <FilterBySearch updateFilter={ updateFilterTermAsync } />
         </TableWrapper>
+        <News />
         <p className={ footer }>
           <span>Data via <a href="https://www.govtrack.us">GovTrack</a>. </span>
           <span>Code on <a href="https://github.com/bjacobel/cabinet">GitHub</a>, PRs welcome. </span>
