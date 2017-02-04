@@ -1,0 +1,8 @@
+.tweetWrapper {
+  composes: open-sans from './shared.css';
+  max-width: 475px;
+
+  h2 {
+    padding-left: 10px;
+  }
+}

@@ -14,6 +14,7 @@ export default class Header extends Component {
             <span>or the phone icon to call their office directly.</span>
           </p>
           <p className={ tiny }>* (and Ambassadors, Justices, etc.)</p>
+          <a href="#news">Latest news →</a>
         </div>
       </div>
     );
