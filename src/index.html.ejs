@@ -13,7 +13,11 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-  <div id="main"></div>
+  <div id="main">
+    <% if (typeof serverRender !== 'undefined' && serverRender) { %>
+        <%= serverHtml %>
+    <% } %>
+  </div>
   <%=htmlWebpackPlugin.files.webpackManifest%>
 </body>
 </html>

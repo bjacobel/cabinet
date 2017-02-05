@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const InlineManifestWebpackPlugin = require('inline-manifest-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -51,6 +52,7 @@ const wpconfig = {
     // https://github.com/webpack/style-loader/issues/55
     publicPath: isProd ? '/' : 'http://localhost:8080/',
     filename: isProd ? '[name].[chunkhash].js' : '[name].js',
+    libraryTarget: 'umd',
   },
   devtool: isProd ? false : 'source-map',
   module: {
@@ -141,6 +143,7 @@ if (!isProd) {
       minimize: true,
     }),
     new webpack.optimize.UglifyJsPlugin(),
+    new StaticSiteGeneratorPlugin('main', ['/', '/dem', '/rep', '/ind']),
     ...wpconfig.plugins,
   ];
 }
