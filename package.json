@@ -2,7 +2,7 @@
   "author": "Brian Jacobel <brian@bjacobel.com> (https://bjacobel.com)",
   "dependencies": {
     "classnames": "^2.2.5",
-    "fixed-data-table": "^0.6.3",
+    "fixed-data-table-2": "^0.7.10",
     "react": "^15.4.2",
     "react-aria-modal": "^2.4.0",
     "react-dom": "^15.4.2",
