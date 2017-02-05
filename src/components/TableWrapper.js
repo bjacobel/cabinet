@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Table, Column, Cell } from 'fixed-data-table';
-import 'fixed-data-table/dist/fixed-data-table.css';
+import { Table, Column, Cell } from 'fixed-data-table-2';
+import 'fixed-data-table-2/dist/fixed-data-table.css';
 import classnames from 'classnames';
 
 import { table, cell, r, d, i, yea, nay, antiskew } from '../stylesheets/tableWrapper.css';
@@ -32,9 +32,10 @@ export default class TableWrapper extends Component {
         <Table
           rowHeight={ 42 }
           rowsCount={ senators.length }
-          width={ 9999 }
-          height={ (42 * senators.length) + 150 + 2 }
+          width={ 4000 }
+          height={ (42 * senators.length) + 152 }
           headerHeight={ 150 }
+          showScrollbarX={ false }
         >
           <Column // Names of senators
             width={ 355 }

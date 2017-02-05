@@ -8,9 +8,6 @@ import Header from './Header';
 import TableWrapper from './TableWrapper';
 import FilterBySearch from './FilterBySearch';
 import FilterByParty from './FilterByParty';
-import { fixed } from '../stylesheets/shared.css';
-import { partyFilter } from '../stylesheets/filterByParty.css';
-import { filterBox } from '../stylesheets/filterBySearch.css';
 
 const mapStateToProps = state => ({
   votes: state.votes,
@@ -26,27 +23,6 @@ const mapDispatchToProps = {
 class Main extends Component {
   componentWillMount() {
     this.props.getCabinetAsync();
-  }
-
-  componentDidMount() {
-    const columnHeaders = document.querySelector('.fixedDataTableRowLayout_rowWrapper');
-
-    document.addEventListener('scroll', () => requestAnimationFrame(() => {
-      // this is HACKY as SHIT
-      // my kingdom for actually working position: sticky
-      const columnHeaderPos = columnHeaders.getBoundingClientRect().top;
-
-      console.log(columnHeaderPos);
-
-      if (columnHeaderPos < 0) { // the top of the column header is scrolled out of the viewport
-        columnHeaders.classList.add(fixed);
-      } else if (window.scrollY <= 215) { // The window is scrolled less than 215px, and the header "should" come back
-        columnHeaders.classList.remove(fixed);
-        columnHeaders.style.left = 'unset';
-      } else if (columnHeaderPos === 0) {
-        columnHeaders.style.left = `${-1 * window.scrollX}px`;
-      }
-    }));
   }
 
   render() {
