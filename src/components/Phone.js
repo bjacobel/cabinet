@@ -76,7 +76,7 @@ export default class Phone extends Component {
             </p>
             <p>
               <span>Then ask for your representative&#39;s support or opposition when votes on </span>
-              <a href="https://www.washingtonpost.com/graphics/politics/trump-administration-appointee-tracker/">
+              <a href="https://www.nytimes.com/interactive/2016/us/politics/donald-trump-administration.html">
                 future nominees
               </a> are held.
             </p>
