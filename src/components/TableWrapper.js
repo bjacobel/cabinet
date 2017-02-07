@@ -25,7 +25,7 @@ const headerize = (text) => {
 
 export default class TableWrapper extends Component {
   render() {
-    const { senators, votes, filteredVoteRecords, children } = this.props;
+    const { senators, votes, voteTotals, filteredVoteRecords, children } = this.props;
 
     return (
       <div className={ table }>
@@ -53,6 +53,15 @@ export default class TableWrapper extends Component {
                 return <Cell />;
               }
             } }
+          />
+          <Column // Record on votes so far
+            width={ 110 }
+            header={ () => <Cell className={ cell }>{ headerize('Record (yeas / total)') }</Cell> }
+            cell={ props => (
+              <Cell className={ cell }>
+                { voteTotals[senators[props.rowIndex].name] } / { voteTotals.total }
+              </Cell>
+            ) }
           />
           { Object.entries(filteredVoteRecords).map(([voteId, votersForVote]) => {
             return (

@@ -13,6 +13,7 @@ import News from './News';
 const mapStateToProps = state => ({
   votes: state.votes,
   voteRecords: state.voteRecords,
+  voteTotals: state.voteTotals,
   filterTerm: state.filterTerm,
 });
 
@@ -30,6 +31,7 @@ class Main extends Component {
     const {
       votes,
       voteRecords,
+      voteTotals,
       filterTerm,
       updateFilterTermAsync, // eslint-disable-line no-shadow
     } = this.props;
@@ -53,7 +55,12 @@ class Main extends Component {
     return (
       <div className={ data }>
         <Header />
-        <TableWrapper votes={ votes } senators={ senators } filteredVoteRecords={ filteredVoteRecords }>
+        <TableWrapper
+          votes={ votes }
+          senators={ senators }
+          filteredVoteRecords={ filteredVoteRecords }
+          voteTotals={ voteTotals }
+        >
           <FilterByParty />
           <FilterBySearch updateFilter={ updateFilterTermAsync } />
         </TableWrapper>
