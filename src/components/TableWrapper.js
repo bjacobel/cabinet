@@ -70,12 +70,16 @@ export default class TableWrapper extends Component {
                 width={ 110 }
                 header={ () => <Cell className={ cell }>{ headerize(votes[voteId].question) }</Cell> }
                 cell={ (props) => {
-                  const vote = votersForVote[props.rowIndex].value;
-                  return (
-                    <Cell className={ classnames(cell, voteClass(vote)) }>
-                      { vote }
-                    </Cell>
-                  );
+                  if (votersForVote[props.rowIndex]) {
+                    const vote = votersForVote[props.rowIndex].value;
+                    return (
+                      <Cell className={ classnames(cell, voteClass(vote)) }>
+                        { vote }
+                      </Cell>
+                    );
+                  } else {
+                    return null;
+                  }
                 } }
               />
             );
