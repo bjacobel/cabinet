@@ -28,13 +28,18 @@ export const getVoteRecords = (voteId) => {
     .then(data => data.objects)
     .then(voters => voters.map((voter) => {
       const { value } = voter.option;
-      const { name, id, link } = voter.person;
+      const { name, lastname, id, link } = voter.person;
       const { party, state, website, phone, extra } = voter.person_role;
       const { contact_form } = extra;
 
+      if (id === 400315) {
+        // Mike Pence ruins everything
+        return null;
+      }
+
       return {
         name,
-        lastName: name.match(/ (\S+) \[/)[1],
+        lastName: lastname,
         value,
         id,
         party,
@@ -44,5 +49,7 @@ export const getVoteRecords = (voteId) => {
         link: contact_form || website || link, // eslint-disable-line camelcase
         stateFull: states[state],
       };
-    }).sort((a, b) => (a.lastName < b.lastName ? 1 : -1)));
+    })
+    .filter(x => x !== null)
+    .sort((a, b) => (a.lastName < b.lastName ? 1 : -1)));
 };

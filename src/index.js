@@ -27,8 +27,7 @@ const render = () => {
     <Provider store={ store }>
       <BrowserRouter>
         <div>
-          <AnalyticsMatch pattern="/" exactly component={ Main } />
-          <AnalyticsMatch pattern="/:party" component={ Main } />
+          <AnalyticsMatch pattern="/:party?" component={ Main } />
         </div>
       </BrowserRouter>
     </Provider>,
