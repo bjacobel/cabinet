@@ -34,6 +34,7 @@ export const getVoteRecords = (voteId) => {
 
       return {
         name,
+        lastName: name.match(/ (\S+) \[/)[1],
         value,
         id,
         party,
@@ -43,5 +44,5 @@ export const getVoteRecords = (voteId) => {
         link: contact_form || website || link, // eslint-disable-line camelcase
         stateFull: states[state],
       };
-    }));
+    }).sort((a, b) => (a.lastName < b.lastName ? 1 : -1)));
 };
