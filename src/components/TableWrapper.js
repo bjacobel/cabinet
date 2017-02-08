@@ -3,7 +3,18 @@ import { Table, Column, Cell } from 'fixed-data-table-2';
 import 'fixed-data-table-2/dist/fixed-data-table.css';
 import classnames from 'classnames';
 
-import { table, cell, r, d, i, yea, nay, antiskew } from '../stylesheets/tableWrapper.css';
+import {
+  table,
+  cell,
+  cellCenter,
+  r,
+  d,
+  i,
+  yea,
+  nay,
+  voteText,
+  antiskew,
+} from '../stylesheets/tableWrapper.css';
 import Phone from './Phone';
 
 const partyClass = party => ({
@@ -16,6 +27,17 @@ const voteClass = vote => ({
   [yea]: vote === 'Yea',
   [nay]: vote === 'Nay',
 });
+
+const voteRepr = (vote) => {
+  switch (vote) {
+  case 'Yea':
+    return '✓';
+  case 'Nay':
+    return '✗';
+  default:
+    return '';
+  }
+};
 
 const headerize = (text) => {
   return text.split(' ').map((textchunk, ind) => {
@@ -38,14 +60,46 @@ export default class TableWrapper extends Component {
           showScrollbarX={ false }
         >
           <Column // Names of senators
-            width={ 355 }
+            width={ 200 }
             header={ children }
             cell={ (props) => {
               if (senators) {
                 const senator = senators[props.rowIndex];
                 return (
                   <Cell className={ classnames(cell, partyClass(senator.party)) }>
-                    <a href={ senator.link }>{ senator.name }</a>
+                    <a href={ senator.link }>{ senator.lastName }</a>
+                  </Cell>
+                );
+              } else {
+                return <Cell />;
+              }
+            } }
+          />
+          <Column // States of senators
+            width={ 50 }
+            header={ () => <Cell className={ cell }>{ headerize('State') }</Cell> }
+            cell={ (props) => {
+              if (senators) {
+                const senator = senators[props.rowIndex];
+                return (
+                  <Cell className={ classnames(cell, partyClass(senator.party)) }>
+                    { senator.state }
+                  </Cell>
+                );
+              } else {
+                return <Cell />;
+              }
+            } }
+          />
+          <Column // Contact links of senators
+            width={ 40 }
+            header={ () => <Cell className={ cell }>{ headerize('Contact') }</Cell> }
+            cell={ (props) => {
+              if (senators) {
+                const senator = senators[props.rowIndex];
+                return (
+                  <Cell className={ classnames(cell, partyClass(senator.party)) }>
+                    <span>&nbsp;</span>
                     <Phone number={ senator.phone } name={ senator.name } />
                   </Cell>
                 );
@@ -55,26 +109,30 @@ export default class TableWrapper extends Component {
             } }
           />
           <Column // Record on votes so far
-            width={ 110 }
+            width={ 70 }
             header={ () => <Cell className={ cell }>{ headerize('Record (yeas / total)') }</Cell> }
-            cell={ props => (
-              <Cell className={ cell }>
-                { voteTotals[senators[props.rowIndex].name] } / { voteTotals.total }
-              </Cell>
-            ) }
+            cell={ (props) => {
+              const senator = senators[props.rowIndex];
+              return (
+                <Cell className={ classnames(cellCenter, partyClass(senator.party)) }>
+                  { voteTotals[senator.name] } / { voteTotals.total }
+                </Cell>
+              );
+            } }
           />
           { Object.entries(filteredVoteRecords).map(([voteId, votersForVote]) => {
             return (
               <Column // The vote on each nominee
                 key={ voteId }
-                width={ 110 }
+                width={ 70 }
                 header={ () => <Cell className={ cell }>{ headerize(votes[voteId].question) }</Cell> }
                 cell={ (props) => {
                   if (votersForVote[props.rowIndex]) {
                     const vote = votersForVote[props.rowIndex].value;
                     return (
-                      <Cell className={ classnames(cell, voteClass(vote)) }>
-                        { vote }
+                      <Cell className={ classnames(cellCenter, voteClass(vote)) }>
+                        <span>{ voteRepr(vote) }</span>
+                        <span className={ voteText }>{ vote }</span>
                       </Cell>
                     );
                   } else {
