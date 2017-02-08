@@ -23,7 +23,7 @@ export const getVotes = () => {
 };
 
 export const getVoteRecords = (voteId) => {
-  return fetch(`https://www.govtrack.us/api/v2/vote_voter?vote=${voteId}`)
+  return fetch(`https://www.govtrack.us/api/v2/vote_voter?vote=${voteId}&limit=101`)
     .then(body => body.json())
     .then(data => data.objects)
     .then((voters) => {
@@ -53,25 +53,5 @@ export const getVoteRecords = (voteId) => {
       })
       .filter(x => x !== null)
       .sort((a, b) => (a.lastName < b.lastName ? 1 : -1));
-    })
-    .then((voters) => {
-      // Patch over the GovTrack bug where DeVos vote shows Pence but omits Masto
-      // Masto needs to be inserted at index 78 bc my stupid logic depends on array indexes being constant
-      if (!voters.find(x => x.id === 412681)) {
-        voters.splice(78, 0, {
-          value: 'Nay',
-          id: 412681,
-          lastName: 'Cortez Masto',
-          link: 'https://www.cortezmasto.senate.gov/content/contact-senator',
-          name: 'Sen. Catherine Cortez Masto [D-NV]',
-          party: 'Democrat',
-          phone: '202-224-3542',
-          state: 'NV',
-          stateFull: 'Nevada',
-          voteId: 118997,
-        });
-      }
-
-      return voters;
     });
 };
