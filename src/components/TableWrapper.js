@@ -77,7 +77,7 @@ export default class TableWrapper extends Component {
           />
           <Column // States of senators
             width={ 50 }
-            header={ () => <Cell className={ cell }>{ headerize('State') }</Cell> }
+            header={ () => <Cell className={ cell } style={ { paddingTop: '6px' } }>{ headerize('State') }</Cell> }
             cell={ (props) => {
               if (senators) {
                 const senator = senators[props.rowIndex];
@@ -110,7 +110,11 @@ export default class TableWrapper extends Component {
           />
           <Column // Record on votes so far
             width={ 70 }
-            header={ () => <Cell className={ cell }>{ headerize('Record (yeas / total)') }</Cell> }
+            header={ () => (
+              <Cell className={ cell } style={ { paddingTop: '13px' } } >
+                { headerize('Record (yeas / total)') }
+              </Cell>
+            ) }
             cell={ (props) => {
               const senator = senators[props.rowIndex];
               return (
@@ -124,7 +128,7 @@ export default class TableWrapper extends Component {
             return (
               <Column // The vote on each nominee
                 key={ voteId }
-                width={ 70 }
+                width={ 62 }
                 header={ () => <Cell className={ cell }>{ headerize(votes[voteId].question) }</Cell> }
                 cell={ (props) => {
                   if (votersForVote[props.rowIndex]) {
