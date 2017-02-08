@@ -49,12 +49,17 @@ export default class TableWrapper extends Component {
   render() {
     const { senators, votes, voteTotals, filteredVoteRecords, children } = this.props;
 
+    let tableWidth = (Object.entries(filteredVoteRecords).length * 62) + (200 + 50 + 40 + 70) + 120;
+    if (tableWidth < window.innerWidth) {
+      tableWidth = window.innerWidth;
+    }
+
     return (
       <div className={ table }>
         <Table
           rowHeight={ 42 }
           rowsCount={ senators.length }
-          width={ 4000 }
+          width={ tableWidth }
           height={ (42 * senators.length) + 152 }
           headerHeight={ 150 }
           showScrollbarX={ false }
