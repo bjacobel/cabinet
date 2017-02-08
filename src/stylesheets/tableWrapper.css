@@ -15,6 +15,11 @@
   white-space: pre-wrap;
 }
 
+.cellCenter {
+  composes: cell;
+  text-align: center;
+}
+
 .antiskew {
   display: inline-block;
   transform: skew(-45deg);
@@ -33,21 +38,16 @@
   background-color: yellow-tint;
 }
 
-.yea,
-.nay {
-  &::after {
-    right: 10px;
-    top: 10px;
-    position: absolute;
-  }
+.voteText {
+  composes: sr-only from './shared.css';
 }
 
-.yea::after {
+.yea {
   content: '✓';
   color: green;
 }
 
-.nay::after {
+.nay {
   content: '✗';
   color: red;
 }
@@ -79,12 +79,13 @@
         &:not(:first-of-type) {
           font-size: 80%;
           font-weight: bold;
-          width: 180px !important;
+          width: 220px !important;
+          line-height: 1.1;
           overflow: visible;
           transform:
             rotate(315deg)
             skew(45deg)
-            translate(-15px, 63px);
+            translate(5px, 49px);
           border-top: 1px solid #d3d3d3;
 
           .public_fixedDataTableCell_wrap1 {
