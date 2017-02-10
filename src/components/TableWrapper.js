@@ -47,9 +47,9 @@ const headerize = (text) => {
 
 export default class TableWrapper extends Component {
   render() {
-    const { senators, votes, voteTotals, filteredVoteRecords, children } = this.props;
+    const { senators, votes, voteTotals, voteRecords, children } = this.props;
 
-    let tableWidth = (Object.entries(filteredVoteRecords).length * 62) + (200 + 50 + 40 + 70) + 120;
+    let tableWidth = (Object.entries(voteRecords).length * 62) + (200 + 50 + 40 + 70) + 120;
     if (tableWidth < window.innerWidth) {
       tableWidth = window.innerWidth;
     }
@@ -129,15 +129,17 @@ export default class TableWrapper extends Component {
               );
             } }
           />
-          { Object.entries(filteredVoteRecords).map(([voteId, votersForVote]) => {
+          { Object.entries(voteRecords).map(([voteId, votersForVote]) => {
             return (
               <Column // The vote on each nominee
                 key={ voteId }
                 width={ 62 }
                 header={ () => <Cell className={ cell }>{ headerize(votes[voteId].question) }</Cell> }
                 cell={ (props) => {
-                  if (votersForVote[props.rowIndex]) {
-                    const vote = votersForVote[props.rowIndex].value;
+                  const senator = senators[props.rowIndex];
+
+                  if (votersForVote[senator.id]) {
+                    const vote = votersForVote[senator.id].value;
                     return (
                       <Cell className={ classnames(cellCenter, voteClass(vote)) }>
                         <span>{ voteRepr(vote) }</span>

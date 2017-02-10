@@ -8,10 +8,10 @@ export default (state = {}, action) => {
       ...action.payload.voteRecords.reduce((red, cur) => {
         let newRed = red;
         if (red[cur.voteId]) {
-          newRed[cur.voteId] = [cur, ...red[cur.voteId]];
+          newRed[cur.voteId][cur.id] = cur;
         } else {
           newRed = {
-            [cur.voteId]: [cur],
+            [cur.voteId]: { [cur.id]: cur },
             ...red,
           };
         }
