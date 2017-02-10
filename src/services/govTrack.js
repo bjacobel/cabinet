@@ -1,6 +1,32 @@
 import fetch from './fetch';
 import states from './states.json';
 
+// Get the list of voters
+export const getSenators = () => {
+  return fetch('https://www.govtrack.us/api/v2/role?current=true&senator_class__in=class1%7Cclass2%7Cclass3&limit=101')
+    .then(body => body.json())
+    .then(data => data.objects)
+    .then((voters) => {
+      return voters.map((voter) => {
+        const { party, state, website, phone } = voter;
+        const { name, lastname, id, link } = voter.person;
+
+        return {
+          name,
+          lastName: lastname,
+          id,
+          party,
+          phone,
+          state,
+          link: website || link,
+          stateFull: states[state],
+        };
+      })
+      .sort((a, b) => (a.lastName > b.lastName ? 1 : -1));
+    });
+};
+
+// Get the list of votes held
 export const getVotes = () => {
   return fetch('https://www.govtrack.us/api/v2/vote/?congress=115&chamber=senate&session=2017')
     .then(body => body.json())
@@ -22,6 +48,7 @@ export const getVotes = () => {
     }));
 };
 
+// For a given vote, get how everyone voted on it
 export const getVoteRecords = (voteId) => {
   return fetch(`https://www.govtrack.us/api/v2/vote_voter?vote=${voteId}&limit=101`)
     .then(body => body.json())
@@ -29,9 +56,7 @@ export const getVoteRecords = (voteId) => {
     .then((voters) => {
       return voters.map((voter) => {
         const { value } = voter.option;
-        const { name, lastname, id, link } = voter.person;
-        const { party, state, website, phone, extra } = voter.person_role;
-        const { contact_form } = extra;
+        const { id } = voter.person;
 
         if (id === 400315) {
           // Mike Pence ruins everything
@@ -39,19 +64,12 @@ export const getVoteRecords = (voteId) => {
         }
 
         return {
-          name,
-          lastName: lastname,
           value,
           id,
-          party,
-          phone,
           voteId,
-          state,
-          link: contact_form || website || link, // eslint-disable-line camelcase
-          stateFull: states[state],
+          name: voter.person.name,
         };
       })
-      .filter(x => x !== null)
-      .sort((a, b) => (a.lastName < b.lastName ? 1 : -1));
+      .filter(x => x !== null);
     });
 };

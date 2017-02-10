@@ -13,6 +13,7 @@ import News from './News';
 const mapStateToProps = state => ({
   votes: state.votes,
   voteRecords: state.voteRecords,
+  senators: state.senators,
   voteTotals: state.voteTotals,
   filterTerm: state.filterTerm,
 });
@@ -31,6 +32,7 @@ class Main extends Component {
     const {
       votes,
       voteRecords,
+      senators,
       voteTotals,
       filterTerm,
       updateFilterTermAsync, // eslint-disable-line no-shadow
@@ -39,26 +41,21 @@ class Main extends Component {
     const partyRegexp = new RegExp(party || '.+', 'i');
     const filterRegexp = new RegExp(filterTerm, 'i');
 
-    const filteredVoteRecords = {};
-    Object.entries(voteRecords).forEach(([voteId, votersForVote]) => {
-      filteredVoteRecords[voteId] = votersForVote
-        .filter(voter => voter.party.match(partyRegexp))
-        .filter((voter) => {
-          return voter.name.match(filterRegexp) ||
-            voter.state.match(filterRegexp) ||
-            voter.stateFull.match(filterRegexp);
-        });
-    });
-
-    const senators = Object.values(filteredVoteRecords)[0] || [];
+    const filteredSenators = senators
+      .filter(senator => senator.party.match(partyRegexp))
+      .filter((senator) => {
+        return senator.name.match(filterRegexp) ||
+          senator.state.match(filterRegexp) ||
+          senator.stateFull.match(filterRegexp);
+      });
 
     return (
       <div className={ data }>
         <Header />
         <TableWrapper
           votes={ votes }
-          senators={ senators }
-          filteredVoteRecords={ filteredVoteRecords }
+          senators={ filteredSenators }
+          voteRecords={ voteRecords }
           voteTotals={ voteTotals }
         >
           <FilterByParty />
