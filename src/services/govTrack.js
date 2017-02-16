@@ -40,6 +40,8 @@ export const getVotes = () => {
         position = 'Ambassador to the United Nations';
       } else if (position === 'Administrator of the Small Business Administration') {
         position = 'Admin. of the Small Business Admin.';
+      } else if (position === 'Director of the Office of Management and Budget') {
+        position = 'O.M.B. Director';
       }
 
       return {
