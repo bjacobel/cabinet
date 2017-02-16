@@ -6,7 +6,7 @@ import {
   getVotes,
   getVoteRecords,
   getSenators,
-} from '../services/govTrack';
+} from '../services/api';
 
 export const GET_VOTES_FAILED = 'GET_VOTES_FAILED';
 export const GET_VOTES_SUCCEEDED = 'GET_VOTES_SUCCEEDED';

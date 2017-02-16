@@ -66,8 +66,7 @@ export default class Phone extends Component {
             </header>
             <h2>Call {name}&#39;s office.</h2>
             <p>
-              <a href="https:/www.govtrack.us">GovTrack.us</a>
-              <span> has the following phone number on record for this senator&#39;s office:</span>
+              <span>The number for {name}&#39;s D.C. office is:</span>
             </p>
             <p className={ bigPhone }><a id="phone" className={ phoneLink } href={ `tel:${number}` }>{ number }</a></p>
             <p>
