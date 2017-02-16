@@ -38,6 +38,8 @@ export const getVotes = () => {
 
       if (position === 'the Representative of the United States of America to the United Nations') {
         position = 'Ambassador to the United Nations';
+      } else if (position === 'Administrator of the Small Business Administration') {
+        position = 'Admin. of the Small Business Admin.';
       }
 
       return {
