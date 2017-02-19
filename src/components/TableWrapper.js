@@ -62,7 +62,7 @@ export default class TableWrapper extends Component {
           rowHeight={ 38 }
           rowsCount={ senators.length }
           width={ tableWidth }
-          height={ (42 * senators.length) + 152 }
+          height={ (38 * senators.length) + 152 }
           headerHeight={ 150 }
           showScrollbarX={ false }
         >

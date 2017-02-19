@@ -1,5 +1,6 @@
 import fetch from './fetch';
 import states from './states.json';
+import phones from './phones.json';
 import { API_ROOT } from '../constants';
 
 const partyFromShort = (shortParty) => {
@@ -27,7 +28,7 @@ export const getSenators = () => {
           lastName: last_name,
           id,
           party: partyFromShort(party),
-          phone: '555-555-5555',
+          phone: phones[id],
           state,
           link: url,
           stateFull: states[state],
