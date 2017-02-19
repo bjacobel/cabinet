@@ -40,7 +40,8 @@ export const getSenatorsFailed = (err) => {
 };
 
 export const getCabinetAsync = () => {
-  return (dispatch) => {
+  return (dispatch, getState) => {
+    const state = getState();
     dispatch(loadingStarted());
 
     return Promise.all([
@@ -51,9 +52,13 @@ export const getCabinetAsync = () => {
       dispatch(getVotesSucceeded(votes));
 
       return Promise.all(votes.map((vote) => {
-        return getVoteRecords(vote.id)
-          .then(voteRecords => dispatch(getVoteRecordsSucceeded(voteRecords)))
-          .catch(err => dispatch(getVoteRecordsFailed(err)));
+        if (!state.voteRecords[vote.id]) {
+          return getVoteRecords(vote.id)
+            .then(voteRecords => dispatch(getVoteRecordsSucceeded(voteRecords)))
+            .catch(err => dispatch(getVoteRecordsFailed(err)));
+        } else {
+          return Promise.resolve();
+        }
       }));
     })
     .then(() => {
