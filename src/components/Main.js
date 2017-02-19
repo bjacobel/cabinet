@@ -63,7 +63,13 @@ class Main extends Component {
         </TableWrapper>
         <News />
         <p className={ footer }>
-          <span>Data via <a href="https://www.govtrack.us">GovTrack</a>. </span>
+          <span>
+            <span>Data via </span>
+            <a href="https://www.govtrack.us">GovTrack</a>
+            <span> and </span>
+            <a href="https://www.propublica.org/">ProPublica</a>
+            .
+          </span>
           <span>Code on <a href="https://github.com/bjacobel/cabinet">GitHub</a>, PRs welcome. </span>
           <span>Created by <a href="https://twitter.com/bjacobel">@bjacobel</a>.</span>
           <br />

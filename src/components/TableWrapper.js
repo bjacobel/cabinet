@@ -10,8 +10,8 @@ import {
   r,
   d,
   i,
-  yea,
-  nay,
+  yes,
+  no,
   voteText,
   antiskew,
 } from '../stylesheets/tableWrapper.css';
@@ -24,18 +24,20 @@ const partyClass = party => ({
 });
 
 const voteClass = vote => ({
-  [yea]: vote === 'Yea',
-  [nay]: vote === 'Nay',
+  [yes]: vote === 'Yes',
+  [no]: vote === 'No',
 });
 
 const voteRepr = (vote) => {
   switch (vote) {
-  case 'Yea':
+  case 'Yes':
     return '✓';
-  case 'Nay':
+  case 'No':
     return '✗';
-  default:
+  case undefined:
     return '';
+  default:
+    return '•';
   }
 };
 
@@ -57,10 +59,10 @@ export default class TableWrapper extends Component {
     return (
       <div className={ table }>
         <Table
-          rowHeight={ 42 }
+          rowHeight={ 38 }
           rowsCount={ senators.length }
           width={ tableWidth }
-          height={ (42 * senators.length) + 152 }
+          height={ (38 * senators.length) + 152 }
           headerHeight={ 150 }
           showScrollbarX={ false }
         >
@@ -122,9 +124,11 @@ export default class TableWrapper extends Component {
             ) }
             cell={ (props) => {
               const senator = senators[props.rowIndex];
+              const totals = voteTotals[senator.id] || { yeas: 0, total: 0 };
+
               return (
                 <Cell className={ classnames(cellCenter, partyClass(senator.party)) }>
-                  { voteTotals[senator.name] } / { voteTotals.total }
+                  { totals.yeas } / { totals.total }
                 </Cell>
               );
             } }

@@ -10,7 +10,6 @@
 }
 
 .cell {
-  padding: 3px;
   width: 100%;
   white-space: pre-wrap;
 }
@@ -42,12 +41,12 @@
   composes: sr-only from './shared.css';
 }
 
-.yea {
+.yes {
   content: '✓';
   color: green;
 }
 
-.nay {
+.no {
   content: '✗';
   color: red;
 }
@@ -89,6 +88,8 @@
           border-top: 1px solid #d3d3d3;
 
           .public_fixedDataTableCell_wrap1 {
+            padding: 3px;
+
             .public_fixedDataTableCell_cellContent {
               padding: 3px 3px 3px 15px;
             }
