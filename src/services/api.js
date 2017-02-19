@@ -56,8 +56,6 @@ export const getVotes = () => {
         position = 'Environmental Protection Agency';
       }
 
-      console.log(name, position);
-
       return {
         id: roll_call,
         question: `${name} (${position})`,

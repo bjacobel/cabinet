@@ -1,20 +1,38 @@
 import {
-  GET_VOTES_SUCCEEDED,
   GET_VOTE_RECORDS_SUCCEEDED,
 } from '../actions/cabinet';
 
 export default (state = {}, action) => {
   switch (action.type) {
-  case GET_VOTES_SUCCEEDED:
-    return { total: action.payload.votes.length };
   case GET_VOTE_RECORDS_SUCCEEDED:  // eslint-disable-line no-case-declarations
     const stateCopy = { ...state };
     action.payload.voteRecords.forEach((vote) => {
-      if (vote.value === 'Yea') {
-        if (stateCopy[vote.name]) {
-          stateCopy[vote.name] += 1;
+      if (!stateCopy[vote.id]) {
+        stateCopy[vote.id] = {
+          total: 0,
+          yeas: 0,
+        };
+      }
+
+      if (vote.value) {
+        if (stateCopy[vote.id].total) {
+          stateCopy[vote.id].total += 1;
         } else {
-          stateCopy[vote.name] = 1;
+          stateCopy[vote.id] = {
+            ...stateCopy[vote.id],
+            total: 1,
+          };
+        }
+      }
+
+      if (vote.value === 'Yes') {
+        if (stateCopy[vote.id].yeas) {
+          stateCopy[vote.id].yeas += 1;
+        } else {
+          stateCopy[vote.id] = {
+            ...stateCopy[vote.id],
+            yeas: 1,
+          };
         }
       }
     });
