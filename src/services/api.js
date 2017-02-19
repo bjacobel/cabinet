@@ -48,6 +48,12 @@ export const getVotes = () => {
 
       if (position === 'Representative of the United States of America to the Sessions of the General Assembly of the United Nations during her tenure of service as Representative of the United States of America to the United Nations') {  // eslint-disable-line max-len
         position = 'Ambassador to the United Nations';
+      } else if (position === 'Administrator of the Small Business Administration') {
+        position = 'Small Business Administration';
+      } else if (position === 'Director of the Office of Management and Budget') {
+        position = 'Office of Management and Budget';
+      } else if (position === 'Administrator of the Environmental Protection Agency') {
+        position = 'Environmental Protection Agency';
       }
 
       console.log(name, position);
