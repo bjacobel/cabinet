@@ -55,6 +55,8 @@ export const getVotes = () => {
         position = 'Office of Management and Budget';
       } else if (position === 'Administrator of the Environmental Protection Agency') {
         position = 'Environmental Protection Agency';
+      } else if (position === 'Secretary of Housing and Urban Development') {
+        position = 'Housing and Urban Dev.';
       }
 
       return {
