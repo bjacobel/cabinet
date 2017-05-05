@@ -89,6 +89,61 @@ module.exports = {
       id: '79',
       question: 'James Richard Perry (Secretary of Energy)',
       result: 'Nomination Confirmed'
+    },
+    '86': {
+      id: '86',
+      question: 'Seema Verma (Admin. of Medicare/Medicaid)',
+      result: 'Nomination Confirmed'
+    },
+    '89': {
+      id: '89',
+      question: 'Daniel Coats (Director of National Intelligence)',
+      result: 'Nomination Confirmed'
+    },
+    '90': {
+      id: '90',
+      question: 'Lt. Gen. Herbert R. McMaster, Jr. (Lieutenant General)',
+      result: 'Nomination Confirmed'
+    },
+    '91': {
+      id: '91',
+      question: 'Danny C. Reeves (a Member of the U.S.S.C.)',
+      result: 'Nomination Confirmed'
+    },
+    '96': {
+      id: '96',
+      question: 'David Friedman (Ambassador to Israel)',
+      result: 'Nomination Confirmed'
+    },
+    '103': {
+      id: '103',
+      question: 'Elaine C. Duke (Dep. Sec. of Homeland Security)',
+      result: 'Nomination Confirmed'
+    },
+    '111': {
+      id: '111',
+      question: 'Neil M. Gorsuch (Assoc. Justice of the Supreme Court)',
+      result: 'Nomination Confirmed'
+    },
+    '112': {
+      id: '112',
+      question: 'Sonny Perdue (Secretary of Agriculture)',
+      result: 'Nomination Confirmed'
+    },
+    '114': {
+      id: '114',
+      question: 'Rod J. Rosenstein (Deputy Attorney General)',
+      result: 'Nomination Confirmed'
+    },
+    '116': {
+      id: '116',
+      question: 'R. Alexander Acosta (Secretary of Labor)',
+      result: 'Nomination Confirmed'
+    },
+    '118': {
+      id: '118',
+      question: 'Jay Clayton (a Member of the S.E.C.)',
+      result: 'Nomination Confirmed'
     }
   },
   voteRecords: {
@@ -9127,6 +9182,5528 @@ module.exports = {
         id: 'Y000064',
         voteId: '79'
       }
+    },
+    '86': {
+      A000360: {
+        value: 'Yes',
+        id: 'A000360',
+        voteId: '86'
+      },
+      B001230: {
+        value: 'No',
+        id: 'B001230',
+        voteId: '86'
+      },
+      B001261: {
+        value: 'Yes',
+        id: 'B001261',
+        voteId: '86'
+      },
+      B001267: {
+        value: 'No',
+        id: 'B001267',
+        voteId: '86'
+      },
+      B001277: {
+        value: 'No',
+        id: 'B001277',
+        voteId: '86'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '86'
+      },
+      B001288: {
+        value: 'No',
+        id: 'B001288',
+        voteId: '86'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '86'
+      },
+      B000944: {
+        value: 'No',
+        id: 'B000944',
+        voteId: '86'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '86'
+      },
+      C000127: {
+        value: 'No',
+        id: 'C000127',
+        voteId: '86'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '86'
+      },
+      C000141: {
+        value: 'No',
+        id: 'C000141',
+        voteId: '86'
+      },
+      C000174: {
+        value: 'No',
+        id: 'C000174',
+        voteId: '86'
+      },
+      C001070: {
+        value: 'No',
+        id: 'C001070',
+        voteId: '86'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '86'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '86'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '86'
+      },
+      C001088: {
+        value: 'No',
+        id: 'C001088',
+        voteId: '86'
+      },
+      C001071: {
+        value: 'Yes',
+        id: 'C001071',
+        voteId: '86'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '86'
+      },
+      C001113: {
+        value: 'No',
+        id: 'C001113',
+        voteId: '86'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '86'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '86'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '86'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '86'
+      },
+      D000607: {
+        value: 'Yes',
+        id: 'D000607',
+        voteId: '86'
+      },
+      D000622: {
+        value: 'No',
+        id: 'D000622',
+        voteId: '86'
+      },
+      D000563: {
+        value: 'No',
+        id: 'D000563',
+        voteId: '86'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '86'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '86'
+      },
+      F000062: {
+        value: 'No',
+        id: 'F000062',
+        voteId: '86'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '86'
+      },
+      F000444: {
+        value: 'Yes',
+        id: 'F000444',
+        voteId: '86'
+      },
+      F000457: {
+        value: 'No',
+        id: 'F000457',
+        voteId: '86'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '86'
+      },
+      G000555: {
+        value: 'No',
+        id: 'G000555',
+        voteId: '86'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '86'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '86'
+      },
+      H001075: {
+        value: 'No',
+        id: 'H001075',
+        voteId: '86'
+      },
+      H001076: {
+        value: 'No',
+        id: 'H001076',
+        voteId: '86'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '86'
+      },
+      H001046: {
+        value: 'No',
+        id: 'H001046',
+        voteId: '86'
+      },
+      H001069: {
+        value: 'Yes',
+        id: 'H001069',
+        voteId: '86'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '86'
+      },
+      H001042: {
+        value: 'No',
+        id: 'H001042',
+        voteId: '86'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '86'
+      },
+      I000024: {
+        value: 'Yes',
+        id: 'I000024',
+        voteId: '86'
+      },
+      I000055: {
+        value: 'Not Voting',
+        id: 'I000055',
+        voteId: '86'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '86'
+      },
+      K000384: {
+        value: 'No',
+        id: 'K000384',
+        voteId: '86'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '86'
+      },
+      K000383: {
+        value: 'Yes',
+        id: 'K000383',
+        voteId: '86'
+      },
+      K000367: {
+        value: 'No',
+        id: 'K000367',
+        voteId: '86'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '86'
+      },
+      L000174: {
+        value: 'No',
+        id: 'L000174',
+        voteId: '86'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '86'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '86'
+      },
+      M000133: {
+        value: 'No',
+        id: 'M000133',
+        voteId: '86'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '86'
+      },
+      M001170: {
+        value: 'No',
+        id: 'M001170',
+        voteId: '86'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '86'
+      },
+      M000639: {
+        value: 'No',
+        id: 'M000639',
+        voteId: '86'
+      },
+      M001176: {
+        value: 'No',
+        id: 'M001176',
+        voteId: '86'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '86'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '86'
+      },
+      M001169: {
+        value: 'No',
+        id: 'M001169',
+        voteId: '86'
+      },
+      M001111: {
+        value: 'No',
+        id: 'M001111',
+        voteId: '86'
+      },
+      N000032: {
+        value: 'No',
+        id: 'N000032',
+        voteId: '86'
+      },
+      P000603: {
+        value: 'Yes',
+        id: 'P000603',
+        voteId: '86'
+      },
+      P000612: {
+        value: 'Yes',
+        id: 'P000612',
+        voteId: '86'
+      },
+      P000595: {
+        value: 'Not Voting',
+        id: 'P000595',
+        voteId: '86'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '86'
+      },
+      R000122: {
+        value: 'No',
+        id: 'R000122',
+        voteId: '86'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '86'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '86'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '86'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '86'
+      },
+      S000033: {
+        value: 'No',
+        id: 'S000033',
+        voteId: '86'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '86'
+      },
+      S001194: {
+        value: 'No',
+        id: 'S001194',
+        voteId: '86'
+      },
+      S000148: {
+        value: 'No',
+        id: 'S000148',
+        voteId: '86'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '86'
+      },
+      S001181: {
+        value: 'No',
+        id: 'S001181',
+        voteId: '86'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '86'
+      },
+      S000770: {
+        value: 'No',
+        id: 'S000770',
+        voteId: '86'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '86'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '86'
+      },
+      T000464: {
+        value: 'No',
+        id: 'T000464',
+        voteId: '86'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '86'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '86'
+      },
+      T000461: {
+        value: 'Yes',
+        id: 'T000461',
+        voteId: '86'
+      },
+      U000039: {
+        value: 'No',
+        id: 'U000039',
+        voteId: '86'
+      },
+      V000128: {
+        value: 'No',
+        id: 'V000128',
+        voteId: '86'
+      },
+      W000805: {
+        value: 'No',
+        id: 'W000805',
+        voteId: '86'
+      },
+      W000817: {
+        value: 'No',
+        id: 'W000817',
+        voteId: '86'
+      },
+      W000802: {
+        value: 'No',
+        id: 'W000802',
+        voteId: '86'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '86'
+      },
+      W000779: {
+        value: 'No',
+        id: 'W000779',
+        voteId: '86'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '86'
+      }
+    },
+    '89': {
+      A000360: {
+        value: 'Not Voting',
+        id: 'A000360',
+        voteId: '89'
+      },
+      B001230: {
+        value: 'No',
+        id: 'B001230',
+        voteId: '89'
+      },
+      B001261: {
+        value: 'Yes',
+        id: 'B001261',
+        voteId: '89'
+      },
+      B001267: {
+        value: 'Yes',
+        id: 'B001267',
+        voteId: '89'
+      },
+      B001277: {
+        value: 'Yes',
+        id: 'B001277',
+        voteId: '89'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '89'
+      },
+      B001288: {
+        value: 'No',
+        id: 'B001288',
+        voteId: '89'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '89'
+      },
+      B000944: {
+        value: 'Yes',
+        id: 'B000944',
+        voteId: '89'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '89'
+      },
+      C000127: {
+        value: 'Yes',
+        id: 'C000127',
+        voteId: '89'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '89'
+      },
+      C000141: {
+        value: 'Yes',
+        id: 'C000141',
+        voteId: '89'
+      },
+      C000174: {
+        value: 'Yes',
+        id: 'C000174',
+        voteId: '89'
+      },
+      C001070: {
+        value: 'Yes',
+        id: 'C001070',
+        voteId: '89'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '89'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '89'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '89'
+      },
+      C001088: {
+        value: 'Yes',
+        id: 'C001088',
+        voteId: '89'
+      },
+      C001071: {
+        value: 'Not Voting',
+        id: 'C001071',
+        voteId: '89'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '89'
+      },
+      C001113: {
+        value: 'Yes',
+        id: 'C001113',
+        voteId: '89'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '89'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '89'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '89'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '89'
+      },
+      D000607: {
+        value: 'Yes',
+        id: 'D000607',
+        voteId: '89'
+      },
+      D000622: {
+        value: 'No',
+        id: 'D000622',
+        voteId: '89'
+      },
+      D000563: {
+        value: 'Yes',
+        id: 'D000563',
+        voteId: '89'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '89'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '89'
+      },
+      F000062: {
+        value: 'Yes',
+        id: 'F000062',
+        voteId: '89'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '89'
+      },
+      F000444: {
+        value: 'Yes',
+        id: 'F000444',
+        voteId: '89'
+      },
+      F000457: {
+        value: 'Yes',
+        id: 'F000457',
+        voteId: '89'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '89'
+      },
+      G000555: {
+        value: 'No',
+        id: 'G000555',
+        voteId: '89'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '89'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '89'
+      },
+      H001075: {
+        value: 'No',
+        id: 'H001075',
+        voteId: '89'
+      },
+      H001076: {
+        value: 'Yes',
+        id: 'H001076',
+        voteId: '89'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '89'
+      },
+      H001046: {
+        value: 'Yes',
+        id: 'H001046',
+        voteId: '89'
+      },
+      H001069: {
+        value: 'Yes',
+        id: 'H001069',
+        voteId: '89'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '89'
+      },
+      H001042: {
+        value: 'Yes',
+        id: 'H001042',
+        voteId: '89'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '89'
+      },
+      I000024: {
+        value: 'Yes',
+        id: 'I000024',
+        voteId: '89'
+      },
+      I000055: {
+        value: 'Not Voting',
+        id: 'I000055',
+        voteId: '89'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '89'
+      },
+      K000384: {
+        value: 'Yes',
+        id: 'K000384',
+        voteId: '89'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '89'
+      },
+      K000383: {
+        value: 'Yes',
+        id: 'K000383',
+        voteId: '89'
+      },
+      K000367: {
+        value: 'Yes',
+        id: 'K000367',
+        voteId: '89'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '89'
+      },
+      L000174: {
+        value: 'Yes',
+        id: 'L000174',
+        voteId: '89'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '89'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '89'
+      },
+      M000133: {
+        value: 'No',
+        id: 'M000133',
+        voteId: '89'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '89'
+      },
+      M001170: {
+        value: 'Yes',
+        id: 'M001170',
+        voteId: '89'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '89'
+      },
+      M000639: {
+        value: 'Yes',
+        id: 'M000639',
+        voteId: '89'
+      },
+      M001176: {
+        value: 'No',
+        id: 'M001176',
+        voteId: '89'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '89'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '89'
+      },
+      M001169: {
+        value: 'Yes',
+        id: 'M001169',
+        voteId: '89'
+      },
+      M001111: {
+        value: 'Yes',
+        id: 'M001111',
+        voteId: '89'
+      },
+      N000032: {
+        value: 'Yes',
+        id: 'N000032',
+        voteId: '89'
+      },
+      P000603: {
+        value: 'No',
+        id: 'P000603',
+        voteId: '89'
+      },
+      P000612: {
+        value: 'Yes',
+        id: 'P000612',
+        voteId: '89'
+      },
+      P000595: {
+        value: 'Yes',
+        id: 'P000595',
+        voteId: '89'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '89'
+      },
+      R000122: {
+        value: 'Yes',
+        id: 'R000122',
+        voteId: '89'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '89'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '89'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '89'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '89'
+      },
+      S000033: {
+        value: 'No',
+        id: 'S000033',
+        voteId: '89'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '89'
+      },
+      S001194: {
+        value: 'Yes',
+        id: 'S001194',
+        voteId: '89'
+      },
+      S000148: {
+        value: 'Yes',
+        id: 'S000148',
+        voteId: '89'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '89'
+      },
+      S001181: {
+        value: 'Yes',
+        id: 'S001181',
+        voteId: '89'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '89'
+      },
+      S000770: {
+        value: 'Yes',
+        id: 'S000770',
+        voteId: '89'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '89'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '89'
+      },
+      T000464: {
+        value: 'Yes',
+        id: 'T000464',
+        voteId: '89'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '89'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '89'
+      },
+      T000461: {
+        value: 'Yes',
+        id: 'T000461',
+        voteId: '89'
+      },
+      U000039: {
+        value: 'No',
+        id: 'U000039',
+        voteId: '89'
+      },
+      V000128: {
+        value: 'Yes',
+        id: 'V000128',
+        voteId: '89'
+      },
+      W000805: {
+        value: 'Yes',
+        id: 'W000805',
+        voteId: '89'
+      },
+      W000817: {
+        value: 'No',
+        id: 'W000817',
+        voteId: '89'
+      },
+      W000802: {
+        value: 'Yes',
+        id: 'W000802',
+        voteId: '89'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '89'
+      },
+      W000779: {
+        value: 'No',
+        id: 'W000779',
+        voteId: '89'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '89'
+      }
+    },
+    '90': {
+      A000360: {
+        value: 'Not Voting',
+        id: 'A000360',
+        voteId: '90'
+      },
+      B001230: {
+        value: 'Yes',
+        id: 'B001230',
+        voteId: '90'
+      },
+      B001261: {
+        value: 'Not Voting',
+        id: 'B001261',
+        voteId: '90'
+      },
+      B001267: {
+        value: 'Yes',
+        id: 'B001267',
+        voteId: '90'
+      },
+      B001277: {
+        value: 'Yes',
+        id: 'B001277',
+        voteId: '90'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '90'
+      },
+      B001288: {
+        value: 'No',
+        id: 'B001288',
+        voteId: '90'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '90'
+      },
+      B000944: {
+        value: 'Yes',
+        id: 'B000944',
+        voteId: '90'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '90'
+      },
+      C000127: {
+        value: 'Yes',
+        id: 'C000127',
+        voteId: '90'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '90'
+      },
+      C000141: {
+        value: 'Yes',
+        id: 'C000141',
+        voteId: '90'
+      },
+      C000174: {
+        value: 'Yes',
+        id: 'C000174',
+        voteId: '90'
+      },
+      C001070: {
+        value: 'Yes',
+        id: 'C001070',
+        voteId: '90'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '90'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '90'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '90'
+      },
+      C001088: {
+        value: 'Yes',
+        id: 'C001088',
+        voteId: '90'
+      },
+      C001071: {
+        value: 'Not Voting',
+        id: 'C001071',
+        voteId: '90'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '90'
+      },
+      C001113: {
+        value: 'Yes',
+        id: 'C001113',
+        voteId: '90'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '90'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '90'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '90'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '90'
+      },
+      D000607: {
+        value: 'Yes',
+        id: 'D000607',
+        voteId: '90'
+      },
+      D000622: {
+        value: 'Yes',
+        id: 'D000622',
+        voteId: '90'
+      },
+      D000563: {
+        value: 'Yes',
+        id: 'D000563',
+        voteId: '90'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '90'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '90'
+      },
+      F000062: {
+        value: 'Yes',
+        id: 'F000062',
+        voteId: '90'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '90'
+      },
+      F000444: {
+        value: 'Yes',
+        id: 'F000444',
+        voteId: '90'
+      },
+      F000457: {
+        value: 'Yes',
+        id: 'F000457',
+        voteId: '90'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '90'
+      },
+      G000555: {
+        value: 'No',
+        id: 'G000555',
+        voteId: '90'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '90'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '90'
+      },
+      H001075: {
+        value: 'No',
+        id: 'H001075',
+        voteId: '90'
+      },
+      H001076: {
+        value: 'Yes',
+        id: 'H001076',
+        voteId: '90'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '90'
+      },
+      H001046: {
+        value: 'Yes',
+        id: 'H001046',
+        voteId: '90'
+      },
+      H001069: {
+        value: 'Yes',
+        id: 'H001069',
+        voteId: '90'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '90'
+      },
+      H001042: {
+        value: 'No',
+        id: 'H001042',
+        voteId: '90'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '90'
+      },
+      I000024: {
+        value: 'Yes',
+        id: 'I000024',
+        voteId: '90'
+      },
+      I000055: {
+        value: 'Not Voting',
+        id: 'I000055',
+        voteId: '90'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '90'
+      },
+      K000384: {
+        value: 'Yes',
+        id: 'K000384',
+        voteId: '90'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '90'
+      },
+      K000383: {
+        value: 'Yes',
+        id: 'K000383',
+        voteId: '90'
+      },
+      K000367: {
+        value: 'Yes',
+        id: 'K000367',
+        voteId: '90'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '90'
+      },
+      L000174: {
+        value: 'Yes',
+        id: 'L000174',
+        voteId: '90'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '90'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '90'
+      },
+      M000133: {
+        value: 'No',
+        id: 'M000133',
+        voteId: '90'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '90'
+      },
+      M001170: {
+        value: 'No',
+        id: 'M001170',
+        voteId: '90'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '90'
+      },
+      M000639: {
+        value: 'Yes',
+        id: 'M000639',
+        voteId: '90'
+      },
+      M001176: {
+        value: 'No',
+        id: 'M001176',
+        voteId: '90'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '90'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '90'
+      },
+      M001169: {
+        value: 'Yes',
+        id: 'M001169',
+        voteId: '90'
+      },
+      M001111: {
+        value: 'Yes',
+        id: 'M001111',
+        voteId: '90'
+      },
+      N000032: {
+        value: 'Yes',
+        id: 'N000032',
+        voteId: '90'
+      },
+      P000603: {
+        value: 'Yes',
+        id: 'P000603',
+        voteId: '90'
+      },
+      P000612: {
+        value: 'Yes',
+        id: 'P000612',
+        voteId: '90'
+      },
+      P000595: {
+        value: 'Yes',
+        id: 'P000595',
+        voteId: '90'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '90'
+      },
+      R000122: {
+        value: 'Yes',
+        id: 'R000122',
+        voteId: '90'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '90'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '90'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '90'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '90'
+      },
+      S000033: {
+        value: 'No',
+        id: 'S000033',
+        voteId: '90'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '90'
+      },
+      S001194: {
+        value: 'Yes',
+        id: 'S001194',
+        voteId: '90'
+      },
+      S000148: {
+        value: 'No',
+        id: 'S000148',
+        voteId: '90'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '90'
+      },
+      S001181: {
+        value: 'Yes',
+        id: 'S001181',
+        voteId: '90'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '90'
+      },
+      S000770: {
+        value: 'Yes',
+        id: 'S000770',
+        voteId: '90'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '90'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '90'
+      },
+      T000464: {
+        value: 'Yes',
+        id: 'T000464',
+        voteId: '90'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '90'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '90'
+      },
+      T000461: {
+        value: 'Yes',
+        id: 'T000461',
+        voteId: '90'
+      },
+      U000039: {
+        value: 'Yes',
+        id: 'U000039',
+        voteId: '90'
+      },
+      V000128: {
+        value: 'Yes',
+        id: 'V000128',
+        voteId: '90'
+      },
+      W000805: {
+        value: 'Yes',
+        id: 'W000805',
+        voteId: '90'
+      },
+      W000817: {
+        value: 'No',
+        id: 'W000817',
+        voteId: '90'
+      },
+      W000802: {
+        value: 'Yes',
+        id: 'W000802',
+        voteId: '90'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '90'
+      },
+      W000779: {
+        value: 'Yes',
+        id: 'W000779',
+        voteId: '90'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '90'
+      }
+    },
+    '91': {
+      A000360: {
+        value: 'Yes',
+        id: 'A000360',
+        voteId: '91'
+      },
+      B001230: {
+        value: 'Yes',
+        id: 'B001230',
+        voteId: '91'
+      },
+      B001261: {
+        value: 'Yes',
+        id: 'B001261',
+        voteId: '91'
+      },
+      B001267: {
+        value: 'Yes',
+        id: 'B001267',
+        voteId: '91'
+      },
+      B001277: {
+        value: 'Yes',
+        id: 'B001277',
+        voteId: '91'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '91'
+      },
+      B001288: {
+        value: 'Yes',
+        id: 'B001288',
+        voteId: '91'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '91'
+      },
+      B000944: {
+        value: 'Yes',
+        id: 'B000944',
+        voteId: '91'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '91'
+      },
+      C000127: {
+        value: 'Yes',
+        id: 'C000127',
+        voteId: '91'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '91'
+      },
+      C000141: {
+        value: 'Yes',
+        id: 'C000141',
+        voteId: '91'
+      },
+      C000174: {
+        value: 'Yes',
+        id: 'C000174',
+        voteId: '91'
+      },
+      C001070: {
+        value: 'Yes',
+        id: 'C001070',
+        voteId: '91'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '91'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '91'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '91'
+      },
+      C001088: {
+        value: 'Yes',
+        id: 'C001088',
+        voteId: '91'
+      },
+      C001071: {
+        value: 'Yes',
+        id: 'C001071',
+        voteId: '91'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '91'
+      },
+      C001113: {
+        value: 'Yes',
+        id: 'C001113',
+        voteId: '91'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '91'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '91'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '91'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '91'
+      },
+      D000607: {
+        value: 'Yes',
+        id: 'D000607',
+        voteId: '91'
+      },
+      D000622: {
+        value: 'Yes',
+        id: 'D000622',
+        voteId: '91'
+      },
+      D000563: {
+        value: 'Yes',
+        id: 'D000563',
+        voteId: '91'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '91'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '91'
+      },
+      F000062: {
+        value: 'Yes',
+        id: 'F000062',
+        voteId: '91'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '91'
+      },
+      F000444: {
+        value: 'Yes',
+        id: 'F000444',
+        voteId: '91'
+      },
+      F000457: {
+        value: 'Yes',
+        id: 'F000457',
+        voteId: '91'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '91'
+      },
+      G000555: {
+        value: 'Yes',
+        id: 'G000555',
+        voteId: '91'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '91'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '91'
+      },
+      H001075: {
+        value: 'Yes',
+        id: 'H001075',
+        voteId: '91'
+      },
+      H001076: {
+        value: 'Yes',
+        id: 'H001076',
+        voteId: '91'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '91'
+      },
+      H001046: {
+        value: 'Yes',
+        id: 'H001046',
+        voteId: '91'
+      },
+      H001069: {
+        value: 'Yes',
+        id: 'H001069',
+        voteId: '91'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '91'
+      },
+      H001042: {
+        value: 'Yes',
+        id: 'H001042',
+        voteId: '91'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '91'
+      },
+      I000024: {
+        value: 'Not Voting',
+        id: 'I000024',
+        voteId: '91'
+      },
+      I000055: {
+        value: 'Not Voting',
+        id: 'I000055',
+        voteId: '91'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '91'
+      },
+      K000384: {
+        value: 'Yes',
+        id: 'K000384',
+        voteId: '91'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '91'
+      },
+      K000383: {
+        value: 'Yes',
+        id: 'K000383',
+        voteId: '91'
+      },
+      K000367: {
+        value: 'Yes',
+        id: 'K000367',
+        voteId: '91'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '91'
+      },
+      L000174: {
+        value: 'Yes',
+        id: 'L000174',
+        voteId: '91'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '91'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '91'
+      },
+      M000133: {
+        value: 'Yes',
+        id: 'M000133',
+        voteId: '91'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '91'
+      },
+      M001170: {
+        value: 'Yes',
+        id: 'M001170',
+        voteId: '91'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '91'
+      },
+      M000639: {
+        value: 'Yes',
+        id: 'M000639',
+        voteId: '91'
+      },
+      M001176: {
+        value: 'Yes',
+        id: 'M001176',
+        voteId: '91'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '91'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '91'
+      },
+      M001169: {
+        value: 'Yes',
+        id: 'M001169',
+        voteId: '91'
+      },
+      M001111: {
+        value: 'Yes',
+        id: 'M001111',
+        voteId: '91'
+      },
+      N000032: {
+        value: 'Yes',
+        id: 'N000032',
+        voteId: '91'
+      },
+      P000603: {
+        value: 'Yes',
+        id: 'P000603',
+        voteId: '91'
+      },
+      P000612: {
+        value: 'Yes',
+        id: 'P000612',
+        voteId: '91'
+      },
+      P000595: {
+        value: 'Yes',
+        id: 'P000595',
+        voteId: '91'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '91'
+      },
+      R000122: {
+        value: 'Yes',
+        id: 'R000122',
+        voteId: '91'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '91'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '91'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '91'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '91'
+      },
+      S000033: {
+        value: 'Yes',
+        id: 'S000033',
+        voteId: '91'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '91'
+      },
+      S001194: {
+        value: 'Yes',
+        id: 'S001194',
+        voteId: '91'
+      },
+      S000148: {
+        value: 'Yes',
+        id: 'S000148',
+        voteId: '91'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '91'
+      },
+      S001181: {
+        value: 'Yes',
+        id: 'S001181',
+        voteId: '91'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '91'
+      },
+      S000770: {
+        value: 'Yes',
+        id: 'S000770',
+        voteId: '91'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '91'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '91'
+      },
+      T000464: {
+        value: 'Yes',
+        id: 'T000464',
+        voteId: '91'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '91'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '91'
+      },
+      T000461: {
+        value: 'Yes',
+        id: 'T000461',
+        voteId: '91'
+      },
+      U000039: {
+        value: 'Yes',
+        id: 'U000039',
+        voteId: '91'
+      },
+      V000128: {
+        value: 'Yes',
+        id: 'V000128',
+        voteId: '91'
+      },
+      W000805: {
+        value: 'Yes',
+        id: 'W000805',
+        voteId: '91'
+      },
+      W000817: {
+        value: 'Yes',
+        id: 'W000817',
+        voteId: '91'
+      },
+      W000802: {
+        value: 'Yes',
+        id: 'W000802',
+        voteId: '91'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '91'
+      },
+      W000779: {
+        value: 'Yes',
+        id: 'W000779',
+        voteId: '91'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '91'
+      }
+    },
+    '96': {
+      A000360: {
+        value: 'Yes',
+        id: 'A000360',
+        voteId: '96'
+      },
+      B001230: {
+        value: 'No',
+        id: 'B001230',
+        voteId: '96'
+      },
+      B001261: {
+        value: 'Yes',
+        id: 'B001261',
+        voteId: '96'
+      },
+      B001267: {
+        value: 'No',
+        id: 'B001267',
+        voteId: '96'
+      },
+      B001277: {
+        value: 'No',
+        id: 'B001277',
+        voteId: '96'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '96'
+      },
+      B001288: {
+        value: 'No',
+        id: 'B001288',
+        voteId: '96'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '96'
+      },
+      B000944: {
+        value: 'No',
+        id: 'B000944',
+        voteId: '96'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '96'
+      },
+      C000127: {
+        value: 'No',
+        id: 'C000127',
+        voteId: '96'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '96'
+      },
+      C000141: {
+        value: 'No',
+        id: 'C000141',
+        voteId: '96'
+      },
+      C000174: {
+        value: 'No',
+        id: 'C000174',
+        voteId: '96'
+      },
+      C001070: {
+        value: 'No',
+        id: 'C001070',
+        voteId: '96'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '96'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '96'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '96'
+      },
+      C001088: {
+        value: 'No',
+        id: 'C001088',
+        voteId: '96'
+      },
+      C001071: {
+        value: 'Yes',
+        id: 'C001071',
+        voteId: '96'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '96'
+      },
+      C001113: {
+        value: 'No',
+        id: 'C001113',
+        voteId: '96'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '96'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '96'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '96'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '96'
+      },
+      D000607: {
+        value: 'No',
+        id: 'D000607',
+        voteId: '96'
+      },
+      D000622: {
+        value: 'No',
+        id: 'D000622',
+        voteId: '96'
+      },
+      D000563: {
+        value: 'No',
+        id: 'D000563',
+        voteId: '96'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '96'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '96'
+      },
+      F000062: {
+        value: 'No',
+        id: 'F000062',
+        voteId: '96'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '96'
+      },
+      F000444: {
+        value: 'Yes',
+        id: 'F000444',
+        voteId: '96'
+      },
+      F000457: {
+        value: 'No',
+        id: 'F000457',
+        voteId: '96'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '96'
+      },
+      G000555: {
+        value: 'No',
+        id: 'G000555',
+        voteId: '96'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '96'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '96'
+      },
+      H001075: {
+        value: 'No',
+        id: 'H001075',
+        voteId: '96'
+      },
+      H001076: {
+        value: 'No',
+        id: 'H001076',
+        voteId: '96'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '96'
+      },
+      H001046: {
+        value: 'No',
+        id: 'H001046',
+        voteId: '96'
+      },
+      H001069: {
+        value: 'No',
+        id: 'H001069',
+        voteId: '96'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '96'
+      },
+      H001042: {
+        value: 'No',
+        id: 'H001042',
+        voteId: '96'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '96'
+      },
+      I000024: {
+        value: 'Yes',
+        id: 'I000024',
+        voteId: '96'
+      },
+      I000055: {
+        value: 'Not Voting',
+        id: 'I000055',
+        voteId: '96'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '96'
+      },
+      K000384: {
+        value: 'No',
+        id: 'K000384',
+        voteId: '96'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '96'
+      },
+      K000383: {
+        value: 'No',
+        id: 'K000383',
+        voteId: '96'
+      },
+      K000367: {
+        value: 'No',
+        id: 'K000367',
+        voteId: '96'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '96'
+      },
+      L000174: {
+        value: 'No',
+        id: 'L000174',
+        voteId: '96'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '96'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '96'
+      },
+      M000133: {
+        value: 'No',
+        id: 'M000133',
+        voteId: '96'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '96'
+      },
+      M001170: {
+        value: 'No',
+        id: 'M001170',
+        voteId: '96'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '96'
+      },
+      M000639: {
+        value: 'Yes',
+        id: 'M000639',
+        voteId: '96'
+      },
+      M001176: {
+        value: 'No',
+        id: 'M001176',
+        voteId: '96'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '96'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '96'
+      },
+      M001169: {
+        value: 'No',
+        id: 'M001169',
+        voteId: '96'
+      },
+      M001111: {
+        value: 'No',
+        id: 'M001111',
+        voteId: '96'
+      },
+      N000032: {
+        value: 'No',
+        id: 'N000032',
+        voteId: '96'
+      },
+      P000603: {
+        value: 'Not Voting',
+        id: 'P000603',
+        voteId: '96'
+      },
+      P000612: {
+        value: 'Yes',
+        id: 'P000612',
+        voteId: '96'
+      },
+      P000595: {
+        value: 'No',
+        id: 'P000595',
+        voteId: '96'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '96'
+      },
+      R000122: {
+        value: 'No',
+        id: 'R000122',
+        voteId: '96'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '96'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '96'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '96'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '96'
+      },
+      S000033: {
+        value: 'No',
+        id: 'S000033',
+        voteId: '96'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '96'
+      },
+      S001194: {
+        value: 'No',
+        id: 'S001194',
+        voteId: '96'
+      },
+      S000148: {
+        value: 'No',
+        id: 'S000148',
+        voteId: '96'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '96'
+      },
+      S001181: {
+        value: 'No',
+        id: 'S001181',
+        voteId: '96'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '96'
+      },
+      S000770: {
+        value: 'No',
+        id: 'S000770',
+        voteId: '96'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '96'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '96'
+      },
+      T000464: {
+        value: 'No',
+        id: 'T000464',
+        voteId: '96'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '96'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '96'
+      },
+      T000461: {
+        value: 'Yes',
+        id: 'T000461',
+        voteId: '96'
+      },
+      U000039: {
+        value: 'No',
+        id: 'U000039',
+        voteId: '96'
+      },
+      V000128: {
+        value: 'No',
+        id: 'V000128',
+        voteId: '96'
+      },
+      W000805: {
+        value: 'No',
+        id: 'W000805',
+        voteId: '96'
+      },
+      W000817: {
+        value: 'No',
+        id: 'W000817',
+        voteId: '96'
+      },
+      W000802: {
+        value: 'No',
+        id: 'W000802',
+        voteId: '96'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '96'
+      },
+      W000779: {
+        value: 'No',
+        id: 'W000779',
+        voteId: '96'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '96'
+      }
+    },
+    '103': {
+      A000360: {
+        value: 'Yes',
+        id: 'A000360',
+        voteId: '103'
+      },
+      B001230: {
+        value: 'Yes',
+        id: 'B001230',
+        voteId: '103'
+      },
+      B001261: {
+        value: 'Yes',
+        id: 'B001261',
+        voteId: '103'
+      },
+      B001267: {
+        value: 'Yes',
+        id: 'B001267',
+        voteId: '103'
+      },
+      B001277: {
+        value: 'No',
+        id: 'B001277',
+        voteId: '103'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '103'
+      },
+      B001288: {
+        value: 'No',
+        id: 'B001288',
+        voteId: '103'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '103'
+      },
+      B000944: {
+        value: 'Yes',
+        id: 'B000944',
+        voteId: '103'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '103'
+      },
+      C000127: {
+        value: 'Yes',
+        id: 'C000127',
+        voteId: '103'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '103'
+      },
+      C000141: {
+        value: 'Yes',
+        id: 'C000141',
+        voteId: '103'
+      },
+      C000174: {
+        value: 'Yes',
+        id: 'C000174',
+        voteId: '103'
+      },
+      C001070: {
+        value: 'Yes',
+        id: 'C001070',
+        voteId: '103'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '103'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '103'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '103'
+      },
+      C001088: {
+        value: 'Yes',
+        id: 'C001088',
+        voteId: '103'
+      },
+      C001071: {
+        value: 'Yes',
+        id: 'C001071',
+        voteId: '103'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '103'
+      },
+      C001113: {
+        value: 'No',
+        id: 'C001113',
+        voteId: '103'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '103'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '103'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '103'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '103'
+      },
+      D000607: {
+        value: 'Yes',
+        id: 'D000607',
+        voteId: '103'
+      },
+      D000622: {
+        value: 'No',
+        id: 'D000622',
+        voteId: '103'
+      },
+      D000563: {
+        value: 'Yes',
+        id: 'D000563',
+        voteId: '103'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '103'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '103'
+      },
+      F000062: {
+        value: 'Yes',
+        id: 'F000062',
+        voteId: '103'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '103'
+      },
+      F000444: {
+        value: 'Yes',
+        id: 'F000444',
+        voteId: '103'
+      },
+      F000457: {
+        value: 'Yes',
+        id: 'F000457',
+        voteId: '103'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '103'
+      },
+      G000555: {
+        value: 'No',
+        id: 'G000555',
+        voteId: '103'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '103'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '103'
+      },
+      H001075: {
+        value: 'No',
+        id: 'H001075',
+        voteId: '103'
+      },
+      H001076: {
+        value: 'Yes',
+        id: 'H001076',
+        voteId: '103'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '103'
+      },
+      H001046: {
+        value: 'No',
+        id: 'H001046',
+        voteId: '103'
+      },
+      H001069: {
+        value: 'Yes',
+        id: 'H001069',
+        voteId: '103'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '103'
+      },
+      H001042: {
+        value: 'Yes',
+        id: 'H001042',
+        voteId: '103'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '103'
+      },
+      I000024: {
+        value: 'Yes',
+        id: 'I000024',
+        voteId: '103'
+      },
+      I000055: {
+        value: 'Not Voting',
+        id: 'I000055',
+        voteId: '103'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '103'
+      },
+      K000384: {
+        value: 'Yes',
+        id: 'K000384',
+        voteId: '103'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '103'
+      },
+      K000383: {
+        value: 'Yes',
+        id: 'K000383',
+        voteId: '103'
+      },
+      K000367: {
+        value: 'Yes',
+        id: 'K000367',
+        voteId: '103'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '103'
+      },
+      L000174: {
+        value: 'Yes',
+        id: 'L000174',
+        voteId: '103'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '103'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '103'
+      },
+      M000133: {
+        value: 'No',
+        id: 'M000133',
+        voteId: '103'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '103'
+      },
+      M001170: {
+        value: 'Yes',
+        id: 'M001170',
+        voteId: '103'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '103'
+      },
+      M000639: {
+        value: 'No',
+        id: 'M000639',
+        voteId: '103'
+      },
+      M001176: {
+        value: 'No',
+        id: 'M001176',
+        voteId: '103'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '103'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '103'
+      },
+      M001169: {
+        value: 'No',
+        id: 'M001169',
+        voteId: '103'
+      },
+      M001111: {
+        value: 'Yes',
+        id: 'M001111',
+        voteId: '103'
+      },
+      N000032: {
+        value: 'Yes',
+        id: 'N000032',
+        voteId: '103'
+      },
+      P000603: {
+        value: 'Yes',
+        id: 'P000603',
+        voteId: '103'
+      },
+      P000612: {
+        value: 'Yes',
+        id: 'P000612',
+        voteId: '103'
+      },
+      P000595: {
+        value: 'Yes',
+        id: 'P000595',
+        voteId: '103'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '103'
+      },
+      R000122: {
+        value: 'Yes',
+        id: 'R000122',
+        voteId: '103'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '103'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '103'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '103'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '103'
+      },
+      S000033: {
+        value: 'No',
+        id: 'S000033',
+        voteId: '103'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '103'
+      },
+      S001194: {
+        value: 'Yes',
+        id: 'S001194',
+        voteId: '103'
+      },
+      S000148: {
+        value: 'Yes',
+        id: 'S000148',
+        voteId: '103'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '103'
+      },
+      S001181: {
+        value: 'Yes',
+        id: 'S001181',
+        voteId: '103'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '103'
+      },
+      S000770: {
+        value: 'Yes',
+        id: 'S000770',
+        voteId: '103'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '103'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '103'
+      },
+      T000464: {
+        value: 'Yes',
+        id: 'T000464',
+        voteId: '103'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '103'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '103'
+      },
+      T000461: {
+        value: 'Yes',
+        id: 'T000461',
+        voteId: '103'
+      },
+      U000039: {
+        value: 'No',
+        id: 'U000039',
+        voteId: '103'
+      },
+      V000128: {
+        value: 'Yes',
+        id: 'V000128',
+        voteId: '103'
+      },
+      W000805: {
+        value: 'Yes',
+        id: 'W000805',
+        voteId: '103'
+      },
+      W000817: {
+        value: 'No',
+        id: 'W000817',
+        voteId: '103'
+      },
+      W000802: {
+        value: 'Yes',
+        id: 'W000802',
+        voteId: '103'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '103'
+      },
+      W000779: {
+        value: 'Yes',
+        id: 'W000779',
+        voteId: '103'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '103'
+      }
+    },
+    '111': {
+      A000360: {
+        value: 'Yes',
+        id: 'A000360',
+        voteId: '111'
+      },
+      B001230: {
+        value: 'No',
+        id: 'B001230',
+        voteId: '111'
+      },
+      B001261: {
+        value: 'Yes',
+        id: 'B001261',
+        voteId: '111'
+      },
+      B001267: {
+        value: 'No',
+        id: 'B001267',
+        voteId: '111'
+      },
+      B001277: {
+        value: 'No',
+        id: 'B001277',
+        voteId: '111'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '111'
+      },
+      B001288: {
+        value: 'No',
+        id: 'B001288',
+        voteId: '111'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '111'
+      },
+      B000944: {
+        value: 'No',
+        id: 'B000944',
+        voteId: '111'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '111'
+      },
+      C000127: {
+        value: 'No',
+        id: 'C000127',
+        voteId: '111'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '111'
+      },
+      C000141: {
+        value: 'No',
+        id: 'C000141',
+        voteId: '111'
+      },
+      C000174: {
+        value: 'No',
+        id: 'C000174',
+        voteId: '111'
+      },
+      C001070: {
+        value: 'No',
+        id: 'C001070',
+        voteId: '111'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '111'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '111'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '111'
+      },
+      C001088: {
+        value: 'No',
+        id: 'C001088',
+        voteId: '111'
+      },
+      C001071: {
+        value: 'Yes',
+        id: 'C001071',
+        voteId: '111'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '111'
+      },
+      C001113: {
+        value: 'No',
+        id: 'C001113',
+        voteId: '111'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '111'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '111'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '111'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '111'
+      },
+      D000607: {
+        value: 'Yes',
+        id: 'D000607',
+        voteId: '111'
+      },
+      D000622: {
+        value: 'No',
+        id: 'D000622',
+        voteId: '111'
+      },
+      D000563: {
+        value: 'No',
+        id: 'D000563',
+        voteId: '111'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '111'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '111'
+      },
+      F000062: {
+        value: 'No',
+        id: 'F000062',
+        voteId: '111'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '111'
+      },
+      F000444: {
+        value: 'Yes',
+        id: 'F000444',
+        voteId: '111'
+      },
+      F000457: {
+        value: 'No',
+        id: 'F000457',
+        voteId: '111'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '111'
+      },
+      G000555: {
+        value: 'No',
+        id: 'G000555',
+        voteId: '111'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '111'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '111'
+      },
+      H001075: {
+        value: 'No',
+        id: 'H001075',
+        voteId: '111'
+      },
+      H001076: {
+        value: 'No',
+        id: 'H001076',
+        voteId: '111'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '111'
+      },
+      H001046: {
+        value: 'No',
+        id: 'H001046',
+        voteId: '111'
+      },
+      H001069: {
+        value: 'Yes',
+        id: 'H001069',
+        voteId: '111'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '111'
+      },
+      H001042: {
+        value: 'No',
+        id: 'H001042',
+        voteId: '111'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '111'
+      },
+      I000024: {
+        value: 'Yes',
+        id: 'I000024',
+        voteId: '111'
+      },
+      I000055: {
+        value: 'Not Voting',
+        id: 'I000055',
+        voteId: '111'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '111'
+      },
+      K000384: {
+        value: 'No',
+        id: 'K000384',
+        voteId: '111'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '111'
+      },
+      K000383: {
+        value: 'No',
+        id: 'K000383',
+        voteId: '111'
+      },
+      K000367: {
+        value: 'No',
+        id: 'K000367',
+        voteId: '111'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '111'
+      },
+      L000174: {
+        value: 'No',
+        id: 'L000174',
+        voteId: '111'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '111'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '111'
+      },
+      M000133: {
+        value: 'No',
+        id: 'M000133',
+        voteId: '111'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '111'
+      },
+      M001170: {
+        value: 'No',
+        id: 'M001170',
+        voteId: '111'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '111'
+      },
+      M000639: {
+        value: 'No',
+        id: 'M000639',
+        voteId: '111'
+      },
+      M001176: {
+        value: 'No',
+        id: 'M001176',
+        voteId: '111'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '111'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '111'
+      },
+      M001169: {
+        value: 'No',
+        id: 'M001169',
+        voteId: '111'
+      },
+      M001111: {
+        value: 'No',
+        id: 'M001111',
+        voteId: '111'
+      },
+      N000032: {
+        value: 'No',
+        id: 'N000032',
+        voteId: '111'
+      },
+      P000603: {
+        value: 'Yes',
+        id: 'P000603',
+        voteId: '111'
+      },
+      P000612: {
+        value: 'Yes',
+        id: 'P000612',
+        voteId: '111'
+      },
+      P000595: {
+        value: 'No',
+        id: 'P000595',
+        voteId: '111'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '111'
+      },
+      R000122: {
+        value: 'No',
+        id: 'R000122',
+        voteId: '111'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '111'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '111'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '111'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '111'
+      },
+      S000033: {
+        value: 'No',
+        id: 'S000033',
+        voteId: '111'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '111'
+      },
+      S001194: {
+        value: 'No',
+        id: 'S001194',
+        voteId: '111'
+      },
+      S000148: {
+        value: 'No',
+        id: 'S000148',
+        voteId: '111'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '111'
+      },
+      S001181: {
+        value: 'No',
+        id: 'S001181',
+        voteId: '111'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '111'
+      },
+      S000770: {
+        value: 'No',
+        id: 'S000770',
+        voteId: '111'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '111'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '111'
+      },
+      T000464: {
+        value: 'No',
+        id: 'T000464',
+        voteId: '111'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '111'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '111'
+      },
+      T000461: {
+        value: 'Yes',
+        id: 'T000461',
+        voteId: '111'
+      },
+      U000039: {
+        value: 'No',
+        id: 'U000039',
+        voteId: '111'
+      },
+      V000128: {
+        value: 'No',
+        id: 'V000128',
+        voteId: '111'
+      },
+      W000805: {
+        value: 'No',
+        id: 'W000805',
+        voteId: '111'
+      },
+      W000817: {
+        value: 'No',
+        id: 'W000817',
+        voteId: '111'
+      },
+      W000802: {
+        value: 'No',
+        id: 'W000802',
+        voteId: '111'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '111'
+      },
+      W000779: {
+        value: 'No',
+        id: 'W000779',
+        voteId: '111'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '111'
+      }
+    },
+    '112': {
+      A000360: {
+        value: 'Yes',
+        id: 'A000360',
+        voteId: '112'
+      },
+      B001230: {
+        value: 'Yes',
+        id: 'B001230',
+        voteId: '112'
+      },
+      B001261: {
+        value: 'Yes',
+        id: 'B001261',
+        voteId: '112'
+      },
+      B001267: {
+        value: 'Yes',
+        id: 'B001267',
+        voteId: '112'
+      },
+      B001277: {
+        value: 'No',
+        id: 'B001277',
+        voteId: '112'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '112'
+      },
+      B001288: {
+        value: 'No',
+        id: 'B001288',
+        voteId: '112'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '112'
+      },
+      B000944: {
+        value: 'Yes',
+        id: 'B000944',
+        voteId: '112'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '112'
+      },
+      C000127: {
+        value: 'Yes',
+        id: 'C000127',
+        voteId: '112'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '112'
+      },
+      C000141: {
+        value: 'Yes',
+        id: 'C000141',
+        voteId: '112'
+      },
+      C000174: {
+        value: 'Yes',
+        id: 'C000174',
+        voteId: '112'
+      },
+      C001070: {
+        value: 'Yes',
+        id: 'C001070',
+        voteId: '112'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '112'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '112'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '112'
+      },
+      C001088: {
+        value: 'Yes',
+        id: 'C001088',
+        voteId: '112'
+      },
+      C001071: {
+        value: 'Yes',
+        id: 'C001071',
+        voteId: '112'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '112'
+      },
+      C001113: {
+        value: 'Yes',
+        id: 'C001113',
+        voteId: '112'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '112'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '112'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '112'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '112'
+      },
+      D000607: {
+        value: 'Yes',
+        id: 'D000607',
+        voteId: '112'
+      },
+      D000622: {
+        value: 'Yes',
+        id: 'D000622',
+        voteId: '112'
+      },
+      D000563: {
+        value: 'Yes',
+        id: 'D000563',
+        voteId: '112'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '112'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '112'
+      },
+      F000062: {
+        value: 'Yes',
+        id: 'F000062',
+        voteId: '112'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '112'
+      },
+      F000444: {
+        value: 'Not Voting',
+        id: 'F000444',
+        voteId: '112'
+      },
+      F000457: {
+        value: 'Yes',
+        id: 'F000457',
+        voteId: '112'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '112'
+      },
+      G000555: {
+        value: 'No',
+        id: 'G000555',
+        voteId: '112'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '112'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '112'
+      },
+      H001075: {
+        value: 'No',
+        id: 'H001075',
+        voteId: '112'
+      },
+      H001076: {
+        value: 'Yes',
+        id: 'H001076',
+        voteId: '112'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '112'
+      },
+      H001046: {
+        value: 'Yes',
+        id: 'H001046',
+        voteId: '112'
+      },
+      H001069: {
+        value: 'Yes',
+        id: 'H001069',
+        voteId: '112'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '112'
+      },
+      H001042: {
+        value: 'Yes',
+        id: 'H001042',
+        voteId: '112'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '112'
+      },
+      I000024: {
+        value: 'Yes',
+        id: 'I000024',
+        voteId: '112'
+      },
+      I000055: {
+        value: 'Yes',
+        id: 'I000055',
+        voteId: '112'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '112'
+      },
+      K000384: {
+        value: 'Yes',
+        id: 'K000384',
+        voteId: '112'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '112'
+      },
+      K000383: {
+        value: 'Yes',
+        id: 'K000383',
+        voteId: '112'
+      },
+      K000367: {
+        value: 'Yes',
+        id: 'K000367',
+        voteId: '112'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '112'
+      },
+      L000174: {
+        value: 'Yes',
+        id: 'L000174',
+        voteId: '112'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '112'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '112'
+      },
+      M000133: {
+        value: 'No',
+        id: 'M000133',
+        voteId: '112'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '112'
+      },
+      M001170: {
+        value: 'Yes',
+        id: 'M001170',
+        voteId: '112'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '112'
+      },
+      M000639: {
+        value: 'No',
+        id: 'M000639',
+        voteId: '112'
+      },
+      M001176: {
+        value: 'Yes',
+        id: 'M001176',
+        voteId: '112'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '112'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '112'
+      },
+      M001169: {
+        value: 'Yes',
+        id: 'M001169',
+        voteId: '112'
+      },
+      M001111: {
+        value: 'Yes',
+        id: 'M001111',
+        voteId: '112'
+      },
+      N000032: {
+        value: 'Yes',
+        id: 'N000032',
+        voteId: '112'
+      },
+      P000603: {
+        value: 'Yes',
+        id: 'P000603',
+        voteId: '112'
+      },
+      P000612: {
+        value: 'Present',
+        id: 'P000612',
+        voteId: '112'
+      },
+      P000595: {
+        value: 'Yes',
+        id: 'P000595',
+        voteId: '112'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '112'
+      },
+      R000122: {
+        value: 'No',
+        id: 'R000122',
+        voteId: '112'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '112'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '112'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '112'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '112'
+      },
+      S000033: {
+        value: 'No',
+        id: 'S000033',
+        voteId: '112'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '112'
+      },
+      S001194: {
+        value: 'Yes',
+        id: 'S001194',
+        voteId: '112'
+      },
+      S000148: {
+        value: 'Yes',
+        id: 'S000148',
+        voteId: '112'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '112'
+      },
+      S001181: {
+        value: 'Yes',
+        id: 'S001181',
+        voteId: '112'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '112'
+      },
+      S000770: {
+        value: 'Yes',
+        id: 'S000770',
+        voteId: '112'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '112'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '112'
+      },
+      T000464: {
+        value: 'Yes',
+        id: 'T000464',
+        voteId: '112'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '112'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '112'
+      },
+      T000461: {
+        value: 'Yes',
+        id: 'T000461',
+        voteId: '112'
+      },
+      U000039: {
+        value: 'Yes',
+        id: 'U000039',
+        voteId: '112'
+      },
+      V000128: {
+        value: 'Yes',
+        id: 'V000128',
+        voteId: '112'
+      },
+      W000805: {
+        value: 'Yes',
+        id: 'W000805',
+        voteId: '112'
+      },
+      W000817: {
+        value: 'No',
+        id: 'W000817',
+        voteId: '112'
+      },
+      W000802: {
+        value: 'No',
+        id: 'W000802',
+        voteId: '112'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '112'
+      },
+      W000779: {
+        value: 'No',
+        id: 'W000779',
+        voteId: '112'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '112'
+      }
+    },
+    '114': {
+      A000360: {
+        value: 'Yes',
+        id: 'A000360',
+        voteId: '114'
+      },
+      B001230: {
+        value: 'Yes',
+        id: 'B001230',
+        voteId: '114'
+      },
+      B001261: {
+        value: 'Yes',
+        id: 'B001261',
+        voteId: '114'
+      },
+      B001267: {
+        value: 'Yes',
+        id: 'B001267',
+        voteId: '114'
+      },
+      B001277: {
+        value: 'No',
+        id: 'B001277',
+        voteId: '114'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '114'
+      },
+      B001288: {
+        value: 'No',
+        id: 'B001288',
+        voteId: '114'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '114'
+      },
+      B000944: {
+        value: 'Yes',
+        id: 'B000944',
+        voteId: '114'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '114'
+      },
+      C000127: {
+        value: 'Yes',
+        id: 'C000127',
+        voteId: '114'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '114'
+      },
+      C000141: {
+        value: 'Yes',
+        id: 'C000141',
+        voteId: '114'
+      },
+      C000174: {
+        value: 'Yes',
+        id: 'C000174',
+        voteId: '114'
+      },
+      C001070: {
+        value: 'Yes',
+        id: 'C001070',
+        voteId: '114'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '114'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '114'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '114'
+      },
+      C001088: {
+        value: 'Yes',
+        id: 'C001088',
+        voteId: '114'
+      },
+      C001071: {
+        value: 'Yes',
+        id: 'C001071',
+        voteId: '114'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '114'
+      },
+      C001113: {
+        value: 'No',
+        id: 'C001113',
+        voteId: '114'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '114'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '114'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '114'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '114'
+      },
+      D000607: {
+        value: 'Yes',
+        id: 'D000607',
+        voteId: '114'
+      },
+      D000622: {
+        value: 'Yes',
+        id: 'D000622',
+        voteId: '114'
+      },
+      D000563: {
+        value: 'Yes',
+        id: 'D000563',
+        voteId: '114'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '114'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '114'
+      },
+      F000062: {
+        value: 'Yes',
+        id: 'F000062',
+        voteId: '114'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '114'
+      },
+      F000444: {
+        value: 'Yes',
+        id: 'F000444',
+        voteId: '114'
+      },
+      F000457: {
+        value: 'Yes',
+        id: 'F000457',
+        voteId: '114'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '114'
+      },
+      G000555: {
+        value: 'No',
+        id: 'G000555',
+        voteId: '114'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '114'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '114'
+      },
+      H001075: {
+        value: 'No',
+        id: 'H001075',
+        voteId: '114'
+      },
+      H001076: {
+        value: 'Yes',
+        id: 'H001076',
+        voteId: '114'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '114'
+      },
+      H001046: {
+        value: 'Yes',
+        id: 'H001046',
+        voteId: '114'
+      },
+      H001069: {
+        value: 'Yes',
+        id: 'H001069',
+        voteId: '114'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '114'
+      },
+      H001042: {
+        value: 'Yes',
+        id: 'H001042',
+        voteId: '114'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '114'
+      },
+      I000024: {
+        value: 'Yes',
+        id: 'I000024',
+        voteId: '114'
+      },
+      I000055: {
+        value: 'Yes',
+        id: 'I000055',
+        voteId: '114'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '114'
+      },
+      K000384: {
+        value: 'Yes',
+        id: 'K000384',
+        voteId: '114'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '114'
+      },
+      K000383: {
+        value: 'Yes',
+        id: 'K000383',
+        voteId: '114'
+      },
+      K000367: {
+        value: 'Yes',
+        id: 'K000367',
+        voteId: '114'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '114'
+      },
+      L000174: {
+        value: 'Yes',
+        id: 'L000174',
+        voteId: '114'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '114'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '114'
+      },
+      M000133: {
+        value: 'Yes',
+        id: 'M000133',
+        voteId: '114'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '114'
+      },
+      M001170: {
+        value: 'Yes',
+        id: 'M001170',
+        voteId: '114'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '114'
+      },
+      M000639: {
+        value: 'Yes',
+        id: 'M000639',
+        voteId: '114'
+      },
+      M001176: {
+        value: 'Yes',
+        id: 'M001176',
+        voteId: '114'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '114'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '114'
+      },
+      M001169: {
+        value: 'Yes',
+        id: 'M001169',
+        voteId: '114'
+      },
+      M001111: {
+        value: 'Yes',
+        id: 'M001111',
+        voteId: '114'
+      },
+      N000032: {
+        value: 'Yes',
+        id: 'N000032',
+        voteId: '114'
+      },
+      P000603: {
+        value: 'Yes',
+        id: 'P000603',
+        voteId: '114'
+      },
+      P000612: {
+        value: 'Yes',
+        id: 'P000612',
+        voteId: '114'
+      },
+      P000595: {
+        value: 'Yes',
+        id: 'P000595',
+        voteId: '114'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '114'
+      },
+      R000122: {
+        value: 'Yes',
+        id: 'R000122',
+        voteId: '114'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '114'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '114'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '114'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '114'
+      },
+      S000033: {
+        value: 'Yes',
+        id: 'S000033',
+        voteId: '114'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '114'
+      },
+      S001194: {
+        value: 'Yes',
+        id: 'S001194',
+        voteId: '114'
+      },
+      S000148: {
+        value: 'Yes',
+        id: 'S000148',
+        voteId: '114'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '114'
+      },
+      S001181: {
+        value: 'Yes',
+        id: 'S001181',
+        voteId: '114'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '114'
+      },
+      S000770: {
+        value: 'Yes',
+        id: 'S000770',
+        voteId: '114'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '114'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '114'
+      },
+      T000464: {
+        value: 'Yes',
+        id: 'T000464',
+        voteId: '114'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '114'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '114'
+      },
+      T000461: {
+        value: 'Yes',
+        id: 'T000461',
+        voteId: '114'
+      },
+      U000039: {
+        value: 'Yes',
+        id: 'U000039',
+        voteId: '114'
+      },
+      V000128: {
+        value: 'Yes',
+        id: 'V000128',
+        voteId: '114'
+      },
+      W000805: {
+        value: 'Yes',
+        id: 'W000805',
+        voteId: '114'
+      },
+      W000817: {
+        value: 'No',
+        id: 'W000817',
+        voteId: '114'
+      },
+      W000802: {
+        value: 'Yes',
+        id: 'W000802',
+        voteId: '114'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '114'
+      },
+      W000779: {
+        value: 'Yes',
+        id: 'W000779',
+        voteId: '114'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '114'
+      }
+    },
+    '116': {
+      A000360: {
+        value: 'Yes',
+        id: 'A000360',
+        voteId: '116'
+      },
+      B001230: {
+        value: 'No',
+        id: 'B001230',
+        voteId: '116'
+      },
+      B001261: {
+        value: 'Yes',
+        id: 'B001261',
+        voteId: '116'
+      },
+      B001267: {
+        value: 'No',
+        id: 'B001267',
+        voteId: '116'
+      },
+      B001277: {
+        value: 'No',
+        id: 'B001277',
+        voteId: '116'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '116'
+      },
+      B001288: {
+        value: 'No',
+        id: 'B001288',
+        voteId: '116'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '116'
+      },
+      B000944: {
+        value: 'No',
+        id: 'B000944',
+        voteId: '116'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '116'
+      },
+      C000127: {
+        value: 'No',
+        id: 'C000127',
+        voteId: '116'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '116'
+      },
+      C000141: {
+        value: 'No',
+        id: 'C000141',
+        voteId: '116'
+      },
+      C000174: {
+        value: 'No',
+        id: 'C000174',
+        voteId: '116'
+      },
+      C001070: {
+        value: 'No',
+        id: 'C001070',
+        voteId: '116'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '116'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '116'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '116'
+      },
+      C001088: {
+        value: 'No',
+        id: 'C001088',
+        voteId: '116'
+      },
+      C001071: {
+        value: 'Yes',
+        id: 'C001071',
+        voteId: '116'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '116'
+      },
+      C001113: {
+        value: 'Yes',
+        id: 'C001113',
+        voteId: '116'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '116'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '116'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '116'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '116'
+      },
+      D000607: {
+        value: 'No',
+        id: 'D000607',
+        voteId: '116'
+      },
+      D000622: {
+        value: 'No',
+        id: 'D000622',
+        voteId: '116'
+      },
+      D000563: {
+        value: 'No',
+        id: 'D000563',
+        voteId: '116'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '116'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '116'
+      },
+      F000062: {
+        value: 'No',
+        id: 'F000062',
+        voteId: '116'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '116'
+      },
+      F000444: {
+        value: 'Yes',
+        id: 'F000444',
+        voteId: '116'
+      },
+      F000457: {
+        value: 'No',
+        id: 'F000457',
+        voteId: '116'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '116'
+      },
+      G000555: {
+        value: 'No',
+        id: 'G000555',
+        voteId: '116'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '116'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '116'
+      },
+      H001075: {
+        value: 'No',
+        id: 'H001075',
+        voteId: '116'
+      },
+      H001076: {
+        value: 'No',
+        id: 'H001076',
+        voteId: '116'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '116'
+      },
+      H001046: {
+        value: 'No',
+        id: 'H001046',
+        voteId: '116'
+      },
+      H001069: {
+        value: 'Yes',
+        id: 'H001069',
+        voteId: '116'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '116'
+      },
+      H001042: {
+        value: 'No',
+        id: 'H001042',
+        voteId: '116'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '116'
+      },
+      I000024: {
+        value: 'Yes',
+        id: 'I000024',
+        voteId: '116'
+      },
+      I000055: {
+        value: 'Yes',
+        id: 'I000055',
+        voteId: '116'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '116'
+      },
+      K000384: {
+        value: 'No',
+        id: 'K000384',
+        voteId: '116'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '116'
+      },
+      K000383: {
+        value: 'Yes',
+        id: 'K000383',
+        voteId: '116'
+      },
+      K000367: {
+        value: 'No',
+        id: 'K000367',
+        voteId: '116'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '116'
+      },
+      L000174: {
+        value: 'No',
+        id: 'L000174',
+        voteId: '116'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '116'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '116'
+      },
+      M000133: {
+        value: 'No',
+        id: 'M000133',
+        voteId: '116'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '116'
+      },
+      M001170: {
+        value: 'Yes',
+        id: 'M001170',
+        voteId: '116'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '116'
+      },
+      M000639: {
+        value: 'Yes',
+        id: 'M000639',
+        voteId: '116'
+      },
+      M001176: {
+        value: 'No',
+        id: 'M001176',
+        voteId: '116'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '116'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '116'
+      },
+      M001169: {
+        value: 'No',
+        id: 'M001169',
+        voteId: '116'
+      },
+      M001111: {
+        value: 'No',
+        id: 'M001111',
+        voteId: '116'
+      },
+      N000032: {
+        value: 'Yes',
+        id: 'N000032',
+        voteId: '116'
+      },
+      P000603: {
+        value: 'Yes',
+        id: 'P000603',
+        voteId: '116'
+      },
+      P000612: {
+        value: 'Yes',
+        id: 'P000612',
+        voteId: '116'
+      },
+      P000595: {
+        value: 'Not Voting',
+        id: 'P000595',
+        voteId: '116'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '116'
+      },
+      R000122: {
+        value: 'No',
+        id: 'R000122',
+        voteId: '116'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '116'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '116'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '116'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '116'
+      },
+      S000033: {
+        value: 'No',
+        id: 'S000033',
+        voteId: '116'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '116'
+      },
+      S001194: {
+        value: 'No',
+        id: 'S001194',
+        voteId: '116'
+      },
+      S000148: {
+        value: 'No',
+        id: 'S000148',
+        voteId: '116'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '116'
+      },
+      S001181: {
+        value: 'No',
+        id: 'S001181',
+        voteId: '116'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '116'
+      },
+      S000770: {
+        value: 'No',
+        id: 'S000770',
+        voteId: '116'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '116'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '116'
+      },
+      T000464: {
+        value: 'Yes',
+        id: 'T000464',
+        voteId: '116'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '116'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '116'
+      },
+      T000461: {
+        value: 'Not Voting',
+        id: 'T000461',
+        voteId: '116'
+      },
+      U000039: {
+        value: 'No',
+        id: 'U000039',
+        voteId: '116'
+      },
+      V000128: {
+        value: 'No',
+        id: 'V000128',
+        voteId: '116'
+      },
+      W000805: {
+        value: 'Yes',
+        id: 'W000805',
+        voteId: '116'
+      },
+      W000817: {
+        value: 'No',
+        id: 'W000817',
+        voteId: '116'
+      },
+      W000802: {
+        value: 'No',
+        id: 'W000802',
+        voteId: '116'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '116'
+      },
+      W000779: {
+        value: 'No',
+        id: 'W000779',
+        voteId: '116'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '116'
+      }
+    },
+    '118': {
+      A000360: {
+        value: 'Yes',
+        id: 'A000360',
+        voteId: '118'
+      },
+      B001230: {
+        value: 'No',
+        id: 'B001230',
+        voteId: '118'
+      },
+      B001261: {
+        value: 'Yes',
+        id: 'B001261',
+        voteId: '118'
+      },
+      B001267: {
+        value: 'Yes',
+        id: 'B001267',
+        voteId: '118'
+      },
+      B001277: {
+        value: 'No',
+        id: 'B001277',
+        voteId: '118'
+      },
+      B000575: {
+        value: 'Yes',
+        id: 'B000575',
+        voteId: '118'
+      },
+      B001288: {
+        value: 'No',
+        id: 'B001288',
+        voteId: '118'
+      },
+      B001236: {
+        value: 'Yes',
+        id: 'B001236',
+        voteId: '118'
+      },
+      B000944: {
+        value: 'No',
+        id: 'B000944',
+        voteId: '118'
+      },
+      B001135: {
+        value: 'Yes',
+        id: 'B001135',
+        voteId: '118'
+      },
+      C000127: {
+        value: 'No',
+        id: 'C000127',
+        voteId: '118'
+      },
+      C001047: {
+        value: 'Yes',
+        id: 'C001047',
+        voteId: '118'
+      },
+      C000141: {
+        value: 'No',
+        id: 'C000141',
+        voteId: '118'
+      },
+      C000174: {
+        value: 'Yes',
+        id: 'C000174',
+        voteId: '118'
+      },
+      C001070: {
+        value: 'No',
+        id: 'C001070',
+        voteId: '118'
+      },
+      C001075: {
+        value: 'Yes',
+        id: 'C001075',
+        voteId: '118'
+      },
+      C000567: {
+        value: 'Yes',
+        id: 'C000567',
+        voteId: '118'
+      },
+      C001035: {
+        value: 'Yes',
+        id: 'C001035',
+        voteId: '118'
+      },
+      C001088: {
+        value: 'No',
+        id: 'C001088',
+        voteId: '118'
+      },
+      C001071: {
+        value: 'Yes',
+        id: 'C001071',
+        voteId: '118'
+      },
+      C001056: {
+        value: 'Yes',
+        id: 'C001056',
+        voteId: '118'
+      },
+      C001113: {
+        value: 'No',
+        id: 'C001113',
+        voteId: '118'
+      },
+      C001095: {
+        value: 'Yes',
+        id: 'C001095',
+        voteId: '118'
+      },
+      C000880: {
+        value: 'Yes',
+        id: 'C000880',
+        voteId: '118'
+      },
+      C001098: {
+        value: 'Yes',
+        id: 'C001098',
+        voteId: '118'
+      },
+      D000618: {
+        value: 'Yes',
+        id: 'D000618',
+        voteId: '118'
+      },
+      D000607: {
+        value: 'No',
+        id: 'D000607',
+        voteId: '118'
+      },
+      D000622: {
+        value: 'No',
+        id: 'D000622',
+        voteId: '118'
+      },
+      D000563: {
+        value: 'Not Voting',
+        id: 'D000563',
+        voteId: '118'
+      },
+      E000285: {
+        value: 'Yes',
+        id: 'E000285',
+        voteId: '118'
+      },
+      E000295: {
+        value: 'Yes',
+        id: 'E000295',
+        voteId: '118'
+      },
+      F000062: {
+        value: 'No',
+        id: 'F000062',
+        voteId: '118'
+      },
+      F000463: {
+        value: 'Yes',
+        id: 'F000463',
+        voteId: '118'
+      },
+      F000444: {
+        value: 'Yes',
+        id: 'F000444',
+        voteId: '118'
+      },
+      F000457: {
+        value: 'No',
+        id: 'F000457',
+        voteId: '118'
+      },
+      G000562: {
+        value: 'Yes',
+        id: 'G000562',
+        voteId: '118'
+      },
+      G000555: {
+        value: 'No',
+        id: 'G000555',
+        voteId: '118'
+      },
+      G000359: {
+        value: 'Yes',
+        id: 'G000359',
+        voteId: '118'
+      },
+      G000386: {
+        value: 'Yes',
+        id: 'G000386',
+        voteId: '118'
+      },
+      H001075: {
+        value: 'No',
+        id: 'H001075',
+        voteId: '118'
+      },
+      H001076: {
+        value: 'No',
+        id: 'H001076',
+        voteId: '118'
+      },
+      H000338: {
+        value: 'Yes',
+        id: 'H000338',
+        voteId: '118'
+      },
+      H001046: {
+        value: 'No',
+        id: 'H001046',
+        voteId: '118'
+      },
+      H001069: {
+        value: 'Yes',
+        id: 'H001069',
+        voteId: '118'
+      },
+      H001041: {
+        value: 'Yes',
+        id: 'H001041',
+        voteId: '118'
+      },
+      H001042: {
+        value: 'No',
+        id: 'H001042',
+        voteId: '118'
+      },
+      H001061: {
+        value: 'Yes',
+        id: 'H001061',
+        voteId: '118'
+      },
+      I000024: {
+        value: 'Yes',
+        id: 'I000024',
+        voteId: '118'
+      },
+      I000055: {
+        value: 'Not Voting',
+        id: 'I000055',
+        voteId: '118'
+      },
+      J000293: {
+        value: 'Yes',
+        id: 'J000293',
+        voteId: '118'
+      },
+      K000384: {
+        value: 'No',
+        id: 'K000384',
+        voteId: '118'
+      },
+      K000393: {
+        value: 'Yes',
+        id: 'K000393',
+        voteId: '118'
+      },
+      K000383: {
+        value: 'Yes',
+        id: 'K000383',
+        voteId: '118'
+      },
+      K000367: {
+        value: 'No',
+        id: 'K000367',
+        voteId: '118'
+      },
+      L000575: {
+        value: 'Yes',
+        id: 'L000575',
+        voteId: '118'
+      },
+      L000174: {
+        value: 'No',
+        id: 'L000174',
+        voteId: '118'
+      },
+      L000577: {
+        value: 'Yes',
+        id: 'L000577',
+        voteId: '118'
+      },
+      M001183: {
+        value: 'Yes',
+        id: 'M001183',
+        voteId: '118'
+      },
+      M000133: {
+        value: 'No',
+        id: 'M000133',
+        voteId: '118'
+      },
+      M000303: {
+        value: 'Yes',
+        id: 'M000303',
+        voteId: '118'
+      },
+      M001170: {
+        value: 'Yes',
+        id: 'M001170',
+        voteId: '118'
+      },
+      M000355: {
+        value: 'Yes',
+        id: 'M000355',
+        voteId: '118'
+      },
+      M000639: {
+        value: 'No',
+        id: 'M000639',
+        voteId: '118'
+      },
+      M001176: {
+        value: 'No',
+        id: 'M001176',
+        voteId: '118'
+      },
+      M000934: {
+        value: 'Yes',
+        id: 'M000934',
+        voteId: '118'
+      },
+      M001153: {
+        value: 'Yes',
+        id: 'M001153',
+        voteId: '118'
+      },
+      M001169: {
+        value: 'No',
+        id: 'M001169',
+        voteId: '118'
+      },
+      M001111: {
+        value: 'No',
+        id: 'M001111',
+        voteId: '118'
+      },
+      N000032: {
+        value: 'Yes',
+        id: 'N000032',
+        voteId: '118'
+      },
+      P000603: {
+        value: 'Yes',
+        id: 'P000603',
+        voteId: '118'
+      },
+      P000612: {
+        value: 'Yes',
+        id: 'P000612',
+        voteId: '118'
+      },
+      P000595: {
+        value: 'No',
+        id: 'P000595',
+        voteId: '118'
+      },
+      P000449: {
+        value: 'Yes',
+        id: 'P000449',
+        voteId: '118'
+      },
+      R000122: {
+        value: 'No',
+        id: 'R000122',
+        voteId: '118'
+      },
+      R000584: {
+        value: 'Yes',
+        id: 'R000584',
+        voteId: '118'
+      },
+      R000307: {
+        value: 'Yes',
+        id: 'R000307',
+        voteId: '118'
+      },
+      R000605: {
+        value: 'Yes',
+        id: 'R000605',
+        voteId: '118'
+      },
+      R000595: {
+        value: 'Yes',
+        id: 'R000595',
+        voteId: '118'
+      },
+      S000033: {
+        value: 'No',
+        id: 'S000033',
+        voteId: '118'
+      },
+      S001197: {
+        value: 'Yes',
+        id: 'S001197',
+        voteId: '118'
+      },
+      S001194: {
+        value: 'No',
+        id: 'S001194',
+        voteId: '118'
+      },
+      S000148: {
+        value: 'No',
+        id: 'S000148',
+        voteId: '118'
+      },
+      S001184: {
+        value: 'Yes',
+        id: 'S001184',
+        voteId: '118'
+      },
+      S001181: {
+        value: 'Yes',
+        id: 'S001181',
+        voteId: '118'
+      },
+      S000320: {
+        value: 'Yes',
+        id: 'S000320',
+        voteId: '118'
+      },
+      S000770: {
+        value: 'No',
+        id: 'S000770',
+        voteId: '118'
+      },
+      S001202: {
+        value: 'Yes',
+        id: 'S001202',
+        voteId: '118'
+      },
+      S001198: {
+        value: 'Yes',
+        id: 'S001198',
+        voteId: '118'
+      },
+      T000464: {
+        value: 'Yes',
+        id: 'T000464',
+        voteId: '118'
+      },
+      T000250: {
+        value: 'Yes',
+        id: 'T000250',
+        voteId: '118'
+      },
+      T000476: {
+        value: 'Yes',
+        id: 'T000476',
+        voteId: '118'
+      },
+      T000461: {
+        value: 'Yes',
+        id: 'T000461',
+        voteId: '118'
+      },
+      U000039: {
+        value: 'No',
+        id: 'U000039',
+        voteId: '118'
+      },
+      V000128: {
+        value: 'No',
+        id: 'V000128',
+        voteId: '118'
+      },
+      W000805: {
+        value: 'Yes',
+        id: 'W000805',
+        voteId: '118'
+      },
+      W000817: {
+        value: 'No',
+        id: 'W000817',
+        voteId: '118'
+      },
+      W000802: {
+        value: 'No',
+        id: 'W000802',
+        voteId: '118'
+      },
+      W000437: {
+        value: 'Yes',
+        id: 'W000437',
+        voteId: '118'
+      },
+      W000779: {
+        value: 'No',
+        id: 'W000779',
+        voteId: '118'
+      },
+      Y000064: {
+        value: 'Yes',
+        id: 'Y000064',
+        voteId: '118'
+      }
     }
   },
   senators: [
@@ -9267,7 +14844,7 @@ module.exports = {
       party: 'Democrat',
       phone: '202-224-2441',
       state: 'DE',
-      link: 'http://www.carper.senate.gov/public',
+      link: 'https://www.carper.senate.gov/public',
       stateFull: 'Delaware'
     },
     {
@@ -9617,7 +15194,7 @@ module.exports = {
       party: 'Republican',
       phone: '202-224-3643',
       state: 'GA',
-      link: 'http://www.isakson.senate.gov',
+      link: 'https://www.isakson.senate.gov',
       stateFull: 'Georgia'
     },
     {
@@ -9667,7 +15244,7 @@ module.exports = {
       party: 'Democrat',
       phone: '202-224-3244',
       state: 'MN',
-      link: 'http://www.klobuchar.senate.gov',
+      link: 'https://www.klobuchar.senate.gov',
       stateFull: 'Minnesota'
     },
     {
@@ -10095,7 +15672,7 @@ module.exports = {
       party: 'Democrat',
       phone: '202-224-4543',
       state: 'MA',
-      link: 'http://www.warren.senate.gov',
+      link: 'https://www.warren.senate.gov',
       stateFull: 'Massachusetts'
     },
     {
@@ -10115,7 +15692,7 @@ module.exports = {
       party: 'Republican',
       phone: '202-224-6253',
       state: 'MS',
-      link: 'http://www.wicker.senate.gov',
+      link: 'https://www.wicker.senate.gov',
       stateFull: 'Mississippi'
     },
     {
@@ -10141,408 +15718,408 @@ module.exports = {
   ],
   voteTotals: {
     A000360: {
-      total: 18,
-      yeas: 18
+      total: 29,
+      yeas: 27
     },
     B001230: {
-      total: 18,
-      yeas: 5
+      total: 29,
+      yeas: 10
     },
     B001261: {
-      total: 18,
-      yeas: 18
+      total: 29,
+      yeas: 28
     },
     B001267: {
-      total: 18,
-      yeas: 8
+      total: 29,
+      yeas: 15
     },
     B001277: {
-      total: 18,
-      yeas: 5
+      total: 29,
+      yeas: 8
     },
     B000575: {
-      total: 18,
-      yeas: 18
+      total: 29,
+      yeas: 29
     },
     B001288: {
-      total: 18,
-      yeas: 3
+      total: 29,
+      yeas: 4
     },
     B001236: {
-      total: 18,
-      yeas: 18
+      total: 29,
+      yeas: 29
     },
     B000944: {
-      total: 18,
-      yeas: 8
+      total: 29,
+      yeas: 14
     },
     B001135: {
-      total: 18,
-      yeas: 18
+      total: 29,
+      yeas: 29
     },
     C000127: {
-      total: 18,
-      yeas: 6
+      total: 29,
+      yeas: 12
     },
     C001047: {
-      total: 18,
-      yeas: 18
+      total: 29,
+      yeas: 29
     },
     C000141: {
-      total: 18,
-      yeas: 6
+      total: 29,
+      yeas: 12
     },
     C000174: {
-      total: 18,
-      yeas: 8
+      total: 29,
+      yeas: 15
     },
     C001070: {
-      total: 18,
-      yeas: 7
-    },
-    C001075: {
-      total: 18,
-      yeas: 18
-    },
-    C000567: {
-      total: 18,
-      yeas: 18
-    },
-    C001035: {
-      total: 18,
-      yeas: 16
-    },
-    C001088: {
-      total: 18,
-      yeas: 7
-    },
-    C001071: {
-      total: 18,
-      yeas: 18
-    },
-    C001056: {
-      total: 18,
-      yeas: 18
-    },
-    C001113: {
-      total: 18,
-      yeas: 8
-    },
-    C001095: {
-      total: 18,
-      yeas: 18
-    },
-    C000880: {
-      total: 18,
-      yeas: 18
-    },
-    C001098: {
-      total: 18,
-      yeas: 18
-    },
-    D000618: {
-      total: 18,
-      yeas: 18
-    },
-    D000607: {
-      total: 18,
-      yeas: 11
-    },
-    D000622: {
-      total: 18,
-      yeas: 7
-    },
-    D000563: {
-      total: 18,
-      yeas: 5
-    },
-    E000285: {
-      total: 18,
-      yeas: 18
-    },
-    E000295: {
-      total: 18,
-      yeas: 18
-    },
-    F000062: {
-      total: 18,
-      yeas: 8
-    },
-    F000463: {
-      total: 18,
-      yeas: 18
-    },
-    F000444: {
-      total: 18,
-      yeas: 18
-    },
-    F000457: {
-      total: 18,
-      yeas: 6
-    },
-    G000562: {
-      total: 18,
-      yeas: 18
-    },
-    G000555: {
-      total: 18,
-      yeas: 2
-    },
-    G000359: {
-      total: 18,
-      yeas: 18
-    },
-    G000386: {
-      total: 18,
-      yeas: 18
-    },
-    H001075: {
-      total: 18,
-      yeas: 4
-    },
-    H001076: {
-      total: 18,
-      yeas: 8
-    },
-    H000338: {
-      total: 18,
-      yeas: 18
-    },
-    H001046: {
-      total: 18,
-      yeas: 4
-    },
-    H001069: {
-      total: 18,
+      total: 29,
       yeas: 13
     },
-    H001041: {
-      total: 18,
-      yeas: 18
+    C001075: {
+      total: 29,
+      yeas: 29
     },
-    H001042: {
-      total: 18,
-      yeas: 6
+    C000567: {
+      total: 29,
+      yeas: 29
     },
-    H001061: {
-      total: 18,
-      yeas: 18
+    C001035: {
+      total: 29,
+      yeas: 27
     },
-    I000024: {
-      total: 18,
-      yeas: 18
+    C001088: {
+      total: 29,
+      yeas: 13
     },
-    I000055: {
-      total: 18,
+    C001071: {
+      total: 29,
+      yeas: 27
+    },
+    C001056: {
+      total: 29,
+      yeas: 29
+    },
+    C001113: {
+      total: 29,
+      yeas: 13
+    },
+    C001095: {
+      total: 29,
+      yeas: 29
+    },
+    C000880: {
+      total: 29,
+      yeas: 29
+    },
+    C001098: {
+      total: 29,
+      yeas: 29
+    },
+    D000618: {
+      total: 29,
+      yeas: 29
+    },
+    D000607: {
+      total: 29,
+      yeas: 19
+    },
+    D000622: {
+      total: 29,
+      yeas: 11
+    },
+    D000563: {
+      total: 29,
+      yeas: 11
+    },
+    E000285: {
+      total: 29,
+      yeas: 29
+    },
+    E000295: {
+      total: 29,
+      yeas: 29
+    },
+    F000062: {
+      total: 29,
       yeas: 14
     },
-    J000293: {
-      total: 18,
-      yeas: 18
+    F000463: {
+      total: 29,
+      yeas: 29
     },
-    K000384: {
-      total: 18,
+    F000444: {
+      total: 29,
+      yeas: 28
+    },
+    F000457: {
+      total: 29,
+      yeas: 12
+    },
+    G000562: {
+      total: 29,
+      yeas: 29
+    },
+    G000555: {
+      total: 29,
+      yeas: 3
+    },
+    G000359: {
+      total: 29,
+      yeas: 29
+    },
+    G000386: {
+      total: 29,
+      yeas: 29
+    },
+    H001075: {
+      total: 29,
+      yeas: 5
+    },
+    H001076: {
+      total: 29,
+      yeas: 14
+    },
+    H000338: {
+      total: 29,
+      yeas: 29
+    },
+    H001046: {
+      total: 29,
       yeas: 9
     },
+    H001069: {
+      total: 29,
+      yeas: 23
+    },
+    H001041: {
+      total: 29,
+      yeas: 29
+    },
+    H001042: {
+      total: 29,
+      yeas: 11
+    },
+    H001061: {
+      total: 29,
+      yeas: 29
+    },
+    I000024: {
+      total: 29,
+      yeas: 28
+    },
+    I000055: {
+      total: 29,
+      yeas: 17
+    },
+    J000293: {
+      total: 29,
+      yeas: 29
+    },
+    K000384: {
+      total: 29,
+      yeas: 15
+    },
     K000393: {
-      total: 18,
-      yeas: 18
+      total: 29,
+      yeas: 29
     },
     K000383: {
-      total: 18,
-      yeas: 12
+      total: 29,
+      yeas: 21
     },
     K000367: {
-      total: 18,
-      yeas: 8
-    },
-    L000575: {
-      total: 18,
-      yeas: 18
-    },
-    L000174: {
-      total: 18,
-      yeas: 6
-    },
-    L000577: {
-      total: 18,
-      yeas: 18
-    },
-    M001183: {
-      total: 18,
+      total: 29,
       yeas: 14
     },
-    M000133: {
-      total: 18,
-      yeas: 5
+    L000575: {
+      total: 29,
+      yeas: 29
     },
-    M000303: {
-      total: 18,
-      yeas: 16
-    },
-    M001170: {
-      total: 18,
-      yeas: 10
-    },
-    M000355: {
-      total: 18,
-      yeas: 17
-    },
-    M000639: {
-      total: 18,
-      yeas: 6
-    },
-    M001176: {
-      total: 18,
-      yeas: 3
-    },
-    M000934: {
-      total: 18,
-      yeas: 18
-    },
-    M001153: {
-      total: 18,
-      yeas: 17
-    },
-    M001169: {
-      total: 18,
-      yeas: 7
-    },
-    M001111: {
-      total: 18,
-      yeas: 5
-    },
-    N000032: {
-      total: 18,
-      yeas: 8
-    },
-    P000603: {
-      total: 18,
-      yeas: 17
-    },
-    P000612: {
-      total: 18,
-      yeas: 18
-    },
-    P000595: {
-      total: 18,
-      yeas: 7
-    },
-    P000449: {
-      total: 18,
-      yeas: 18
-    },
-    R000122: {
-      total: 18,
-      yeas: 6
-    },
-    R000584: {
-      total: 18,
-      yeas: 18
-    },
-    R000307: {
-      total: 18,
-      yeas: 18
-    },
-    R000605: {
-      total: 18,
-      yeas: 18
-    },
-    R000595: {
-      total: 18,
-      yeas: 18
-    },
-    S000033: {
-      total: 18,
-      yeas: 3
-    },
-    S001197: {
-      total: 18,
-      yeas: 18
-    },
-    S001194: {
-      total: 18,
-      yeas: 7
-    },
-    S000148: {
-      total: 18,
-      yeas: 5
-    },
-    S001184: {
-      total: 18,
-      yeas: 18
-    },
-    S001181: {
-      total: 18,
-      yeas: 8
-    },
-    S000320: {
-      total: 18,
-      yeas: 18
-    },
-    S000770: {
-      total: 18,
-      yeas: 7
-    },
-    S001202: {
-      total: 10,
-      yeas: 10
-    },
-    S001198: {
-      total: 18,
-      yeas: 18
-    },
-    T000464: {
-      total: 18,
-      yeas: 10
-    },
-    T000250: {
-      total: 18,
-      yeas: 18
-    },
-    T000476: {
-      total: 18,
-      yeas: 18
-    },
-    T000461: {
-      total: 18,
-      yeas: 18
-    },
-    U000039: {
-      total: 18,
-      yeas: 5
-    },
-    V000128: {
-      total: 18,
-      yeas: 4
-    },
-    W000805: {
-      total: 18,
+    L000174: {
+      total: 29,
       yeas: 12
     },
-    W000817: {
-      total: 18,
-      yeas: 3
+    L000577: {
+      total: 29,
+      yeas: 29
     },
-    W000802: {
-      total: 18,
+    M001183: {
+      total: 29,
+      yeas: 25
+    },
+    M000133: {
+      total: 29,
+      yeas: 7
+    },
+    M000303: {
+      total: 29,
+      yeas: 27
+    },
+    M001170: {
+      total: 29,
+      yeas: 17
+    },
+    M000355: {
+      total: 29,
+      yeas: 28
+    },
+    M000639: {
+      total: 29,
+      yeas: 12
+    },
+    M001176: {
+      total: 29,
       yeas: 6
     },
-    W000437: {
-      total: 18,
-      yeas: 18
+    M000934: {
+      total: 29,
+      yeas: 29
     },
-    W000779: {
-      total: 18,
+    M001153: {
+      total: 29,
+      yeas: 28
+    },
+    M001169: {
+      total: 29,
+      yeas: 12
+    },
+    M001111: {
+      total: 29,
+      yeas: 11
+    },
+    N000032: {
+      total: 29,
+      yeas: 16
+    },
+    P000603: {
+      total: 29,
+      yeas: 26
+    },
+    P000612: {
+      total: 29,
+      yeas: 28
+    },
+    P000595: {
+      total: 29,
+      yeas: 13
+    },
+    P000449: {
+      total: 29,
+      yeas: 29
+    },
+    R000122: {
+      total: 29,
+      yeas: 11
+    },
+    R000584: {
+      total: 29,
+      yeas: 29
+    },
+    R000307: {
+      total: 29,
+      yeas: 29
+    },
+    R000605: {
+      total: 29,
+      yeas: 29
+    },
+    R000595: {
+      total: 29,
+      yeas: 29
+    },
+    S000033: {
+      total: 29,
       yeas: 5
     },
-    Y000064: {
-      total: 18,
+    S001197: {
+      total: 29,
+      yeas: 29
+    },
+    S001194: {
+      total: 29,
+      yeas: 13
+    },
+    S000148: {
+      total: 29,
+      yeas: 10
+    },
+    S001184: {
+      total: 29,
+      yeas: 29
+    },
+    S001181: {
+      total: 29,
+      yeas: 15
+    },
+    S000320: {
+      total: 29,
+      yeas: 29
+    },
+    S000770: {
+      total: 29,
+      yeas: 13
+    },
+    S001202: {
+      total: 21,
+      yeas: 21
+    },
+    S001198: {
+      total: 29,
+      yeas: 29
+    },
+    T000464: {
+      total: 29,
       yeas: 18
+    },
+    T000250: {
+      total: 29,
+      yeas: 29
+    },
+    T000476: {
+      total: 29,
+      yeas: 29
+    },
+    T000461: {
+      total: 29,
+      yeas: 28
+    },
+    U000039: {
+      total: 29,
+      yeas: 9
+    },
+    V000128: {
+      total: 29,
+      yeas: 10
+    },
+    W000805: {
+      total: 29,
+      yeas: 20
+    },
+    W000817: {
+      total: 29,
+      yeas: 4
+    },
+    W000802: {
+      total: 29,
+      yeas: 11
+    },
+    W000437: {
+      total: 29,
+      yeas: 29
+    },
+    W000779: {
+      total: 29,
+      yeas: 9
+    },
+    Y000064: {
+      total: 29,
+      yeas: 29
     },
     S001141: {
       total: 8,
       yeas: 5
     }
-  },
-};
+  }
+}

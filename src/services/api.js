@@ -1,6 +1,7 @@
 import fetch from './fetch';
 import states from './states.json';
 import phones from './phones.json';
+import positions from './positions.json';
 import { API_ROOT } from '../constants';
 
 const partyFromShort = (shortParty) => {
@@ -11,6 +12,14 @@ const partyFromShort = (shortParty) => {
     return 'Democrat';
   default:
     return 'Independent';
+  }
+};
+
+const shortPosition = (longPosition) => {
+  if (longPosition in positions) {
+    return positions[longPosition];
+  } else {
+    return longPosition;
   }
 };
 
@@ -45,19 +54,9 @@ export const getVotes = () => {
     .then(data => data.results[0].votes)
     .then(votes => votes.map((vote) => {
       const { roll_call, result, description } = vote;
-      let [_, name, _2, _3, position] = description.match(/([\w\ \.,]+), of (\w+(\ \w+)?), to be ([\w\ \,]+);?/);  // eslint-disable-line
+      let [_, name, position] = description.match(/([\w\ \.,]+), (?:of|in the) (?:\w+(?:\ \w+)?), to be ([\w\ \,]+);?/);  // eslint-disable-line
 
-      if (position === 'Representative of the United States of America to the Sessions of the General Assembly of the United Nations during her tenure of service as Representative of the United States of America to the United Nations') {  // eslint-disable-line max-len
-        position = 'Ambassador to the United Nations';
-      } else if (position === 'Administrator of the Small Business Administration') {
-        position = 'Small Business Administration';
-      } else if (position === 'Director of the Office of Management and Budget') {
-        position = 'Office of Management and Budget';
-      } else if (position === 'Administrator of the Environmental Protection Agency') {
-        position = 'Environmental Protection Agency';
-      } else if (position === 'Secretary of Housing and Urban Development') {
-        position = 'Housing and Urban Dev.';
-      }
+      position = shortPosition(position);
 
       return {
         id: roll_call,
