@@ -137,8 +137,8 @@ export default class TableWrapper extends Component {
             return (
               <Column // The vote on each nominee
                 key={ voteId }
-                width={ 62 }
-                header={ () => <Cell className={ cell }>{ headerize(votes[voteId].question) }</Cell> }
+                width={ 42 }
+                header={ () => <Cell className={ cell }>{ headerize(votes[voteId].name) }</Cell> }
                 cell={ (props) => {
                   const senator = senators[props.rowIndex];
 

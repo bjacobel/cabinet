@@ -1,7 +1,6 @@
 import fetch from './fetch';
 import states from './states.json';
 import phones from './phones.json';
-import positions from './positions.json';
 import { API_ROOT } from '../constants';
 
 const partyFromShort = (shortParty) => {
@@ -12,14 +11,6 @@ const partyFromShort = (shortParty) => {
     return 'Democrat';
   default:
     return 'Independent';
-  }
-};
-
-const shortPosition = (longPosition) => {
-  if (longPosition in positions) {
-    return positions[longPosition];
-  } else {
-    return longPosition;
   }
 };
 
@@ -54,13 +45,12 @@ export const getVotes = () => {
     .then(data => data.results[0].votes)
     .then(votes => votes.map((vote) => {
       const { roll_call, result, description } = vote;
-      let [_, name, position] = description.match(/([\w\ \.,]+), (?:of|in the) (?:\w+(?:\ \w+)?), to be ([\w\ \,]+);?/);  // eslint-disable-line
-
-      position = shortPosition(position);
+      let [_, name] = description.match(/([\w\ \.,]+), (?:of|in).*$/);  // eslint-disable-line
 
       return {
         id: roll_call,
-        question: `${name} (${position})`,
+        name,
+        description,
         result,
       };
     }));
