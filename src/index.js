@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import ReactGA from 'react-ga';
 import { BrowserRouter } from 'react-router';
+import persistState from 'redux-localstorage';
 
 import reducer from './reducers';
 import Main from './components/Main';
@@ -17,6 +18,7 @@ const composeEnhancers = (SHOW_DEV_TOOLS && window.__REDUX_DEVTOOLS_EXTENSION_CO
 
 const store = createStore(reducer, {}, composeEnhancers(
   applyMiddleware(...[thunk]),
+  persistState(),
 ));
 
 ReactGA.initialize(GA_ID);
