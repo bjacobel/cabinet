@@ -9,6 +9,10 @@
   width: 300px;
 }
 
+.smol {
+  font-size: 12px;
+}
+
 .table {
   position: relative;
   margin-top: 10px;

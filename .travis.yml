@@ -1,9 +1,10 @@
 language: node_js
 node_js:
-  - 6
+  - 8
 cache: yarn
 script:
   - yarn run lint
+  - NODE_ENV=test $(yarn bin)/babel-node src/seed.js > src/state.json
   - NODE_ENV=production yarn run webpack
 deploy:
   provider: s3
@@ -18,7 +19,7 @@ deploy:
       - master
     condition: $(node aws/utils bucketExists) = "true"
 after_deploy:
-  - node aws/utils invalidate "/index.html"
+  - node aws/utils invalidate "/index.html" "/state.json"
 notifications:
   email: false
   slack: bjacobel:xasDl3nTxo2feJGba70E43oR

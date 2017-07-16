@@ -18,6 +18,7 @@ import {
   voteText,
   antiskew,
   cabinetHint,
+  smol,
 } from '../stylesheets/tableWrapper.css';
 import Phone from './Phone';
 
@@ -46,9 +47,13 @@ const voteRepr = (vote) => {
 };
 
 const headerize = (text) => {
-  return text.split(' ').map((textchunk, ind) => {
-    return <span className={ antiskew } key={ ind }>{ `${textchunk} ` }</span>; // eslint-disable-line react/no-array-index-key, max-len
-  });
+  return (
+    <span className={ classnames({ [smol]: text.length > 20 }) }>
+      { text.split(' ').map((textchunk, ind) => {
+        return <span className={ antiskew } key={ ind }>{ `${textchunk} ` }</span>; // eslint-disable-line react/no-array-index-key, max-len
+      }) }
+    </span>
+  );
 };
 
 export default class TableWrapper extends Component {

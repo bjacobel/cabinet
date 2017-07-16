@@ -13,10 +13,11 @@ import reducer from './reducers';
 import Main from './components/Main';
 import AnalyticsMatch from './components/AnalyticsMatch';
 import { SHOW_DEV_TOOLS, GA_ID } from './constants';
+import initialState from './state.json';
 
 const composeEnhancers = (SHOW_DEV_TOOLS && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;  // eslint-disable-line max-len, no-underscore-dangle
 
-const store = createStore(reducer, {}, composeEnhancers(
+const store = createStore(reducer, initialState, composeEnhancers(
   applyMiddleware(...[thunk]),
   persistState(),
 ));

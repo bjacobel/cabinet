@@ -3,6 +3,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "fixed-data-table-2": "^0.7.10",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^15.4.2",
     "react-aria-modal": "^2.4.0",
     "react-dom": "^15.4.2",
@@ -12,12 +13,12 @@
     "react-router": "^4.0.0-alpha.4",
     "redux": "^3.6.0",
     "redux-localstorage": "^0.4.1",
-    "redux-thunk": "^2.2.0",
-    "whatwg-fetch": "^2.0.2"
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.0",
     "aws-sdk": "^2.7.27",
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.9",
     "babel-plugin-transform-object-rest-spread": "^6.22.0",

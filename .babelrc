@@ -24,7 +24,7 @@
         // For normal builds, Webpack 2 supports ES modules natively.
         ["env", {
           "targets": {
-            "node": 6
+            "node": 8
           },
           "modules": "commonjs"
         }]
