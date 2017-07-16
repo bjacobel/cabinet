@@ -4,6 +4,11 @@
 @value red from './colors.css';
 @value green from './colors.css';
 
+.cabinetHint {
+  margin-left: -75px;
+  width: 300px;
+}
+
 .table {
   position: relative;
   margin-top: 10px;

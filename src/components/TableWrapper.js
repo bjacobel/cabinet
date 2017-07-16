@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Table, Column, Cell } from 'fixed-data-table-2';
 import 'fixed-data-table-2/dist/fixed-data-table.css';
 import classnames from 'classnames';
+import ReactHint from 'react-hint';
+
+import 'react-hint/css/index.css';
 
 import {
   table,
@@ -14,6 +17,7 @@ import {
   no,
   voteText,
   antiskew,
+  cabinetHint,
 } from '../stylesheets/tableWrapper.css';
 import Phone from './Phone';
 
@@ -138,7 +142,15 @@ export default class TableWrapper extends Component {
               <Column // The vote on each nominee
                 key={ voteId }
                 width={ 42 }
-                header={ () => <Cell className={ cell }>{ headerize(votes[voteId].name) }</Cell> }
+                header={ () => (
+                  <Cell
+                    className={ cell }
+                    data-rh={ votes[voteId].description }
+                    data-rh-at="bottom"
+                  >
+                    { headerize(votes[voteId].name) }
+                  </Cell>
+                ) }
                 cell={ (props) => {
                   const senator = senators[props.rowIndex];
 
@@ -158,6 +170,7 @@ export default class TableWrapper extends Component {
             );
           })}
         </Table>
+        <ReactHint className={ `${cabinetHint} react-hint` } />
       </div>
     );
   }
