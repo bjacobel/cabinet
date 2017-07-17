@@ -19,7 +19,7 @@ deploy:
       - master
     condition: $(node aws/utils bucketExists) = "true"
 after_deploy:
-  - node aws/utils invalidate "/index.html" "/state.json"
+  - node aws/utils invalidate "/index.html"
 notifications:
   email: false
   slack: bjacobel:xasDl3nTxo2feJGba70E43oR
