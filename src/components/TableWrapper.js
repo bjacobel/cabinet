@@ -125,7 +125,7 @@ export default class TableWrapper extends Component {
             } }
           />
           <Column // Record on votes so far
-            width={ 70 }
+            width={ 90 }
             header={ () => (
               <Cell className={ cell } style={ { paddingTop: '13px' } } >
                 { headerize('Record (yeas / total)') }

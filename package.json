@@ -54,9 +54,6 @@
     "webpack": "2.2.0",
     "webpack-dev-server": "2.3.0"
   },
-  "engines": {
-    "node": "^6.7.0"
-  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js"
