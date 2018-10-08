@@ -1,11 +1,7 @@
 export const UPDATE_FILTER = 'UPDATE_FILTER';
 
-export const updateFilterTerm = (filterTerm) => {
-  return { type: UPDATE_FILTER, payload: { filterTerm } };
-};
+export const updateFilterTerm = (filterTerm) => ({ type: UPDATE_FILTER, payload: { filterTerm } });
 
-export const updateFilterTermAsync = (filterTerm) => {
-  return (dispatch) => {
-    dispatch(updateFilterTerm(filterTerm));
-  };
+export const updateFilterTermAsync = (filterTerm) => (dispatch) => {
+  dispatch(updateFilterTerm(filterTerm));
 };

@@ -5,17 +5,22 @@ import { filterBox, filter, filterHint, filterLabel } from '../stylesheets/filte
 export default class FilterbySearch extends Component {
   render() {
     return (
-      <div className={ filterBox }>
-        <label htmlFor="filter-input" className={ filterLabel }>Filter by:</label>
+      <div className={filterBox}>
+        <label id="filter-input-label" htmlFor="filter-input" className={filterLabel}>
+          Filter by:
+        </label>
         <br />
         <input
           id="filter-input"
-          className={ filter }
+          className={filter}
           placeholder="Senator or state"
+          aria-labelledby="filter-input-label"
           aria-describedby="filter-input-hint"
-          onChange={ event => this.props.updateFilter(event.target.value) }
+          onChange={(event) => this.props.updateFilter(event.target.value)}
         />
-        <span className={ filterHint } id="filter-input-hint">Enter a senator&#39;s name or state to search by.</span>
+        <span className={filterHint} id="filter-input-hint">
+          Enter a senator&#39;s name or state to search by.
+        </span>
       </div>
     );
   }

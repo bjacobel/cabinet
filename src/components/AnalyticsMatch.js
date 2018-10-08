@@ -10,19 +10,19 @@ export default class AnalyticsMatch extends Component {
 
     return (
       <Match
-        pattern={ pattern }
-        exactly={ exactly }
-        render={ (matchProps) => {
+        pattern={pattern}
+        exactly={exactly}
+        render={(matchProps) => {
           if (typeof window !== 'undefined' && COLLECT_ANALYTICS) {
             try {
               ReactGA.pageview(path || window.location.pathname);
             } catch (err) {
-              console.warn('can\'t contact GA');
+              console.warn("can't contact GA");
             }
           }
 
           return createElement(component, matchProps);
-        } }
+        }}
       />
     );
   }

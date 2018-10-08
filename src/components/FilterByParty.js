@@ -6,7 +6,7 @@ import { partyFilter } from '../stylesheets/filterByParty.css';
 export default class FilterByParty extends Component {
   render() {
     return (
-      <p className={ partyFilter }>
+      <p className={partyFilter}>
         <span>Show: </span>
         <br />
         <Link to="/rep">Republicans</Link>

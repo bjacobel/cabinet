@@ -40,35 +40,50 @@ export default class Phone extends Component {
 
     return (
       <div>
-        <button
-          className={ phoneWrapper }
-          aria-labelledby="phone-label"
-          onClick={ this.activateModal }
-        />
-        <span id="phone-label" className={ phoneText }>View the phone number for { name }&#39;s office.</span>
+        <button type="button" className={phoneWrapper} aria-labelledby="phone-label" onClick={this.activateModal} />
+        <span id="phone-label" className={phoneText}>
+          View the phone number for
+          {name}
+          &#39;s office.
+        </span>
         <AriaModal
-          mounted={ this.state.modalOpen }
-          titleText={ `Call ${name}'s office` }
-          applicationNode={ document.getElementById('main') }
-          onExit={ this.deactivateModal }
+          mounted={this.state.modalOpen}
+          titleText={`Call ${name}'s office`}
+          applicationNode={document.getElementById('main')}
+          onExit={this.deactivateModal}
           focusDialog
         >
-          <div className={ modalContent }>
+          <div className={modalContent}>
             <header>
               <button
-                className={ headerCloseBtn }
+                type="button"
+                className={headerCloseBtn}
                 aria-labelledby="header-close-hint"
-                onClick={ this.deactivateModal }
+                onClick={this.deactivateModal}
               >
                 ✖
               </button>
-              <span id="header-close-hint" className={ headerCloseHint }>Close modal</span>
+              <span id="header-close-hint" className={headerCloseHint}>
+                Close modal
+              </span>
             </header>
-            <h2>Call {name}&#39;s office.</h2>
+            <h2>
+              Call
+              {name}
+              &#39;s office.
+            </h2>
             <p>
-              <span>The number for {name}&#39;s D.C. office is:</span>
+              <span>
+                The number for
+                {name}
+                &#39;s D.C. office is:
+              </span>
             </p>
-            <p className={ bigPhone }><a id="phone" className={ phoneLink } href={ `tel:${number}` }>{ number }</a></p>
+            <p className={bigPhone}>
+              <a id="phone" className={phoneLink} href={`tel:${number}`}>
+                {number}
+              </a>
+            </p>
             <p>
               <span>Click or dial the number above, and ask to speak to an aide or leave a message regarding </span>
               <span>your representative&#39;s position on past nominee votes. </span>
@@ -77,10 +92,13 @@ export default class Phone extends Component {
               <span>Then ask for your representative&#39;s support or opposition when votes on </span>
               <a href="https://www.nytimes.com/interactive/2016/us/politics/donald-trump-administration.html">
                 future nominees
-              </a> are held.
+              </a>
+              are held.
             </p>
             <footer>
-              <button className={ closeModal } onClick={ this.deactivateModal }>Close</button>
+              <button type="button" className={closeModal} onClick={this.deactivateModal}>
+                Close
+              </button>
             </footer>
           </div>
         </AriaModal>

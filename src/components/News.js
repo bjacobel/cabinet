@@ -13,7 +13,7 @@ export default class News extends Component {
 
   render() {
     return (
-      <div className={ tweetWrapper }>
+      <div className={tweetWrapper}>
         <h2 id="news">Latest Updates</h2>
         <a
           className="twitter-timeline"
