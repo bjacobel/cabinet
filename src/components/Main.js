@@ -37,7 +37,7 @@ class Main extends Component {
       filterTerm,
       updateFilterTermAsync, // eslint-disable-line no-shadow
     } = this.props;
-    const { party } = this.props.params;
+    const { party } = this.props.match.params;
     const partyRegexp = new RegExp(party || '.+', 'i');
     const filterRegexp = new RegExp(filterTerm, 'i');
 
@@ -63,21 +63,21 @@ class Main extends Component {
             <span> and </span>
             <a href="https://www.propublica.org/">ProPublica</a>.
           </span>
+          <br />
           <span>
-            Code on
+            <span>Code on </span>
             <a href="https://github.com/bjacobel/cabinet">GitHub</a>, PRs welcome.
           </span>
+          <br />
           <span>
-            Created by
+            <span>Created by </span>
             <a href="https://twitter.com/bjacobel">@bjacobel</a>.
           </span>
           <br />
           <span>Ringing Phone icon By </span>
           <a href="https://thenounproject.com/mockturtle/">Sergey Demushkin</a>
-          <span>
-            from the
-            <a href="https://thenounproject.com/">Noun Project</a>.
-          </span>
+          <span> from the </span>
+          <a href="https://thenounproject.com/">Noun Project</a>.
         </p>
       </div>
     );

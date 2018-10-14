@@ -4,7 +4,6 @@ node_js:
 cache: yarn
 script:
   - yarn run lint
-  - NODE_ENV=test $(yarn bin)/babel-node src/seed.js > src/state.json
   - NODE_ENV=production yarn run webpack
 deploy:
   provider: s3

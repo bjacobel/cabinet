@@ -3,23 +3,12 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+
+const { ProjectName } = require('./config');
 
 module.exports = (env = {}) => {
   const isProd = env.production || ['production', 'staging'].includes(process.env.NODE_ENV);
-
-  const cssLoader = {
-    loader: 'css-loader',
-    options: {
-      modules: true,
-      importLoaders: 1,
-      localIdentName: '[name]__[local]___[hash:base64:5]',
-      sourceMap: !isProd,
-    },
-  };
-
-  const prodCssConfig = [{ loader: MiniCssExtractPlugin.loader }, cssLoader, { loader: 'postcss-loader' }];
-
-  const devCssConfig = [{ loader: 'style-loader' }, cssLoader, { loader: 'postcss-loader' }];
 
   const wpconfig = {
     entry: {
@@ -30,8 +19,10 @@ module.exports = (env = {}) => {
       path: `${__dirname}/dist`,
       filename: isProd ? '[name].[chunkhash].js' : '[name].js',
       publicPath: isProd ? '/' : 'http://localhost:8080/',
+      libraryTarget: isProd ? 'commonjs2' : 'var',
     },
-    devtool: 'source-map',
+    devtool: isProd ? false : 'source-map',
+    target: isProd ? 'node' : 'web',
     module: {
       rules: [
         {
@@ -55,8 +46,35 @@ module.exports = (env = {}) => {
           use: 'babel-loader',
         },
         {
+          test: /\.html$/,
+          use: 'ejs-loader',
+        },
+        {
+          // Normal css files, from vendors
           test: /\.css$/,
-          use: isProd ? prodCssConfig : devCssConfig,
+          include: path.join(__dirname, 'node_modules'),
+          loader: [
+            isProd ? { loader: MiniCssExtractPlugin.loader } : { loader: 'style-loader' },
+            { loader: 'css-loader' },
+          ],
+        },
+        {
+          // Postcss files
+          test: /\.css$/,
+          exclude: path.join(__dirname, 'node_modules'),
+          loader: [
+            isProd ? { loader: MiniCssExtractPlugin.loader } : { loader: 'style-loader' },
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true,
+                importLoaders: 1,
+                localIdentName: '[name]__[local]___[hash:base64:5]',
+                sourceMap: !isProd,
+              },
+            },
+            { loader: 'postcss-loader' },
+          ],
         },
       ],
     },
@@ -73,12 +91,14 @@ module.exports = (env = {}) => {
         minChunks: 1,
         name: true,
         cacheGroups: {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendor',
-            enforce: true,
-            chunks: 'all',
-          },
+          vendor: isProd
+            ? false
+            : {
+                test: /[\\/]node_modules[\\/]/,
+                name: 'vendor',
+                enforce: true,
+                chunks: 'all',
+              },
         },
       },
     },
@@ -88,17 +108,6 @@ module.exports = (env = {}) => {
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(isProd ? 'production' : 'development'),
         'process.env.TRAVIS_COMMIT': JSON.stringify(process.env.TRAVIS_COMMIT || 'unreleased'),
-      }),
-      new HtmlWebpackPlugin({
-        title: 'cabinetvotes.org',
-        template: './src/index.html',
-        favicon: './src/assets/images/favicon.ico',
-      }),
-      new ScriptExtHtmlWebpackPlugin({
-        dynamicChunks: {
-          preload: true,
-        },
-        defaultAttribute: 'defer',
       }),
     ],
     devServer: {
@@ -115,11 +124,34 @@ module.exports = (env = {}) => {
   };
 
   if (!isProd) {
-    wpconfig.plugins = [new webpack.HotModuleReplacementPlugin(), ...wpconfig.plugins];
+    wpconfig.plugins = [
+      new HtmlWebpackPlugin({
+        title: ProjectName,
+        template: './src/index.html',
+        favicon: './src/assets/images/favicon.ico',
+      }),
+      new ScriptExtHtmlWebpackPlugin({
+        dynamicChunks: {
+          preload: true,
+        },
+        defaultAttribute: 'defer',
+      }),
+      new webpack.HotModuleReplacementPlugin(),
+      ...wpconfig.plugins,
+    ];
   } else {
     wpconfig.plugins = [
       new MiniCssExtractPlugin({
         filename: isProd ? '[name].[contenthash].css' : '[name].css',
+      }),
+      new StaticSiteGeneratorPlugin({
+        entry: 'main',
+        paths: ['/', '/rep', '/dem', '/ind'],
+        globals: {
+          window: {
+            addEventListener: () => {},
+          },
+        },
       }),
       ...wpconfig.plugins,
     ];

@@ -13,7 +13,8 @@ import {
 } from '../stylesheets/phone.css';
 
 export default class Phone extends Component {
-  componentWillMount() {
+  constructor() {
+    super();
     this.state = { modalOpen: false };
     this.activateModal = this.activateModal.bind(this);
     this.deactivateModal = this.deactivateModal.bind(this);
@@ -49,7 +50,7 @@ export default class Phone extends Component {
         <AriaModal
           mounted={this.state.modalOpen}
           titleText={`Call ${name}'s office`}
-          applicationNode={document.getElementById('main')}
+          applicationNode={typeof global.document !== 'undefined' && document.getElementById('main')}
           onExit={this.deactivateModal}
           focusDialog
         >
@@ -68,14 +69,12 @@ export default class Phone extends Component {
               </span>
             </header>
             <h2>
-              Call
-              {name}
+              Call {name}
               &#39;s office.
             </h2>
             <p>
               <span>
-                The number for
-                {name}
+                The number for {name}
                 &#39;s D.C. office is:
               </span>
             </p>
@@ -89,11 +88,9 @@ export default class Phone extends Component {
               <span>your representative&#39;s position on past nominee votes. </span>
             </p>
             <p>
-              <span>Then ask for your representative&#39;s support or opposition when votes on </span>
-              <a href="https://www.nytimes.com/interactive/2016/us/politics/donald-trump-administration.html">
-                future nominees
-              </a>
-              are held.
+              <span>
+                Then ask for your representative&#39;s support or opposition when votes on future nominees are held.
+              </span>
             </p>
             <footer>
               <button type="button" className={closeModal} onClick={this.deactivateModal}>

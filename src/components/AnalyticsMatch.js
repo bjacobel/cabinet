@@ -1,5 +1,5 @@
 import React, { Component, createElement } from 'react';
-import { Match } from 'react-router';
+import Route from 'react-router-dom/Route';
 import ReactGA from 'react-ga';
 
 import { COLLECT_ANALYTICS } from '../constants';
@@ -9,8 +9,8 @@ export default class AnalyticsMatch extends Component {
     const { path, pattern, exactly, component } = this.props;
 
     return (
-      <Match
-        pattern={pattern}
+      <Route
+        path={pattern}
         exactly={exactly}
         render={(matchProps) => {
           if (typeof window !== 'undefined' && COLLECT_ANALYTICS) {

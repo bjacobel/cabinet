@@ -3,14 +3,6 @@ import React, { Component } from 'react';
 import { tweetWrapper } from '../stylesheets/news.css';
 
 export default class News extends Component {
-  componentDidMount() {
-    const script = document.createElement('script');
-    script.async = true;
-    script.charset = 'utf-8';
-    script.src = 'https://platform.twitter.com/widgets.js';
-    document.body.appendChild(script);
-  }
-
   render() {
     return (
       <div className={tweetWrapper}>
