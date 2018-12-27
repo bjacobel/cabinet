@@ -48,7 +48,7 @@ export const getVotes = () =>
     .then((votes) =>
       votes.map((vote) => {
         const { roll_call, result, description } = vote;
-      let [_, name] = description.match(/([\w\ \.,]+), (?:of|in).*$/);  // eslint-disable-line
+        let [_, name] = description.match(/([\w\ \.,]+), (?:of|in).*$/);  // eslint-disable-line
 
         return {
           id: roll_call,
