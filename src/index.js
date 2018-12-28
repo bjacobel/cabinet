@@ -2,7 +2,7 @@ import './polyfills';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { renderToString } from 'react-dom/server';
+import serverRender from 'preact-render-to-string'; // eslint-disable-line import/extensions
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
@@ -13,7 +13,7 @@ import Main from './components/Main';
 import UniversalRouter from './components/UniversalRouter';
 import AnalyticsMatch from './components/AnalyticsMatch';
 import { SHOW_DEV_TOOLS, GA_ID } from './constants';
-import template from './index.html';
+import template from './index.html.ejs';
 
 const composeEnhancers = (SHOW_DEV_TOOLS && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose; // eslint-disable-line max-len, no-underscore-dangle
 
@@ -46,9 +46,11 @@ if (typeof global.document !== 'undefined') {
   render();
 }
 
-export default (locals) =>
-  template({
-    serverHtml: renderToString(App),
-    serverRender: true,
-    css: Object.keys(locals.webpackStats.compilation.assets).filter((value) => value.match(/\.css$/)),
+export default (locals) => {
+  const assets = Object.keys(locals.webpackStats.compilation.assets);
+  return template({
+    html: serverRender(App),
+    css: assets.filter((value) => value.match(/\.css$/)),
+    js: assets.filter((value) => value.match(/\.js$/)),
   });
+};

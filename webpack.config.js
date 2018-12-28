@@ -2,10 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
-
-const { ProjectName } = require('./config');
 
 module.exports = (env = {}) => {
   const isProd = env.production || ['production', 'staging'].includes(process.env.NODE_ENV);
@@ -19,7 +16,8 @@ module.exports = (env = {}) => {
       path: `${__dirname}/dist`,
       filename: isProd ? '[name].[chunkhash].js' : '[name].js',
       publicPath: isProd ? '/' : 'http://localhost:8080/',
-      libraryTarget: isProd ? 'commonjs2' : 'var',
+      libraryTarget: 'umd',
+      globalObject: 'this',
     },
     devtool: isProd ? false : 'source-map',
     target: isProd ? 'node' : 'web',
@@ -46,8 +44,8 @@ module.exports = (env = {}) => {
           use: 'babel-loader',
         },
         {
-          test: /\.html$/,
-          use: 'ejs-loader',
+          test: /\.ejs$/,
+          use: 'ejs-webpack-loader',
         },
         {
           // Normal css files, from vendors
@@ -81,26 +79,17 @@ module.exports = (env = {}) => {
     resolve: {
       extensions: ['.js', '.json', '.css'],
       modules: [__dirname, path.resolve(__dirname, 'src'), 'node_modules'],
+      alias: {
+        react: 'preact-compat',
+        'react-dom': 'preact-compat',
+      },
     },
     node: {
       constants: false,
     },
     optimization: {
-      splitChunks: {
-        chunks: 'async',
-        minChunks: 1,
-        name: true,
-        cacheGroups: {
-          vendor: isProd
-            ? false
-            : {
-                test: /[\\/]node_modules[\\/]/,
-                name: 'vendor',
-                enforce: true,
-                chunks: 'all',
-              },
-        },
-      },
+      noEmitOnErrors: true,
+      splitChunks: {},
     },
     plugins: [
       new webpack.NoEmitOnErrorsPlugin(),
@@ -126,15 +115,8 @@ module.exports = (env = {}) => {
   if (!isProd) {
     wpconfig.plugins = [
       new HtmlWebpackPlugin({
-        title: ProjectName,
-        template: './src/index.html',
+        template: './src/index.html.ejs',
         favicon: './src/assets/images/favicon.ico',
-      }),
-      new ScriptExtHtmlWebpackPlugin({
-        dynamicChunks: {
-          preload: true,
-        },
-        defaultAttribute: 'defer',
       }),
       new webpack.HotModuleReplacementPlugin(),
       ...wpconfig.plugins,

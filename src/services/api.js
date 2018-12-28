@@ -1,6 +1,5 @@
 /* eslint-disable camelcase */
 
-import fetch from './fetch';
 import states from './states.json';
 import phones from './phones.json';
 import { API_ROOT } from '../constants';
