@@ -1,7 +1,8 @@
-import serverRender from 'preact-render-to-string';
+import { renderToString } from 'react-dom/server';
 
 import App from './App';
 import template from './index.html.ejs';
+import createOrHydrateStore from './utils/createOrHydrateStore';
 
 export default () => {
   let manifest;
@@ -11,8 +12,12 @@ export default () => {
   } catch (_) {
     throw new Error('No browser asset manifest in /dist. You need to run the browser build before the server one.');
   }
+
+  const store = createOrHydrateStore();
+
   return template({
-    html: serverRender(App),
+    state: JSON.stringify(store.getState()),
+    html: renderToString(App(store)),
     css: [manifest['browser.css']],
     js: [manifest['browser.js']],
   });

@@ -33,10 +33,6 @@ module.exports = (env = {}) => {
     resolve: {
       extensions: ['.js', '.json', '.css'],
       modules: [__dirname, path.resolve(__dirname, 'src'), 'node_modules'],
-      alias: {
-        react: 'preact-compat',
-        'react-dom': 'preact-compat',
-      },
     },
     node: {
       constants: false,
