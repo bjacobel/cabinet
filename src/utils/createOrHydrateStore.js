@@ -9,7 +9,7 @@ const composeEnhancers = (SHOW_DEV_TOOLS && window.__REDUX_DEVTOOLS_EXTENSION_CO
 const createOrHydrateStore = () =>
   createStore(
     reducer,
-    (window && window.__initial_state) || {}, // eslint-disable-line no-underscore-dangle
+    (window && window.__initialState) || {}, // eslint-disable-line no-underscore-dangle
     composeEnhancers(applyMiddleware(...[thunk]))
   );
 

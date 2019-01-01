@@ -3,8 +3,9 @@ import { renderToString } from 'react-dom/server';
 import App from './App';
 import template from './index.html.ejs';
 import createOrHydrateStore from './utils/createOrHydrateStore';
+import { getCabinetAsync } from './actions/cabinet';
 
-export default () => {
+export default async () => {
   let manifest;
   try {
     // eslint-disable-next-line global-require, import/no-unresolved
@@ -14,6 +15,8 @@ export default () => {
   }
 
   const store = createOrHydrateStore();
+
+  await store.dispatch(getCabinetAsync());
 
   return template({
     state: JSON.stringify(store.getState()),

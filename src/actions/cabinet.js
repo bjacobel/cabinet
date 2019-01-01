@@ -33,7 +33,7 @@ export const getCabinetAsync = () => (dispatch, getState) => {
       dispatch(getVotesSucceeded(votes));
 
       return Promise.all(
-        [votes[0]].map((vote) => {
+        votes.map((vote) => {
           if (!state.voteRecords[vote.id]) {
             return getVoteRecords(vote.id)
               .then((voteRecords) => dispatch(getVoteRecordsSucceeded(voteRecords)))
