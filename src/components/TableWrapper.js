@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import ReactHint from 'react-hint';
 
 import 'react-hint/css/index.css';
-import 'fixed-data-table-2/dist/fixed-data-table.css';
+import 'fixed-data-table-2/dist/fixed-data-table.min.css';
 
 import {
   table,

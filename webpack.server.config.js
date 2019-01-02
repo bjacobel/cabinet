@@ -4,14 +4,8 @@ const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin'
 
 const commonConfig = require('./webpack.common.config');
 
-module.exports = (env = {}) => {
-  const isProd = env.production || ['production'].includes(process.env.NODE_ENV);
-
-  if (!isProd) {
-    throw new Error('Building in dev mode on the server is not supported.');
-  }
-
-  return merge(commonConfig(env), {
+module.exports = (env = {}) =>
+  merge(commonConfig(env), {
     entry: {
       server: './src/server.js',
     },
@@ -54,4 +48,3 @@ module.exports = (env = {}) => {
       }),
     ],
   });
-};

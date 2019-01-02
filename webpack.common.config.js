@@ -69,5 +69,5 @@ module.exports = (env = {}) => {
 module.exports.cssLoaderOpts = {
   modules: true,
   importLoaders: 1,
-  localIdentName: '[name]__[local]___[hash:base64:5]',
+  localIdentName: ['production'].includes(process.env.NODE_ENV) ? '[hash:base64:4]' : '[name]_[local]_[hash:base64:5]',
 };

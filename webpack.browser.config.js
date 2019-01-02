@@ -3,6 +3,7 @@ const merge = require('webpack-merge');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const commonConfig = require('./webpack.common.config');
 
@@ -59,6 +60,11 @@ module.exports = (env = {}) => {
             }),
           ]
         : []),
+      new BundleAnalyzerPlugin({
+        analyzerMode: process.env.ANALYZE ? 'static' : 'disabled',
+        generateStatsFile: false,
+        statsOptions: { source: true },
+      }),
     ],
   });
 };

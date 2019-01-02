@@ -18,8 +18,10 @@ export default async () => {
 
   await store.dispatch(getCabinetAsync());
 
+  const state = store.getState();
+
   return template({
-    state: JSON.stringify(store.getState()),
+    state: JSON.stringify(state),
     html: renderToString(App(store)),
     css: [manifest['browser.css']],
     js: [manifest['browser.js']],

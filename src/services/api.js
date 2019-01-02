@@ -15,9 +15,17 @@ const partyFromShort = (shortParty) => {
   }
 };
 
+const fetchValidate = (url) =>
+  fetch(url).then((body) => {
+    if (!body.ok) {
+      return Promise.reject(new Error(`Request to ${url} failed with code ${body.status}`));
+    }
+    return body;
+  });
+
 // Get the list of voters
 export const getSenators = () =>
-  fetch(`${API_ROOT}/senators`)
+  fetchValidate(`${API_ROOT}/senators`)
     .then((body) => body.json())
     .then((data) => data.results[0].members)
     .then((senators) =>
@@ -41,7 +49,7 @@ export const getSenators = () =>
 
 // Get the list of votes held
 export const getVotes = () =>
-  fetch(`${API_ROOT}/nominations`)
+  fetchValidate(`${API_ROOT}/nominations`)
     .then((body) => body.json())
     .then((data) => data.results[0].votes)
     .then((votes) =>
@@ -60,7 +68,7 @@ export const getVotes = () =>
 
 // For a given vote, get how everyone voted on it
 export const getVoteRecords = (voteId) =>
-  fetch(`${API_ROOT}/votes?vote=${voteId}`)
+  fetchValidate(`${API_ROOT}/votes?vote=${voteId}`)
     .then((body) => body.json())
     .then((data) => data.results.votes.vote.positions)
     .then((voters) =>

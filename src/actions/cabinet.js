@@ -27,7 +27,16 @@ export const getCabinetAsync = () => (dispatch, getState) => {
   const state = getState();
   dispatch(loadingStarted());
 
-  return Promise.all([getVotes(), getSenators()])
+  return Promise.all([
+    getVotes().catch((err) => {
+      dispatch(getVotesFailed(err));
+      throw err;
+    }),
+    getSenators().catch((err) => {
+      dispatch(getSenatorsFailed(err));
+      throw err;
+    }),
+  ])
     .then(([votes, senators]) => {
       dispatch(getSenatorsSucceeded(senators));
       dispatch(getVotesSucceeded(votes));
@@ -42,13 +51,11 @@ export const getCabinetAsync = () => (dispatch, getState) => {
             return Promise.resolve();
           }
         })
-      );
+      ).catch((err) => {
+        dispatch(getVotesFailed(err));
+      });
     })
     .then(() => {
       dispatch(loadingEnded());
-    })
-    .catch((err) => {
-      dispatch(loadingEnded());
-      dispatch(getVotesFailed(err));
     });
 };

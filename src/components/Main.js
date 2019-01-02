@@ -25,7 +25,7 @@ const mapDispatchToProps = {
 
 class Main extends Component {
   componentDidMount() {
-    if (!this.props.votes) {
+    if (!this.props.votes.length) {
       this.props.getCabinetAsync();
     }
   }
