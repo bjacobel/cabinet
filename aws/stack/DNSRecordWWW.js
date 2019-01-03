@@ -1,4 +1,4 @@
-const { ref, getAtt, join } = require('cloudfriend');
+const { ref, getAtt, join } = require('@mapbox/cloudfriend');
 
 module.exports = {
   // Only create this resource if ProjectDomain and ProjectFQDomain are the same.
@@ -10,7 +10,7 @@ module.exports = {
     Name: join(['www.', ref('ProjectDomain'), '.']),
     Type: 'A',
     AliasTarget: {
-      HostedZoneId: 'Z2FDTNDATAQYW2',  // default Cloudfront distro hosted zone
+      HostedZoneId: 'Z2FDTNDATAQYW2', // default Cloudfront distro hosted zone
       DNSName: getAtt('CloudFrontDistribution', 'DomainName'),
     },
   },

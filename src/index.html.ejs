@@ -10,10 +10,23 @@
   <meta property="og:type" content="website">
   <meta property="og:description" content="Tracking the votes of senators on Trump's nominees. Filter by party, state, and senator.">
   <meta property="og:image" content="https://c1.staticflickr.com/6/5564/14726222014_6dc5cc1cdb_b.jpg">
-  <title><%= htmlWebpackPlugin.options.title %></title>
+  <title>CabinetVotes</title>
+  <% typeof css !== 'undefined' && css.forEach(function(file) { %>
+    <link href="<%- file %>" rel="stylesheet preload" as="style">
+  <% }); %>
+  <% if(typeof state !== 'undefined') { %>
+    <script>window.__initialState = <%- state %>;</script>
+  <% } %>
 </head>
 <body>
-  <div id="main"></div>
-  <%=htmlWebpackPlugin.files.webpackManifest%>
+  <div id="main">
+    <% if (typeof html !== 'undefined') { %>
+      <%- html %>
+    <% } %>
+  </div>
+  <% typeof js !== 'undefined' && js.forEach(function(file) { %>
+    <script src="<%- file %>" defer></script>
+  <% }); %>
+  <script async="true" charset="utf8" src="https://platform.twitter.com/widgets.js"></script>
 </body>
 </html>

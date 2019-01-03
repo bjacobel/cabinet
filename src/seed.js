@@ -5,9 +5,7 @@ import { getCabinetAsync } from './actions/cabinet';
 import reducer from './reducers';
 
 (() => {
-  const store = createStore(reducer, {}, compose(
-    applyMiddleware(thunk),
-  ));
+  const store = createStore(reducer, {}, compose(applyMiddleware(thunk)));
 
   return store.dispatch(getCabinetAsync()).then(() => {
     console.log(JSON.stringify(store.getState()));

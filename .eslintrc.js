@@ -1,26 +1,38 @@
 module.exports = {
-  extends: 'eslint-config-airbnb',
+  extends: ['eslint-config-airbnb', 'prettier'],
+  plugins: ['prettier'],
   rules: {
-    'arrow-body-style': 0,
-    'func-names': 0,
-    'indent': [2, 2, { SwitchCase: 0 }],
-    'max-len': [2, 120, 2],
+    'arrow-parens': [2, 'always'],
     'no-else-return': 0,
     'no-console': 0,
-    'quote-props': [2, 'consistent-as-needed'],
     'import/prefer-default-export': 1,
     'import/no-extraneous-dependencies': [2, { devDependencies: true }],
-    'import/order': [2, {
-      'groups': [['builtin', 'external']],
-      'newlines-between': 'always',
-    }],
-    'react/jsx-curly-spacing': [2, 'always'],
+    'import/order': [
+      2,
+      {
+        groups: [['builtin', 'external']],
+        'newlines-between': 'always',
+      },
+    ],
+    'prettier/prettier': [
+      2,
+      {
+        singleQuote: true,
+        trailingComma: 'es5',
+        bracketSpacing: true,
+        printWidth: 120,
+        arrowParens: 'always',
+      },
+    ],
     'react/jsx-filename-extension': [2, { extensions: ['.js'] }],
+    'react/jsx-one-expression-per-line': 0,
     'react/prefer-stateless-function': 0,
+    'react/destructuring-assignment': 0,
     'react/prop-types': 0,
+    'jsx-a11y/anchor-is-valid': [2, { specialLink: ['to'] }],
   },
   parserOptions: {
-    ecmaVersion: 8,
+    ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
       modules: true,
@@ -31,5 +43,8 @@ module.exports = {
     commonjs: true,
     es6: true,
     jest: true,
+  },
+  settings: {
+    'import/resolver': 'webpack',
   },
 };
