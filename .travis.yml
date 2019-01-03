@@ -16,6 +16,7 @@ deploy:
   on:
     branch:
       - master
+      - bjacobel/ssr
     condition: $(node aws/utils bucketExists) = "true"
 after_deploy:
   - node aws/utils invalidate "index.html dem/index.html rep/index.html ind/index.html"
