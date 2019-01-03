@@ -25,7 +25,7 @@ const fetchValidate = (url) =>
 
 // Get the list of voters
 export const getSenators = () =>
-  fetchValidate(`${API_ROOT}/senators`)
+  fetchValidate(`${API_ROOT}/115/senate/members.json`)
     .then((body) => body.json())
     .then((data) => data.results[0].members)
     .then((senators) =>
@@ -49,7 +49,7 @@ export const getSenators = () =>
 
 // Get the list of votes held
 export const getVotes = () =>
-  fetchValidate(`${API_ROOT}/nominations`)
+  fetchValidate(`${API_ROOT}/115/nominations.json`)
     .then((body) => body.json())
     .then((data) => data.results[0].votes)
     .then((votes) =>
@@ -68,7 +68,7 @@ export const getVotes = () =>
 
 // For a given vote, get how everyone voted on it
 export const getVoteRecords = (voteId) =>
-  fetchValidate(`${API_ROOT}/votes?vote=${voteId}`)
+  fetchValidate(`${API_ROOT}/115/senate/sessions/1/votes/${voteId}.json`)
     .then((body) => body.json())
     .then((data) => data.results.votes.vote.positions)
     .then((voters) =>
